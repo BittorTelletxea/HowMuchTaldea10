@@ -1,0 +1,106 @@
+
+.perfil{
+    height: 10%;
+}
+header button{
+    border-color: white;
+    background-color: transparent;
+    margin-left: 1%;
+    margin-top: 1%;
+    border-radius: 9px;
+}
+.image{
+    margin-left: 7%;
+    margin-right: 7%;
+    justify-content: space-between;
+    align-items: center;
+}
+.image img{
+    width: 10%;
+}
+.underlined{
+    font-size: 20px;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+
+}
+.underlined:hover{
+    color: #041e3f;
+}
+.datuak p{
+    margin-left: 15%;
+    font-size: 14px;
+    text-align: justify;
+}
+.zoom {
+    transition: transform 0.3s, background-color 0.3s;
+    background-color: transparent;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+}
+
+.nav {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px;
+  }
+.navdat1{
+    color: #041e3f;
+}
+.nav ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+.nav li {
+    margin-right: 20px;
+  }
+
+.nav a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+.nav a:hover {
+    color: #041e3f;
+  }
+  label {
+    margin-right: 10px;
+  }
+.izena{
+    justify-content: space-around;
+}
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+
+  select:hover,
+  select:focus {
+    border-color: #000000;
+  }
+
+  option {
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+  }

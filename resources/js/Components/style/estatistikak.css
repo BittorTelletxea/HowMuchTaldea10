@@ -1,0 +1,22 @@
+body{
+    background-color: aliceblue;
+}
+.estatistikak{
+    padding-top: 2%;
+    padding-left: 20%;
+    padding-right: 20%;
+    
+}
+.stats{
+    border:1px solid black;
+    border-radius: 6px;
+}
+.kontusorketa{
+    margin: 1%;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+}
+.erosketakop{
+    margin: 1%;
+    justify-content: space-around;
+}

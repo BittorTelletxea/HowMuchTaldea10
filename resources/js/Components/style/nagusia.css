@@ -1,0 +1,54 @@
+
+header{
+    background: #3E5151;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #3f57c9, #000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+header h4{
+      margin-top: 1%;
+      margin-left: 30%;
+}
+
+.sign img{
+      width: 9%;
+      margin-top: 6%;
+      margin-left: 130%;
+}
+.navbar{
+    margin-left: 32%;
+}
+.navbar a{
+    font-size: 25px;
+    margin-left: 10%;
+}
+.zoom:hover{
+    transform: scale(1.1); 
+    transition: transform 0.3s;
+
+}
+
+.subrayado-animado {
+    position: relative;
+    text-decoration: none;
+}
+
+.subrayado-animado::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px; 
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    transition: width 0.3s; 
+}
+
+.subrayado-animado:hover::before {
+    width: 100%;
+}
+.container h1{
+    color: gray;
+    margin-top: 30%;
+    text-align: center;
+}

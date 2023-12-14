@@ -1,0 +1,398 @@
+
+header {
+
+        
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#headerBilatzailea {
+
+    width: 40%;
+}
+#navButton{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    background-color: transparent;
+    border: none;
+    color: white;
+  
+}
+.navbar{
+    padding: 0;
+}
+nav{
+    width: 50%;
+}
+header button{
+    
+    background-color: white;
+    color: black;
+}
+.howmuch a{
+    font-size: 17px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    
+}
+.light button{
+    background-color: white;
+    color: black;
+}
+.guri{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1%;
+    position: relative;
+    font-size: 20px;
+    margin-right: 1%;
+}
+
+  /* Línea de subrayado que inicialmente está oculta */
+  .guri::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Grosor del subrayado */
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff; /* Color del subrayado */
+    transform: scaleX(0); /* Inicialmente oculto */
+    transform-origin: bottom right;
+    transition: transform 0.3s ease; /* Transición para el efecto animado */
+}
+  
+  /* Efecto de subrayado al hacer hover */
+.guri:hover::before {
+
+    transform: scaleX(1); /* Muestra el subrayado al 100% de su ancho original */
+    transform-origin: bottom left;
+  }
+.howmuch{
+    width: 10%;
+}
+.login{
+    position: relative;
+    padding: 0;
+    border-color: transparent;
+    color: white;
+}
+.login:hover{
+    border-color: transparent;
+    background-color: transparent;
+    
+}
+.login a{
+    font-size: 15px;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+  /* Línea de subrayado que inicialmente está oculta */
+.login::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Grosor del subrayado */
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff; /* Color del subrayado */
+    transform: scaleX(0); /* Inicialmente oculto */
+    transform-origin: bottom right;
+    transition: transform 0.3s ease; /* Transición para el efecto animado */
+}
+  
+  /* Efecto de subrayado al hacer hover */
+.login:hover::before {
+
+    transform: scaleX(1); /* Muestra el subrayado al 100% de su ancho original */
+    transform-origin: bottom left;
+  }
+.signup:hover{
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+.signup{
+    border-color: white;
+    background-color: white;
+    color: black;
+}
+.signup a{
+    font-size: 15px;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.animated-heading {
+    font-size: 3em;
+    margin-top: 40%;
+    display: inline-block; 
+  }
+  
+  @keyframes enlargeShrink {
+    0% {
+      transform: scale(1); 
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+.zoom{
+    width: 23%;
+    margin-top: 6%;
+
+}
+.zoom {
+    transition: transform 0.3s, background-color 0.3s;
+    background-color: transparent;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+    background-color: black; 
+}
+
+.zoom:hover h4,
+.zoom:hover p {
+    color: white;
+}
+.zoom:hover button{
+    border-color: white;
+    color: white;
+}
+.zoom:not(:hover) {
+    transform: scale(1);
+    background-color: transparent;
+}
+.zoom2:hover{
+    transform: scale(1.1); 
+    transition: transform 0.3s;
+
+}
+.nagusia{
+    background-image: url('../images/back.webp');
+    background-size: 100% 100%;
+}
+.eslogan{
+    width: 50%;
+}
+.eslogan h1,p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.eslogan h1{
+    font-size: 44px;
+}
+.kontaktua{
+    width: 50%;
+}
+.kontaktua p{
+    font-size: 30px;
+    margin-left: 15%;
+    margin-right: 15%;
+
+}
+.eslogan button{
+    color: white;
+    border-color: white;
+}
+.kontaktua button{
+    border-color: black;
+    color: black;
+}
+.kontaktua button:hover{
+    border-color: black;
+    color: white;
+    background-color: black;
+}
+.eslogan button:hover{
+    border-color: white;
+    background-color: white;
+    color: black;
+}
+
+.norgara{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    padding: 4%;
+    text-align: left;
+    border-top: 1px solid black;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+.norgara button{
+    color: rgb(248, 248, 248);
+    border-color: rgb(255, 255, 255);
+}
+.norgara button:hover{
+    border-color: white;
+    background-color: black;
+}
+.norgara button:active{
+    background-color: white;
+}
+.botoiak{
+    margin-left: 30%;
+}
+.produktuak{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    background-image: url('../images/denda.webp');
+    background-size: 100% 100%;
+    padding-top: 3%;
+    padding: 4%;
+}
+.produktuak button{
+    border-color: white;
+    color: white;
+}
+.produktuak-mota button{
+    margin-bottom: 2%;
+}
+.produktuak button:hover{
+    background-color: white;
+    color: white;
+    border-color: white;
+}
+.produktuak-mota{
+    border: 1px solid white;
+    width: 28%;
+    margin: 2%;
+    border-radius: 3%;
+}
+
+.zeregin{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    padding: 4%;
+    text-align: left;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.zeregin button{
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+}
+.zeregin button:hover{
+    border-color: white;
+    background-color: black;
+}
+.zeregin button:active{
+    background-color: white;
+}
+.tarifak{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    background-size: 100% 100%;
+    padding-top: 3%;
+    padding: 4%;
+}
+.tarifak button{
+    border-color: white;
+    color: white;
+}
+.tarifak button:hover{
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+.row{
+    text-align: center;
+}
+.btn{
+    margin-right: 1%;
+}
+.login a{
+    text-decoration: none;
+    color: white;
+}
+.login a:hover{
+    color: white;
+}
+.signup a{
+    text-decoration: none;
+    color: black;
+}
+.signup a:hover{
+    color: white;
+}
+footer{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    background-image: url("../images/footer.webp");
+    background-size: 100% 100%;
+}
+@media (max-width:1020px){
+    .eslogan h1{
+        font-size: 30px;
+    }
+    .eslogan{
+        padding-bottom: 15%;
+    }
+    .kontaktua h1{
+        font-size: 30px;
+    }
+   
+    .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .produktuak-mota{
+        width: 100%;
+        padding-bottom: 3%;
+        margin-bottom: 3%;
+        margin-top: 5%;
+    }
+    .produktuak-mota button{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width:700px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .howmuch{
+        width: 100%;
+    }
+    .nagusia{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30%;
+        width: 100%;
+    }
+    .eslogan{
+        width: 100%;
+    }
+    .kontaktua{
+        width: 100%;
+        margin: 40%;
+
+    }
+    .kontent{
+        display: flex;
+        flex-direction: column;
+    }
+    .kontent button{
+        display: flex;
+        flex-direction: column;
+    }
+    .produktuak-mota{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer{
+        margin-left: 25%;
+    }
+    .redes{
+        margin-bottom: 7%;
+    }
+}
