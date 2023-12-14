@@ -1,5 +1,6 @@
 import perfil from "../images/perfildark.png"
 import flecha from "../images/flechadark.png";
+import "../style/perfil.css"
 import { Perfilnav } from "./Perfilnav";
 
 export const Perfila = () => {
@@ -7,7 +8,7 @@ export const Perfila = () => {
     <div>
     <div className="perfil bg-black">
       <header className="d-flex ">
-        <button className="zoom" ><a href="../html/index.html"><img src={flecha} alt="" width={'40px'} /></a></button>
+        <button className="zoom" ><a href="Logged"><img src={flecha} alt="" width={'40px'} /></a></button>
       </header>
       <div className="image d-flex">
       <img src={perfil}/>

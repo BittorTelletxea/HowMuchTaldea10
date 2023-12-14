@@ -5,16 +5,16 @@ export const Perfilnav = () => {
   <div className="nav bg-black text-center">
     <ul className="text-center">
         <li>
-            <a href="../html/perfil.html" className="navdat1 ">Datuak</a>
+            <a href="Perfil" className="navdat1 ">Datuak</a>
         </li>
         <li>
-            <a href="../html/salmentak.html" className="navdat">Salmentak</a>
+            <a href="Salmentak" className="navdat">Salmentak</a>
         </li>
         <li>
-            <a href="../html/erosketak.html" className="navdat">Erosketak</a>
+            <a href="Erosketak" className="navdat">Erosketak</a>
         </li>
         <li>
-            <a href="../html/estatistikak.html" className="navdat ">Estatistikak</a>
+            <a href="Estatistikak" className="navdat ">Estatistikak</a>
         </li>
     </ul>
   </div>

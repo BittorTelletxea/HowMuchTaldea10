@@ -30,15 +30,21 @@ Route::get('/Login', function () {
 Route::get('/Signup', function () {
     return Inertia::render('Mainfolder/Signup', []);
 });
-Route::post('/login', [AuthController::class, 'login']);
-Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
-Route::middleware(['auth'])->group(function () {
-    // Rutas protegidas
-    Route::get('/', function () {
-        return inertia('Dashboard');
-    });
+Route::get('/Logged', function () {
+    return Inertia::render('Mainfolder/Logged', []);
 });
-
+Route::get('/Perfil', function () {
+    return Inertia::render('Mainfolder/Perfil', []);
+});
+Route::get('/Salmentak', function () {
+    return Inertia::render('Mainfolder/Salmentak', []);
+});
+Route::get('/Erosketak', function () {
+    return Inertia::render('Mainfolder/Erosketak', []);
+});
+Route::get('/Estatistikak', function () {
+    return Inertia::render('Mainfolder/Estatistikak', []);
+});
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

@@ -39,6 +39,9 @@ header button{
 
     
 }
+.logout button{
+    margin-left: 30%;
+}
 .light button{
     background-color: white;
     color: black;

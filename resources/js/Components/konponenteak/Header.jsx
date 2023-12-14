@@ -5,7 +5,7 @@ export const Header = () => {
   return (
     <header className="bg-black fixed-col pt-4 d-flex">
         <div className="howmuch h-100 ">
-            <a className="navbar-brand text-white display-1 fw-bolder text-center" href="Perfil">
+            <a className="navbar-brand text-white display-1 fw-bolder text-center" >
             <img src={logo} width="40" height="32" alt="" />
                 How Much
             </a>

@@ -22,15 +22,15 @@ export const Datuak = () =>{
             </div>
             <div className='izena d-flex mt-4'>
                     <p>Gmail:</p>
-                    <input className="gmail-input" type="text" value="usuario@gmail.com"/>                    
+                    <input className="gmail-input" type="text" value="mateito@gmail.com"/>                    
             </div>
             <div className='izena d-flex mt-4'>
                     <p>Izena:</p>
-                    <input className="gmail-input" type="text" value="Alfredo Duro"/>                    
+                    <input className="gmail-input" type="text" value="Mateu Laoz"/>                    
             </div>
             <div className='izena d-flex mt-4'>
                     <p>Pasahitza:</p>
-                    <input className="gmail-input" type="password" value="Alfredo Duro"/>                    
+                    <input className="gmail-input" type="password" value="mateu"/>                    
                 </div>
                 <div className='izena d-flex mt-4'>
                     <p>Kontua:</p>
