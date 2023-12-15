@@ -26,7 +26,7 @@ export const Logged = () =>{
         </nav>
         <div className="logout navbar2 text-center">
             <div className="d-flex">
-            <a href="Perfil"><img src={logged} width='40' height='40' className="perfil"></img></a>
+            <a href="Perfil"><img src={logged} width='30' height='30' className="perfil mt-2"></img></a>
             
             <button
         className="signup btn  rounded-pill"

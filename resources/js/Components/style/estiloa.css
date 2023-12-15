@@ -79,6 +79,12 @@ header button{
 .howmuch{
     width: 10%;
 }
+.login a:hover{
+    text-decoration: none;
+}
+.signup a:hover{
+    text-decoration: none;
+}
 .login{
     position: relative;
     padding: 0;
@@ -118,7 +124,7 @@ header button{
   }
 .signup:hover{
     background-color: black;
-    color: white;
+    color:  white;
     border-color: white;
 }
 .signup{

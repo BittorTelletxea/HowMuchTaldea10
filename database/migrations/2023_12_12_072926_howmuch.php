@@ -11,16 +11,17 @@ return new class extends Migration
     */
    public function up(): void
    {
-     /* Schema::create('langileak', function (Blueprint $table) {
+     Schema::create('langileak', function (Blueprint $table) {
            $table->id();
            $table->string('izena');
            $table->string('email');
+           $table->string('pasahitza');
            $table->enum('mota', ['Tasadoreak', 'Administradoreak']);
            $table->timestamps();
-       });*/
+       });
 
 
-       /*Schema::create('tasadoreak', function (Blueprint $table) {
+       Schema::create('tasadoreak', function (Blueprint $table) {
            $table->id();
            $table->integer('kopurua');
            $table->timestamps();
@@ -33,7 +34,7 @@ return new class extends Migration
            $table->timestamps();
        });
 
-*/
+
        Schema::create('bezeroak', function (Blueprint $table) {
            $table->id();
            $table->string('izena');
@@ -44,7 +45,7 @@ return new class extends Migration
            $table->timestamps();
        });
 
-/*
+
        Schema::create('produktuak', function (Blueprint $table) {
            $table->id();
            $table->integer('balioa');
@@ -63,9 +64,9 @@ return new class extends Migration
            $table->datetime('erosketaData');
            $table->string('eroslea');
            $table->timestamps();
-       });*/
+       });
 
-/*
+
        Schema::create('salmentak', function (Blueprint $table) {
            $table->id();
            $table->integer('balioa');
@@ -100,7 +101,7 @@ return new class extends Migration
            $table->string('komentarioa');
            $table->datetime('data');
            $table->timestamps();
-       });*/
+       });
    }
 
 
