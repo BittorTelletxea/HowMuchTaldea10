@@ -3,7 +3,7 @@ import logo from "../images/logo.png"
 import logged from "../images/login.png"
 import { NavButton } from "./NavButton";
 import { Footer } from "./Footer";
-import { Nagusia } from "./Nagusia";
+import { NagusiaLog } from "./NagusiaLog";
 import { Norgara } from "./Norgara";
 import { Produktuak } from "./Produktuak";
 import { Tarifak } from "./Tarifak";
@@ -20,9 +20,9 @@ export const Logged = () =>{
         </div>
         
         <nav>
-            <a href="login" className="guri"><NavButton value="Guri Buruz"/></a>
-            <a href="produktuak.html" className="guri"><NavButton value="Produktuak"/></a>
-            <a href="kontaktua.html" className="guri"><NavButton value="Kontaktua"/></a>
+            <a href="Tasazioa" className="guri"><NavButton value="Tasazioa"/></a>
+            <a href="Denda" className="guri"><NavButton value="Produktuak"/></a>
+            <a href="Kontaktua" className="guri"><NavButton value="Kontaktua"/></a>
         </nav>
         <div className="logout navbar2 text-center">
             <div className="d-flex">
@@ -42,7 +42,7 @@ export const Logged = () =>{
             
       </div>
   </header>
-  <Nagusia />
+  <NagusiaLog />
   <Norgara />
   <Produktuak />
   <Tarifak />

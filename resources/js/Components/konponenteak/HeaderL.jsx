@@ -1,44 +1,31 @@
-import logo from "../images/logo.png"
-import login from "../images/login.png"
+import logo from "../images/logoL.png"
+import Logged  from "../images/perfil.png";
 import { NavButton } from "./NavButton";
-
-export const Header = () => {
+import '../style/headerl.css'
+import LogoutButton from "./LogoutButton";
+export const HeaderL = () => {
   return (
-    <header className="light bg-light fixed-col">
-        <div className="howmuch h-100">
-            <a className="navbar-brand text-black display-1 fw-bolder text-center" href="../perfil.html">
-            <img src={logo} width="50" height="40" alt="" />
+    <header className="bg-light fixed-col pt-4 d-flex">
+        <div className="howmuch h-100 ">
+            <a className="navbar-brand display-1 fw-bolder text-center" href="/Logged" >
+            <img src={logo} width="40" height="32" alt="" />
                 How Much
             </a>
         </div>
         
         <nav>
-            <a href="gureburuz.html" className="guri"><NavButton value="Guri Buruz"/></a>
-            <a href="produktuak.html" className="guri"><NavButton value="Produktuak"/></a>
-            <a href="kontaktua.html" className="guri"><NavButton value="Kontaktua"/></a>
+            <a href="Tasazioa" className="buruz text-black  ">TASAZIOA</a>
+            <a href="Denda" className="buruz text-black ">DENDA</a>
+            <a href="Kontaktua" className="buruz text-black ">KONTAKTUA</a>
         </nav>
-        <div className="howmuch navbar2 text-center">
-        <div className="d-flex">
-        <button
-        className="login btn btn-outline-primary rounded-pill mt-5 "
-        style={{
-          width: '120px'
-        }}
-        
-      > 
-      Log In
-      </button>
-        <button
-        className="signup btn btn-outline-primary rounded-pill mt-5 "
-        style={{
-          borderWidth: '2px',
-          width: '120px'
-        }}
-      >
-        Sign In
-      </button>
+        <div className=" navbar2 text-center">
+            <div className="d-flex">
+            <a href="Perfil"><img src={Logged} width='40' height='40' className=" mt-2"></img></a>
+            
+            <LogoutButton />
+</div>
+            
       </div>
-        </div>
   </header>
 
   );

@@ -16,16 +16,20 @@ class User extends Authenticatable
      *
      * @var string
      */
-    protected $table = 'users';
+    protected $table = 'bezeroak';
 
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
-    protected $fillable = [
-        'izena', 'email', 'pasahitza',
-    ];
+    protected $fillable = ['name','email', 'password','ordainketa metodoa']; // Nombres de las columnas en tu tabla
+    protected $primaryKey = 'id'; // Nombre de la clave primaria en tu tabla
+    public $timestamps = false; // Si no tienes campos created_at y updated_at
+
+    protected $rememberTokenName = null; // Si no tienes un campo remember_token
+
+ 
 
     /**
      * The attributes that should be hidden for arrays.
@@ -33,7 +37,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'pasahitza', 'remember_token',
+        'password', 'remember_token',
     ];
 
     /**
@@ -53,7 +57,7 @@ class User extends Authenticatable
      */
     public function setPasswordAttribute($value)
     {
-        $this->attributes['pasahitza'] = $value;
+        $this->attributes['password'] = $value;
     }
 
     /**

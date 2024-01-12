@@ -1,92 +1,98 @@
+import { useEffect } from 'react';
+import Checkbox from '@/Components/Checkbox';
+import GuestLayout from '@/Layouts/GuestLayout';
+import InputError from '@/Components/InputError';
+import InputLabel from '@/Components/InputLabel';
+import PrimaryButton from '@/Components/PrimaryButton';
+import TextInput from '@/Components/TextInput';
+import { Head, Link, useForm } from '@inertiajs/react';
+import logo from "../images/logoL.png";
 import "../style/login.css";
-import { useState } from 'react';
-import { Inertia } from '@inertiajs/inertia';
-import logo from "../images/logo.png";
+import { HeaderL } from './HeaderL';
+import { FooterL } from './FooterL';
 
-export const Login = () => {
-  const [credentials, setCredentials] = useState({
-    email: '',
-    pasahitza: '',
-  });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setCredentials((prevCredentials) => ({
-      ...prevCredentials,
-      [name]: value,
-    }));
-  };
+export function Login({ status, canResetPassword }) {
+   const { data, setData, post, processing, errors, reset } = useForm({
+       email: '',
+       password: '',
+       remember: false,
+   });
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
 
-    if (credentials.email === 'mateito@gmail.com' && credentials.pasahitza === 'mateu') {
-      Inertia.visit('/Logged');
-    } else {
-      alert('Usuario edo pasahitza ez dira zuzenak');
-    }
-  };
+   useEffect(() => {
+       return () => {
+           reset('password');
+       };
+   }, []);
 
-  return (
-    <section className="vh-87 gradient-custom">
-      <header>
-        <div className="howmuch h-100 mt-3">
-          <a className="navbar-brand text-white display-1 fw-bolder text-center" href="/">
-            <img src={logo} width="50" height="40" alt="" />
-            How Much
-          </a>
-        </div>
-      </header>
-      <div className="container py-5 h-100">
-        <div className="row d-flex justify-content-center align-items-center h-100">
-          <div className="col-12 col-md-8 col-lg-6 col-xl-5">
-            <div className="card transparent text-white" style={{ borderRadius: '1rem' }}>
-              <div className="card-body p-5 text-center">
-                <div className="mb-md-5 mt-md-4 pb-5">
-                  <h2 className="fw-bold mb-2 text-uppercase">Login</h2>
-                  <p className="text-white-50 mb-5">Sartu zure kontua</p>
 
-                  <form onSubmit={handleSubmit} className="form">
-                    <label>Email:</label><br />
-                    <input
-                      placeholder="Email"
-                      type="email"
-                      name="email"
-                      value={credentials.email}
-                      onChange={handleChange}
-                      required
-                    /><br /><br />
+   const submit = (e) => {
+       e.preventDefault();
 
-                    <label>Pasahitza:</label><br />
-                    <input
-                      placeholder="Pasahitza"
-                      type="password"
-                      name="pasahitza"
-                      value={credentials.pasahitza}
-                      onChange={handleChange}
-                      required
-                    /><br /><br /><br />
 
-                    <button
-                      className="login btn"
-                      type="submit"
-                      style={{
-                        width: '120px'
-                      }}
-                    >
-                      Login
-                    </button>
-                  </form>
-                </div>
+       post(route('login'));
+   };
 
-                <div>
-                  <p className="mb-0">Ez duzu konturik? <a href="Signup" className="text-white-50 fw-bold">Sign Up</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
+
+   return (
+       <div className='dena bg-light'>
+           <section className="vh-100 bg-light">
+               <header>
+                   <div className="howmuch h-100 mt-3">
+                       <a className="navbar-brand text-black display-1 fw-bolder text-center" href="/">
+                           <img src={logo} width="50" height="40" alt="" />
+                           How Much
+                       </a>
+                   </div>
+               </header>
+               <div className="container h-100">
+                   <div className="row d-flex justify-content-center align-items-center h-75">
+                       <div className="col col-xl-10">
+                           <div className="card p-lg-5 text-black">
+                               <form onSubmit={submit}>
+                                   <h5 className="fw-normal mb-3 pb-3" style={{ letterSpacing: '1px' }}>Sartu zure kontua</h5>
+
+
+                                   <div className="mb-4">
+                                       <label className="form-label" htmlFor="form2Example17">Email helbidea</label>
+                                       <input
+                                           type="email"
+                                           id="form2Example17"
+                                           className="input"
+                                           value={data.email}
+                                           onChange={(e) => setData('email', e.target.value)}
+                                       />
+                                       <InputError message={errors.email} className="mt-2" />
+                                   </div>
+                                   <div className="form-outline mb-4">
+                                       <label className="form-label" htmlFor="form2Example27">Pasahitza</label>
+                                       <input
+                                           type="password"
+                                           id="form2Example27"
+                                           className="input"
+                                           placeholder=''
+                                           value={data.password}
+                                           onChange={(e) => setData('password', e.target.value)}
+                                       />
+                                       <InputError message={errors.password} className="mt-2" />
+                                   </div>
+
+
+                                   <div className="pt-1 mb-4">
+                   <button className="btn btn-dark btn-lg btn-block" type="submit">SARTU</button>
+                 </div>
+
+
+                                   <p className="mb-5 pb-lg-2" style={{ color: '#393f81' }}>Ez duzu konturik? <Link href="/Signup"
+                                       style={{ color: '#393f81' }}>Erregistratu hemen</Link></p>
+                                   <Link href="/" className="small text-muted">HowMuch</Link>
+                               </form>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </section>
+       </div>
+   );
+}

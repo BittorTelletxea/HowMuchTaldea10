@@ -1,64 +1,119 @@
-import '../style/login.css';
-import logo from "../images/logo.png"
+import { useEffect } from 'react';
+import GuestLayout from '@/Layouts/GuestLayout';
+import InputError from '@/Components/InputError';
+import InputLabel from '@/Components/InputLabel';
+import PrimaryButton from '@/Components/PrimaryButton';
+import TextInput from '@/Components/TextInput';
+import { Head, Link, useForm } from '@inertiajs/react';
+import logo from "../images/logoL.png";
+import "../style/login.css";
+import { HeaderL } from './HeaderL';
+import { FooterL } from './FooterL';
 
-export const Signup = () =>{
-    return(
-        <section className="vh-80 gradient-custom">
-        <header>
-        <div className="howmuch h-100 mt-3">
-          <a className="navbar-brand text-white display-1 fw-bolder text-center" href="/">
-            <img src={logo} width="50" height="40" alt="" />
-            How Much
-          </a>
-        </div>
-      </header>
-        <div className="container py-4 h-100">
-            <div className="row d-flex justify-content-center align-items-center h-100">
-                <div className="col-12 col-md-8 col-lg-6 col-xl-5">
-                <div className="card transparent text-white" style={{ borderRadius: '1rem' }}>                        <div className="card-body p-5 text-center">
-      
-                  <div className="mb-md-5 mt-md-4 pb-5">
-      
-                    <h2 className="fw-bold mb-2 text-uppercase">Sign Up</h2>
-                    <p className="text-white-50 mb-5">Sortu kontu bat</p>
-      
-                    <div className="form-outline form-white mb-4">
-                    <label className="form-label" >Email</label>
-                      <input type="email" id="typeEmailX" className="form-control form-control-lg" placeholder="Email" />
+export function Signup() {
+    const { data, setData, post, processing, errors, reset } = useForm({
+        name: '',
+        email: '',
+        password: '',
+        password_confirmation: '',
+    });
+
+    useEffect(() => {
+        return () => {
+            reset('password', 'password_confirmation');
+        };
+    }, []);
+
+    const submit = (e) => {
+        e.preventDefault();
+        post(route('register'));
+    };
+
+    return (
+        <div className='dena bg-light'>
+            <section className="vh-100 bg-light">
+            <header>
+                   <div className="howmuch h-100 mt-3">
+                       <a className="navbar-brand text-black display-1 fw-bolder text-center" href="/">
+                           <img src={logo} width="50" height="40" alt="" />
+                           How Much
+                       </a>
+                   </div>
+               </header>                <div className="container h-100">
+                    <div className="row d-flex justify-content-center align-items-center h-75">
+                        <div className="col col-xl-10">
+                            <div className="card p-lg-5 text-black">
+                                <form onSubmit={submit}>
+                                    <h5 className="fw-normal mb-3 pb-3" style={{ letterSpacing: '1px' }}>Sortu kontu bat</h5>
+
+                                    <div className="mb-4">
+                                        <label className="form-label" htmlFor="form2Example17">Izena</label>
+                                        <input
+                                            type="text"
+                                            id="name"
+                                            className="input"
+                                            value={data.name}
+                                            onChange={(e) => setData('name', e.target.value)}
+                                        />
+                                        <InputError message={errors.name} className="mt-2" />
+                                    </div>
+
+                                    <div className="mb-4">
+                                        <label className="form-label" htmlFor="form2Example17">Email helbidea</label>
+                                        <input
+                                            type="email"
+                                            id="email"
+                                            className="input"
+                                            value={data.email}
+                                            onChange={(e) => setData('email', e.target.value)}
+                                        />
+                                        <InputError message={errors.email} className="mt-2" />
+                                    </div>
+
+                                    <div className="mb-4">
+                                        <label className="form-label" htmlFor="form2Example27">Pasahitza</label>
+                                        <input
+                                            type="password"
+                                            id="password"
+                                            className="input"
+                                            placeholder=''
+                                            value={data.password}
+                                            onChange={(e) => setData('password', e.target.value)}
+                                        />
+                                        <InputError message={errors.password} className="mt-2" />
+                                    </div>
+
+                                    <div className="mb-4">
+                                        <label className="form-label" htmlFor="form2Example27">Pasahitza konfirmatu</label>
+                                        <input
+                                            type="password"
+                                            id="password_confirmation"
+                                            className="input"
+                                            placeholder=''
+                                            value={data.password_confirmation}
+                                            onChange={(e) => setData('password_confirmation', e.target.value)}
+                                        />
+                                        <InputError message={errors.password_confirmation} className="mt-2" />
+                                    </div>
+
+                                    <div className="flex items-center justify-end mt-4">
+                                        
+
+                                        <div className="pt-1 mb-4">
+                   <button className="btn btn-dark btn-lg btn-block" type="submit">SORTU</button>
+                 </div>
+
+                                    </div>
+                                    <p className="mb-5 pb-lg-2" style={{ color: '#393f81' }}>Kontua baduzu? <Link href="/Login"
+                                       style={{ color: '#393f81' }}>Sartu hemen</Link></p>
+                                   <Link href="/" className="small text-muted">HowMuch</Link>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                    <div className="form-outline form-white mb-4">
-                    <label className="form-label" >Usuario izena</label>
-                      <input type="email" id="typeEmailX" className="form-control form-control-lg" placeholder="Usuario izena" />
-                    </div>
-      
-                    <div className="form-outline form-white mb-4">
-                        <label className="form-label" >Pasahitza</label>
-                      <input type="password" id="typePasswordX" className="form-control form-control-lg" placeholder="Pasahitza" />
-                    </div>
-                    <div className="form-outline form-white mb-4">
-                        <label className="form-label" >Pasahitza errepikatu</label>
-                      <input type="password" id="typePasswordX" className="form-control form-control-lg" placeholder="Pasahitza" />
-                    </div>
-            
-                    <button className="btn btn-outline-light btn-lg px-5" type="submit">Sortu</button>
-      
-                    <div className="d-flex justify-content-center text-center mt-4 pt-1">
-                      <a href="#!" className="text-white"><i className="fab fa-facebook-f fa-lg"></i></a>
-                      <a href="#!" className="text-white"><i className="fab fa-twitter fa-lg mx-4 px-2"></i></a>
-                      <a href="#!" className="text-white"><i className="fab fa-google fa-lg"></i></a>
-                    </div>
-                    <div>
-                        <p className="mb-0">Kontu bat baduzu? <a href="Login" className="text-white-50 fw-bold">Log In</a>
-                        </p>
-                      </div>
-                  </div>
-      
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    );
+            </section>
 
+        </div>
+    );
 }

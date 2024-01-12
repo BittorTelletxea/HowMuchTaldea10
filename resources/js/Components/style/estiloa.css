@@ -1,7 +1,6 @@
 
 header {
 
-        
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -17,9 +16,9 @@ header {
 #navButton{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
+    color: white;
     background-color: transparent;
     border: none;
-    color: white;
   
 }
 .navbar{
@@ -49,6 +48,7 @@ header button{
 .guri{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     padding: 1%;
     position: relative;
@@ -211,6 +211,22 @@ header button{
     color: white;
     border-color: white;
 }
+.eslogan button a{
+    text-decoration: none;
+    color: white;
+}
+.eslogan button a:hover{
+    color: black;
+    text-decoration: none;
+}
+.norgara button a{
+    text-decoration: none;
+    color: white;
+}
+.norgara button a:hover{
+    color: black;
+    text-decoration: none;
+}
 .kontaktua button{
     border-color: black;
     color: black;
@@ -229,24 +245,42 @@ header button{
 .norgara{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-    padding: 4%;
+    padding-top: 4%;
+    padding-left: 2%;
+    padding-right: 2%;
     text-align: left;
     border-top: 1px solid black;
     border-bottom: 1px solid rgb(0, 0, 0);
 }
-.norgara button{
+
+.kontent button{
     color: rgb(248, 248, 248);
     border-color: rgb(255, 255, 255);
 }
-.norgara button:hover{
+.kontent button:hover{
     border-color: white;
     background-color: black;
 }
-.norgara button:active{
+.kontent button:active{
     background-color: white;
 }
 .botoiak{
     margin-left: 30%;
+}
+.botoiak button:hover{
+    background-color: white;
+    color: black;
+}
+.botoiak button:hover{
+    background-color: white;
+    color: black;
+}
+.botoi button:hover{
+    background-color: white;
+    color: black;
+}
+.kontent button{
+    margin-left: 10%;
 }
 .produktuak{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -273,8 +307,19 @@ header button{
     width: 28%;
     margin: 2%;
     border-radius: 3%;
-}
 
+}
+.produktuak-mota:hover{
+    background-color: #041e3f;
+}
+.produktuak-mota button:hover{
+    background-color: white;
+    color: black;
+}
+.produktuak button:hover{
+    background-color: white;
+    color: black;
+}
 .zeregin{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 

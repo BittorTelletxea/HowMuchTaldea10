@@ -12,9 +12,9 @@ export const Header = () => {
         </div>
         
         <nav>
-            <a href="login" className="guri"><NavButton value="Guri Buruz"/></a>
-            <a href="produktuak.html" className="guri"><NavButton value="Produktuak"/></a>
-            <a href="kontaktua.html" className="guri"><NavButton value="Kontaktua"/></a>
+            <a href="Login" className="guri"><NavButton value="Tasazioa"/></a>
+            <a href="Login" className="guri"><NavButton value="Produktuak"/></a>
+            <a href="Login" className="guri"><NavButton value="Kontaktua"/></a>
         </nav>
         <div className="howmuch navbar2 text-center">
         <div className="d-flex">

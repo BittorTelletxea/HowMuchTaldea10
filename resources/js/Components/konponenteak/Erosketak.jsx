@@ -20,23 +20,9 @@ export const Erosketak = () => {
         </nav>
       </div>
       <div>
-      <div className="row row-cols-1 row-cols-sm-2 ">
-      <div className="salmentak">
-            <img src={bizikleta} width='100%' height='50%' alt="" />
-                    <h4 className="">Bicicleta</h4>
-                    <p className="">Bicicleta en perfecto estado, ideal para hacer carreras contra Iker</p>
-                    <p>Prezioa: 3999€</p>               
-            </div>
-            <div className="salmentak">
-            <img src={patinete} width='100%' height='50%' alt="" />
-                    <h4 className="">Patinete electrico</h4>
-                    <p className="">Patienete electrico en perfecto estado, ideal para realizar carreras con Eneko</p>
-                    <p>Prezioa: 499€</p>               
-            </div>
-            
+      <div className='mt-5'><h2><b>Oraindik ez duzu ezer erosi!</b></h2></div>
       </div>
       </div>
-    </div>
     </div>
 
   );

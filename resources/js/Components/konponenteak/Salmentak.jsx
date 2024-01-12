@@ -21,33 +21,7 @@ export const Salmentak = () => {
         </nav>
       </div>
       <div>
-      <div className="row row-cols-1 row-cols-sm-2 ">
-            <div className="salmentak">
-            <img src={seatleon} width='100%' height='50%' alt="" />
-                    <h4 className="">SEAT LEON 1.9 TDI</h4>
-                    <p className="">Perfecto para cani autentico</p>
-                    <p>Prezioa: 1499€</p>                 
-            </div>
-            <div className="salmentak">
-            <img src={bmw} width='100%' height='50%' alt="" />
-                    <h4 className="">BMW E36</h4>
-                    <p className="">Ideal para ser un cani de verdad</p>
-                    <p>Prezioa: 2399€</p>               
-            </div>
-            <div className="salmentak">
-            <img src={cani} width='100%' height='50%' alt="" />
-                    <h4 className="">CANI SUPREMO</h4>
-                    <p className="">El autentico rey de los canis</p>
-                    <p>Prezioa: 2999€</p>
-            </div>
-            <div className="salmentak">
-            <img src={motocani} width='100%' height='50%' alt="" />
-                    <img src="" alt="" />
-                    <h4 className="">Motillo de locos</h4>
-                    <p className="">Motillo en perfecto estado para ti o para tu cani de confianza</p>
-                    <p>Prezioa: 499€</p>               
-            </div>
-      </div>
+      <div className='mt-5'><h2><b>Oraindik ez duzu ezer saldu!</b></h2></div>
       </div>
     </div>
     </div>

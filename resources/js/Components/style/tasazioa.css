@@ -1,0 +1,105 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.tasatu {
+    margin-right: 2%;
+
+    margin-top: 2%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px; 
+    border-radius: 10px;
+  }
+  
+  form {
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    color: #000;
+  }
+  
+  form input,
+  form select {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 10%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #000;
+    background-color: transparent;
+    color: #000;
+    font-size: 18px; 
+    outline: none;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 15px 25px; /* Aumentar el padding para el botón */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  .submit{
+    background-color: transparent;
+    color: black;
+    border-color: black;
+  }
+  .button-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .toggle-mode-button {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .toggle-mode-button a{
+
+  }
+  .tiempo{
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+  .linea{
+    height: 53%;
+  }
+  .lupa{
+    width: 20%;
+    height: 15%;
+    margin-top: 20%;
+    margin-right: 5%;
+  }
+  .carta{
+    width: 35%;
+    margin-left: 19%;
+    margin-top: 18%;
+    margin-right: 78%;
+
+  }
+  .prezioa{
+    width: 50%;
+    margin-top: 15%;
+    margin-right: 30%;
+  }
+  .p h4{
+    margin-right: 14%;
+    font-weight: bold;
+  }
+  .p{
+    margin-left: 4%;
+    margin-bottom: 2%;
+  }
+  .editatu{
+    font-size: 14px;
+  }

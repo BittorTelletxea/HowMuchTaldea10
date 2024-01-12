@@ -6,7 +6,7 @@ export const Tarifak = () => {
             <div className="row row-cols-1 row-cols-sm-2 ">
                 <div className="produktuak-mota zoom">
                         <h4 className="mt-2 text-white">Orokorra</h4>
-                        <p className="text-white">Disfrutatu How Much esperientzia doainik</p>
+                        <p className="text-white">How Much esperientzia doainik</p>
                         <p className="display-6 text-white">0.00€</p><p className="text-white"> /hila</p>
                         <button
                         className="btn btn-outline-primary  mt-5 mb-4"

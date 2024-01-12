@@ -1,0 +1,62 @@
+body{
+    background-color: #f7f7f7;
+}
+.head{
+    margin-top: 3%;
+    padding: 1%;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+}
+.head ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    margin-right: 10%;
+
+}
+.head ul li{
+    list-style: none;
+}
+.head ul li a{
+    font-size: 20px;
+    transition: color 0.3s ease;
+
+}
+.head ul li a:hover{
+    color: rgb(146, 142, 142);
+}
+.produktua{
+    text-align: left;
+    margin-left: 4%;
+    margin-top: 5%;
+}
+.gustukoenak{
+    text-align: left;
+    margin-left: 4%;
+    margin-top: 5%;
+}
+.denbpro{
+    margin-right: 4%;
+}
+.button-container {
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .toggle-mode-button {
+    text-align: center;
+    background-color: #ffffff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+.toggle-mode-button a{
+    padding-top: 4%;
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+}

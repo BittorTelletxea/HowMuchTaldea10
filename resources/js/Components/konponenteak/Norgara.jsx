@@ -7,7 +7,7 @@ export const Norgara = () => {
         background: 'linear-gradient(to left, #3f57c9, #000)',
         border:'1px Solid black'
     }}*/>
-        <div className="">
+        <div className="norgara">
             <div>
                 <h2 className="text-white">NOR GARA?</h2>
             </div>
@@ -17,7 +17,7 @@ export const Norgara = () => {
                 </div>
                 <div className="botoiak">
                     <button
-                        className="btn btn-outline-primary rounded-pill "
+                        className="btn btn-outline rounded-pill "
                         style={{
                             borderWidth: '2px',
                             width: '150px'
@@ -36,7 +36,7 @@ export const Norgara = () => {
                             borderWidth: '2px',
                             width: '150px'
                         }}
-                    > Tasatu nahi dut </button>
+                    > <a href="/Tasazioa">Tasatu nahi dut </a></button>
                 </div>
             </div>
         </div>

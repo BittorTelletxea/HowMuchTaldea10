@@ -15,7 +15,7 @@ export const Nagusia = () => {
           width: '200px'
         }}
       >
-        TASS
+        <a href="/Login">TASS</a>
       </button>
       <div>
       </div>

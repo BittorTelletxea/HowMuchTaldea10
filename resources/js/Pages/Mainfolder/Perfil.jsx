@@ -6,7 +6,6 @@ function Perfil() {
   return (
     <>
    <Perfila/>
-   <Datuak />
    </>
   )
 }
