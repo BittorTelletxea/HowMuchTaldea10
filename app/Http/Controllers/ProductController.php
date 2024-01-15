@@ -13,9 +13,9 @@ class ProductController extends Controller
 {
    public function index()
    {
-       $productos = $this->getProductos();
-       Inertia::share('productos', $productos);
-       return Inertia::render('Mainfolder/Denda', ['productos' => $productos]);
+    $productos = $this->getProductos();
+    dd($productos);
+    return Inertia::render('Mainfolder/DendaProduktuak', ['productos' => $productos]);
    }
 
 

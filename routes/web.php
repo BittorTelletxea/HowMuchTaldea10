@@ -59,9 +59,7 @@ Route::get('/Tasazioa', function () {
 Route::get('/tasazioab', function () {
    return Inertia::render('Mainfolder/tasazioab', []);
 });
-Route::get('/Denda', function () {
-   return Inertia::render('Mainfolder/denda', []);
-});
+Route::get('/Denda', [ProductController::class, 'index']);
 Route::get('/Kontaktua', function () {
    return Inertia::render('Mainfolder/kontaktua', []);
 });
