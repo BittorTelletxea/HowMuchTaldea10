@@ -21,18 +21,24 @@ export function Login({ status, canResetPassword }) {
 
 
    useEffect(() => {
+    
        return () => {
            reset('password');
        };
    }, []);
 
 
-   const submit = (e) => {
-       e.preventDefault();
+   const submit = async (e) => {
+    e.preventDefault();
 
+    const response = await post(route('login'));
 
-       post(route('login'));
-   };
+    if (response.ok) {
+        // Navegar a la página de verificación de correo electrónico
+        const { route } = usePage();
+        route('email-verification');
+    }
+};
 
 
    return (
