@@ -6,13 +6,13 @@ import '../style/dendah.css'
 import buscador from "../images/buscador.png";
 import plus from "../images/plus.png"
 import { HeaderL } from './HeaderL';
-import { DendaProduktuak } from './DendaProduktuak';
+import  DendaProduktuak  from './DendaProduktuak';
 import { Gustukoenak } from './Gustukoenak';
 import LogoutButton from './LogoutButton';
 import Logged  from "../images/perfil.png";
 
 
-export const Denda = () =>{
+export const Denda = ({ productos }) =>{
     return(
         <div className='denda bg-light'>
      <header className="bg-light fixed-col pt-4 d-flex">
@@ -60,7 +60,7 @@ export const Denda = () =>{
     </div>
     <div className='produktua'>
         <h2><b>Denboraldikoak</b></h2><br />
-        <DendaProduktuak />
+        <DendaProduktuak productos={productos}/>
     </div>
     <div className='gustukoenak'>
         <h2><b>Gustukoenak</b></h2><br />

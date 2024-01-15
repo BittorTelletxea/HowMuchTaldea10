@@ -1,40 +1,20 @@
-import ski from '../images/eski.avif'
-import ski2 from '../images/eski2.jpeg'
+import React from 'react';
 
-export const DendaProduktuak = () =>{
-    return(
+// Componente DendaProduktuak que recibe los datos como props
+const DendaProduktuak = ({ productos }) => {
+    return (
         <div className='denboraldikoak d-flex'>
-        <div className='denbpro'>
-            <img src={ski} width='100%' height='80%' alt="" />
-            <p>Ski Schouer Pro</p>
-            <p>209.99€</p>
+            {/* Recorre los productos y renderiza cada uno */}
+            {productos.map((producto, index) => (
+                <div key={index} className='denbpro'>
+                    <img src={producto.image} width='100%' height='80%' alt={producto.name} />
+                    <p>{producto.name}</p>
+                    <p>{producto.price}€</p>
+                </div>
+            ))}
         </div>
-        <div className='denbpro'>
-        <img src={ski} width='100%' height='80%' alt="" />
-        <p>Ski Schouer Pro</p>
-            <p>209.99€</p>
-        </div>
-        <div className='denbpro'>
-        <img src={ski} width='100%' height='80%' alt="" />
-        <p>Ski Schouer Pro</p>
-            <p>209.99€</p>
-        </div>
-        <div className='denbpro'>
-        <img src={ski} width='100%' height='80%' alt="" />
-        <p>Ski Schouer Pro</p>
-            <p>209.99€</p>
-        </div>
-        <div className='denbpro'>
-        <img src={ski} width='100%' height='80%' alt="" />
-        <p>Ski Schouer Pro</p>
-            <p>209.99€</p>
-        </div>
-        <div className='denbpro'>
-        <img src={ski} width='100%' height='80%' alt="" />
-        <p>Ski Schouer Pro</p>
-            <p>209.99€</p>
-        </div>
-        </div>
-        
-    )
-}
+    );
+};
+
+export default DendaProduktuak;
+
