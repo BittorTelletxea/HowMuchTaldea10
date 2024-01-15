@@ -20,46 +20,6 @@ class BezeroakSeeder extends Seeder
       //   'Ordainketa metodoa' => 'VISA',
       // ]);
      
-      $pass= bcrypt('ramirosantos');
-      $email= bcrypt('ramiro@gmail.com');
-
-    
-   
-    DB::table('produktuak')->insert([
-      'balioa' => 200,
-      'publikatzeData' => '2023-03-12',
-      'saltzailea' => 'david',
-      'puntuazioa' => 3.9,
-      'tasadorea' => '1',
-    ]);
-    DB::table('produktuak')->insert([
-      'balioa' => 1200,
-      'publikatzeData' => '2022-03-12',
-      'saltzailea' => 'Jaime',
-      'puntuazioa' => 3.3,
-      'tasadorea' => '2',
-    ]);
-    DB::table('produktuak')->insert([
-      'balioa' => 8000,
-      'publikatzeData' => '2021-03-12',
-      'saltzailea' => 'Julian',
-      'puntuazioa' => 4.9,
-      'tasadorea' => '3',
-    ]);
-    DB::table('produktuak')->insert([
-      'balioa' => 600,
-      'publikatzeData' => '2021-10-22',
-      'saltzailea' => 'Jaime',
-      'puntuazioa' => 3.1,
-      'tasadorea' => '4',
-    ]);
-    DB::table('produktuak')->insert([
-      'balioa' => 990,
-      'publikatzeData' => '2023-12-12',
-      'saltzailea' => 'Javi',
-      'puntuazioa' => 4.4,
-      'tasadorea' => '5',
-    ]);
      DB::table('erosketak')->insert([
         'balioa' => 170,
         'erosketaData' => '2023-08-17',

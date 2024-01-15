@@ -56,14 +56,15 @@ return new class extends Migration
 
 
       Schema::create('produktuak', function (Blueprint $table) {
-          $table->id();
-          $table->string('name');
-          $table->decimal('price', 8, 2);
-          $table->unsignedBigInteger('seller');
-          $table->integer('rate')->default(0);
-          $table->binary('image');
-          $table->timestamps();
-      });
+        $table->id();
+        $table->string('name');
+        $table->decimal('price', 8, 2);
+        $table->unsignedBigInteger('seller');
+        $table->integer('rate')->default(0);
+        $table->string('image');
+        $table->timestamps();
+    });
+
 
 
 

@@ -30,6 +30,14 @@ class ProductController extends Controller
 
        $validatedData['seller'] = auth()->id();
 
+       $imageName = uniqid() . '_' . time() . '.' . $request->file('image')->extension();
+
+       $request->file('image')->storeAs("public/images/DatabaseImages", $imageName);
+
+       $image = "images/Databaseimages/{$imageName}";
+
+       $validatedData["image"] = $image;
+
 
        $product = Produktuak::create($validatedData);
 
