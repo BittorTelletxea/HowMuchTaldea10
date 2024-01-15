@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { HeaderL } from './HeaderL';
 import { FooterL } from './FooterL';
-import { UpdateProfileInformation } from '../../Pages/Profile/Partials/UpdateProfileInformationForm';
+import  UpdateProfileInformation  from '../../Pages/Profile/Partials/UpdateProfileInformationForm';
 import { UpdatePasswordForm } from '../../Pages/Profile/Partials/UpdatePasswordForm';
 import DeleteUserForm from '../../Pages/Profile/Partials/DeleteUserForm';
 import '../style/perfil.css';

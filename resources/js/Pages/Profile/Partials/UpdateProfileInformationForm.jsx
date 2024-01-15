@@ -7,7 +7,7 @@ import { Link, useForm, usePage } from '@inertiajs/react';
 import { Transition } from '@headlessui/react';
 import '../../../Components/style/perfil.css'
 
-export const UpdateProfileInformation = ({ mustVerifyEmail, status, onUpdateSuccess }) => {
+const UpdateProfileInformation = ({ mustVerifyEmail, status, onUpdateSuccess }) => {
   const user = usePage().props.auth.user;
 
   const { data, setData, patch, errors, processing, recentlySuccessful } = useForm({
@@ -88,3 +88,5 @@ export const UpdateProfileInformation = ({ mustVerifyEmail, status, onUpdateSucc
     </section>
   );
 };
+
+export default UpdateProfileInformation;
