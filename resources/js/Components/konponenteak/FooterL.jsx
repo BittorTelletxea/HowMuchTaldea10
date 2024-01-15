@@ -8,7 +8,7 @@ import facebook from "../images/facebookl.png";
 
 export const FooterL = () => {
   return (
-      <div className="bg-light footer d-flex flex-column mx-auto py-5" style={{ width: "80%" }}>
+      <div className="bg-light footer d-flex flex-column mx-auto py-5" style={{ width: "90%" }}>
         <div className="footer d-flex flex-wrap justify-content-between">
           <div className="align-self-center">
             

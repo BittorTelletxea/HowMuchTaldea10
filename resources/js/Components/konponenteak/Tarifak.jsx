@@ -1,13 +1,13 @@
 export const Tarifak = () => {
     return (
-        <div className='tarifak bg-black'>
-        <h2 className="text-black">Tarifak</h2>
+        <div className='tarifak bg-light'>
+        <h2 className="text-black">TARIFAK</h2>
         <div className="container text-center rounded-left">
             <div className="row row-cols-1 row-cols-sm-2 ">
                 <div className="produktuak-mota zoom">
-                        <h4 className="mt-2 text-white">Orokorra</h4>
-                        <p className="text-white">How Much esperientzia doainik</p>
-                        <p className="display-6 text-white">0.00€</p><p className="text-white"> /hila</p>
+                        <h4 className="mt-2 ">Orokorra</h4>
+                        <p className="">How Much esperientzia doainik</p>
+                        <p className="display-6 ">0.00€</p><p className=""> /hila</p>
                         <button
                         className="btn btn-outline-primary  mt-5 mb-4"
                         style={{
@@ -23,9 +23,9 @@ export const Tarifak = () => {
                 <p>Iragarkiak </p>
                 </div>
                 <div className="produktuak-mota zoom">
-                        <h4 className="mt-2 text-white">Premium</h4>
-                        <p className="text-white">Disfrutatu tasazio premium esperientzia</p>
-                        <p className="display-6 text-white">4.99€</p><p className="text-white"> /hila</p>
+                        <h4 className="mt-2 ">Premium</h4>
+                        <p className="">Disfrutatu tasazio premium esperientzia</p>
+                        <p className="display-6 ">4.99€</p><p className=""> /hila</p>
                         <button
                         className="btn btn-outline-primary  mt-5"
                         style={{
@@ -45,9 +45,9 @@ export const Tarifak = () => {
                 <p>Erositako produktuen estatistikak ikusi  </p>              
                 </div>
                 <div className="produktuak-mota zoom">
-                        <h4 className="mt-2 text-white">V.I.P</h4>
-                        <p className="text-white">Disfrutatu esperientzia gorena</p>
-                        <p className="display-6 text-white">8.99€</p><p className="text-white"> /hila</p>
+                        <h4 className="mt-2 ">V.I.P</h4>
+                        <p className="">Disfrutatu esperientzia gorena</p>
+                        <p className="display-6 ">8.99€</p><p className=""> /hila</p>
                         <button
                         className="btn btn-outline-primary  mt-5"
                         style={{

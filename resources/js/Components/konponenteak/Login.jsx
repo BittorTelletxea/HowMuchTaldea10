@@ -59,7 +59,9 @@ export function Login({ status, canResetPassword }) {
                                        <input
                                            type="email"
                                            id="form2Example17"
-                                           className="input"
+                                           className="input1"
+                                           placeholder='Email'
+
                                            value={data.email}
                                            onChange={(e) => setData('email', e.target.value)}
                                        />
@@ -70,13 +72,15 @@ export function Login({ status, canResetPassword }) {
                                        <input
                                            type="password"
                                            id="form2Example27"
-                                           className="input"
-                                           placeholder=''
+                                           className="input1"
+                                           placeholder='Pasahitza'
                                            value={data.password}
                                            onChange={(e) => setData('password', e.target.value)}
                                        />
                                        <InputError message={errors.password} className="mt-2" />
                                    </div>
+                                   <Link href="/Pasahitza"
+                                       style={{ color: 'grey', fontSize: '14px' }}>Pasahitza ez duzu gogoratzen?</Link><br /><br />
 
 
                                    <div className="pt-1 mb-4">

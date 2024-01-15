@@ -1,35 +1,46 @@
-.buruz{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-decoration: none;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 1%;
-    position: relative;
-    font-size: 17px;
-    margin-right: 1%;
+.buruz {
+  text-align: left;
+  border-top: 2px solid grey;
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1%;
+  position: relative;
+  font-size: 17px;
+  margin-right: 1%;
+  transition: border-top-color 0.3s ease; /* Agrega una transición suave */
 }
 
+/* Efecto de hover */
+.buruz:hover {
+  text-decoration: none;
+  border-top-color: black; /* Cambia el color del borde superior al hacer hover */
+}
+.buruz1 {
+  text-align: left;
+  border-top: 2px solid grey;
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1%;
+  position: relative;
+  font-size: 17px;
+  margin-right: 1%;
+  transition: border-top-color 0.3s ease; /* Agrega una transición suave */
+}
+
+/* Efecto de hover */
+.buruz1:hover {
+  text-decoration: none;
+  border-top-color: black; /* Cambia el color del borde superior al hacer hover */
+}
+nav a.active {
+  border-top-color: black;
+}
   /* Línea de subrayado que inicialmente está oculta */
-  .buruz::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px; /* Grosor del subrayado */
-    bottom: 0;
-    left: 0;
-    background-color: #000000; /* Color del subrayado */
-    transform: scaleX(0); /* Inicialmente oculto */
-    transform-origin: bottom right;
-    transition: transform 0.3s ease; /* Transición para el efecto animado */
-}
-  
-  /* Efecto de subrayado al hacer hover */
-.buruz:hover::before {
-
-    transform: scaleX(1); /* Muestra el subrayado al 100% de su ancho original */
-    transform-origin: bottom left;
-  }
+ 
   .logout {
     margin-left: 30%;
     margin-top: 4%;
@@ -43,30 +54,28 @@
   }
   
 
-  .logout a {
-    font-size: 27px;
-    text-decoration: none;
-    color: black;
-    font-size: 15px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
  
-.logout a{
-    font-size: 15px;
-
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-}
-  /* Línea de subrayado que inicialmente está oculta */
-
-  
-  /* Efecto de subrayado al hacer hover */
-.logout:hover::before {
-
-    transform: scaleX(1); /* Muestra el subrayado al 100% de su ancho original */
-    transform-origin: bottom left;
-  }
-  .log{
+.log{
     font-size: 15px;
     font-weight: bold;
-  }
+}
+.logi{
+      font-size: 10px;
+      font-weight: bold;
+ }
+.sign{
+    font-size: 4px;
+    font-weight: bold;
+}
+.botoia a:hover{
+  color: gray;
+  text-decoration: none;
+}
+.botoia button{
+  font-size: 13px;
+  font-weight: bold;
+}
+.botoia button:hover{
+  text-decoration: none;
+  
+}

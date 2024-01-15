@@ -71,6 +71,12 @@ Route::get('/dashboard', function () {
 Route::get('/gehitu', function() {
    return Inertia::render('Mainfolder/ProduktuaGehitu', []);
 });
+Route::get('/Pasahitza', function() {
+   return Inertia::render('Mainfolder/pasahitza', []);
+});
+Route::get('/Konfirmatu', function() {
+   return Inertia::render('Mainfolder/konfirmatu', []);
+});
 Route::post('/Denda', [ProductController::class, 'store'])->name('produktuak');
 Route::post('/Tasazioa', [TasazioaController::class, 'store'])->name('tasazioa');
 

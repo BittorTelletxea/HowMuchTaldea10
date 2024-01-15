@@ -8,6 +8,9 @@ import { Tarifak } from "../../Components/konponenteak/Tarifak";
 import '../../Components/style/bootstrap.min.css';
 import '../../Components/style/estiloa.css';
 import './App.css'
+import { HeaderL } from "@/Components/konponenteak/HeaderL";
+import { FooterL } from "@/Components/konponenteak/FooterL";
+import { NorgaraLog } from "@/Components/konponenteak/NorgaraLog";
 
 
 function App() {
@@ -15,11 +18,9 @@ function App() {
     <>
       <Header />
       <Nagusia />
-      <Norgara />
-      <Produktuak />
-      <Zeregin />
+      <NorgaraLog />
       <Tarifak />
-      <Footer />
+      <FooterL />
     </>
   );
 }

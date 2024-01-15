@@ -51,7 +51,9 @@ export function Signup() {
                                         <input
                                             type="text"
                                             id="name"
-                                            className="input"
+                                            className="input1"
+                                            placeholder='Izena'
+
                                             value={data.name}
                                             onChange={(e) => setData('name', e.target.value)}
                                         />
@@ -63,7 +65,9 @@ export function Signup() {
                                         <input
                                             type="email"
                                             id="email"
-                                            className="input"
+                                            className="input1"
+                                            placeholder='Email'
+
                                             value={data.email}
                                             onChange={(e) => setData('email', e.target.value)}
                                         />
@@ -75,8 +79,8 @@ export function Signup() {
                                         <input
                                             type="password"
                                             id="password"
-                                            className="input"
-                                            placeholder=''
+                                            className="input1"
+                                            placeholder='Pasahitza'
                                             value={data.password}
                                             onChange={(e) => setData('password', e.target.value)}
                                         />
@@ -88,8 +92,8 @@ export function Signup() {
                                         <input
                                             type="password"
                                             id="password_confirmation"
-                                            className="input"
-                                            placeholder=''
+                                            className="input1"
+                                            placeholder='Pasahitza konfirmatu'
                                             value={data.password_confirmation}
                                             onChange={(e) => setData('password_confirmation', e.target.value)}
                                         />
