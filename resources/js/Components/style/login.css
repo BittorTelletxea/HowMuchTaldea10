@@ -41,7 +41,13 @@ body{
     margin-right: 1%;
     transition: border-top-color 0.3s ease; /* Agrega una transición suave */
   }
-  
+  .contador{
+    width: 20%;
+    border-radius: 10px;
+    background-color: green;
+    font-size: 30px;
+
+  }
   /* Efecto de hover */
   .buruz1:hover {
     text-decoration: none;
