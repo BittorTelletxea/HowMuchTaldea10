@@ -39,14 +39,12 @@ body{
     margin-right: 4%;
 }
 .button-container {
-    text-align: center;
     position: fixed;
     bottom: 20px;
     right: 20px;
   }
   
   .toggle-mode-button {
-    text-align: center;
     background-color: #ffffff;
     color: #fff;
     padding: 10px 20px;

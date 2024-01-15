@@ -16,10 +16,10 @@ export const Header = () => {
         </div>
         
         <nav>
-            <a href="Tasazioa" className="buruz text-black  ">TASAZIOA</a>
+            <a href="Login" className="buruz text-black  ">TASAZIOA</a>
             
-            <a href="Denda" className="buruz1 text-black ">DENDA</a>
-            <a href="Kontaktua" className="buruz1 text-black ">KONTAKTUA</a>
+            <a href="Login" className="buruz1 text-black ">DENDA</a>
+            <a href="Login" className="buruz1 text-black ">KONTAKTUA</a>
         </nav>
         <div className="botoia navbar2 text-center">
             <div className="d-flex">

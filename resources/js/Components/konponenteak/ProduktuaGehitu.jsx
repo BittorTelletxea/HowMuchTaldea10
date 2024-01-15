@@ -58,7 +58,7 @@ export function ProduktuaGehitu({ status, canResetPassword }) {
                    <input
                      type="text"
                      id="name"
-                     className="input"
+                     className="form-control"
                      value={data.name}
                      onChange={(e) => setData('name', e.target.value)}
                    />
@@ -71,7 +71,7 @@ export function ProduktuaGehitu({ status, canResetPassword }) {
                    <input
                      type="number"
                      id="number"
-                     className="input"
+                     className="form-control"
                      placeholder=''
                      value={data.price}
                      onChange={(e) => setData('price', e.target.value)}
