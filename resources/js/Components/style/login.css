@@ -42,9 +42,7 @@ body{
     transition: border-top-color 0.3s ease; /* Agrega una transición suave */
   }
   .contador{
-    width: 20%;
-    border-radius: 10px;
-    background-color: green;
+   
     font-size: 30px;
 
   }
