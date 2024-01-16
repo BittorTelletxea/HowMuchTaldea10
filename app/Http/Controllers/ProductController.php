@@ -14,8 +14,7 @@ class ProductController extends Controller
    public function index()
    {
     $productos = $this->getProductos();
-    dd($productos);
-    return Inertia::render('Mainfolder/DendaProduktuak', ['productos' => $productos]);
+    return Inertia::render('Mainfolder/denda', ['productos' => $productos]);
    }
 
 
@@ -35,10 +34,9 @@ class ProductController extends Controller
 
        $request->file('image')->storeAs("public/images/DatabaseImages", $imageName);
 
-       $image = "images/Databaseimages/{$imageName}";
+       $image = "images/DatabaseImages/{$imageName}";
 
        $validatedData["image"] = $image;
-
 
        $product = Produktuak::create($validatedData);
 
@@ -50,6 +48,7 @@ class ProductController extends Controller
    public function getProductos()
    {
        $productos = Produktuak::all();
-       return response()->json($productos);
+
+       return $productos;
    }
 }

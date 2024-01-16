@@ -7,12 +7,12 @@ import buscador from "../images/buscador.png";
 import plus from "../images/plus.png"
 import { HeaderL } from './HeaderL';
 import  DendaProduktuak  from '../../Pages/Mainfolder/DendaProduktuak';
-import { Gustukoenak } from './Gustukoenak';
+import  Gustukoenak  from '../../Pages/Mainfolder/Gustukoenak';
 import LogoutButton from './LogoutButton';
 import Logged  from "../images/perfil.png";
 
 
-export const Denda = () =>{
+export const Denda = ({ productos }) =>{
     return(
         <div className='denda bg-light'>
      <header className="bg-light fixed-col pt-4 d-flex">
@@ -25,7 +25,7 @@ export const Denda = () =>{
         
         <nav>
             <a href="Tasazioa" className="buruz1 text-black  ">TASAZIOA</a>
-            <a href="Denda" className="buruz text-black ">DENDA</a>
+            <a href="denda" className="buruz text-black ">DENDA</a>
             <a href="Kontaktua" className="buruz1 text-black ">KONTAKTUA</a>
         </nav>
         <div className=" navbar2 text-center">
@@ -60,11 +60,11 @@ export const Denda = () =>{
     </div>
     <div className='produktua'>
         <h2><b>Denboraldikoak</b></h2><br />
-        <DendaProduktuak/>
+        <DendaProduktuak productos={productos}/>
     </div>
     <div className='gustukoenak'>
         <h2><b>Gustukoenak</b></h2><br />
-        <Gustukoenak />
+        <Gustukoenak productos={productos}/>
     </div>
     <div className="button-container">
         

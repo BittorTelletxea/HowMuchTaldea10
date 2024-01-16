@@ -1,10 +1,10 @@
 import './App.css'
 import { Denda } from "../../Components/konponenteak/Denda";
-function denda() {
+function denda({productos}) {
 
   return (
     <>
-   <Denda />
+   <Denda productos={productos}/>
    
    </>
   )

@@ -1,9 +1,10 @@
 import React from 'react';
 
-const DendaProduktuak = ({ productos }) => {
+
+const Gustukoenak = ({ productos }) => {
     return (
         <div className='denboraldikoak d-flex'>
-            {productos.slice(0, 6).map((producto, index) => (
+            {productos.slice(7, 13).map((producto, index) => (
                 <div key={index} className='denbpro'>
                     <img src={producto.image} width='100%' height='80%' />
                     <p>{producto.name}</p>
@@ -14,5 +15,4 @@ const DendaProduktuak = ({ productos }) => {
     );
 };
 
-export default DendaProduktuak;
-
+export default Gustukoenak;
