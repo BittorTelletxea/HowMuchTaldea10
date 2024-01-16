@@ -59,7 +59,7 @@ Route::get('/Tasazioa', function () {
 Route::get('/tasazioab', function () {
    return Inertia::render('Mainfolder/tasazioab', []);
 });
-Route::get('/denda', [ProductController::class, 'index']);
+Route::get('/Denda', [ProductController::class, 'index']);
 Route::get('/Kontaktua', function () {
    return Inertia::render('Mainfolder/kontaktua', []);
 });
@@ -75,7 +75,7 @@ Route::get('/Pasahitza', function() {
 Route::get('/Konfirmatu', function() {
    return Inertia::render('Mainfolder/konfirmatu', []);
 });
-Route::post('/denda', [ProductController::class, 'store'])->name('produktuak');
+Route::post('/Denda', [ProductController::class, 'store'])->name('produktuak');
 Route::post('/Tasazioa', [TasazioaController::class, 'store'])->name('tasazioa');
 
 Route::post('/login', 'AuthController@login')->name('login');

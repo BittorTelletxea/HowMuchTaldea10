@@ -15,7 +15,7 @@ export const HeaderL = () => {
         
         <nav>
             <a href="Tasazioa" className="buruz text-black  ">TASAZIOA</a>
-            <a href="denda" className="buruz text-black ">DENDA</a>
+            <a href="Denda" className="buruz text-black ">DENDA</a>
             <a href="Kontaktua" className="buruz text-black ">KONTAKTUA</a>
         </nav>
         <div className=" navbar2 text-center">
