@@ -48,6 +48,9 @@ return new class extends Migration
           $table->string('name');
           $table->string('email');
           $table->string('password');
+          $table->boolean('confirmed')->default(0);
+          $table->string('confirmation_code')->nullable();
+          $table->rememberToken();
           $table->enum('mota', ['Arrunta', 'Premium', 'VIP']);
           $table->timestamps();
       });
