@@ -83,7 +83,7 @@ export const Denda = ({ productos }) =>{
     <div className="button-container">
         
         <button className="toggle-mode-button">
-          <a href="/gehitu"><img src={plus} width={40} height={40} alt="" /><b>IGO PRODUKTUA</b></a>
+          <a href="/gehitu" className='text-white'><img src={plus} width={40} height={40} alt="" /><b>IGO PRODUKTUA</b></a>
         </button>
         </div>
         <FooterL />
