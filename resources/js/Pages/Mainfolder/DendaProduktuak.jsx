@@ -5,7 +5,7 @@ const DendaProduktuak = ({ productos }) => {
         <div className='denboraldikoak d-flex'>
             {productos.slice(0, 6).map((producto, index) => (
                 <div key={index} className='denbpro'>
-                    <img src={producto.image} width='100%' height='80%' />
+                    <img src={producto.image} width='225px' height='70%' />
                     <p>{producto.name}</p>
                     <p>{producto.price}€</p>
                 </div>

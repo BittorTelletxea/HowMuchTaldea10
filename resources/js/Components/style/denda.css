@@ -30,6 +30,8 @@ body{
     margin-left: 4%;
     margin-top: 5%;
 }
+
+
 .gustukoenak{
     text-align: left;
     margin-left: 4%;
@@ -37,6 +39,9 @@ body{
 }
 .denbpro{
     margin-right: 4%;
+}
+.denbpro img{
+    
 }
 .button-container {
     position: fixed;
