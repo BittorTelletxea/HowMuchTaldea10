@@ -10,9 +10,13 @@ import  DendaProduktuak  from '../../Pages/Mainfolder/DendaProduktuak';
 import  Gustukoenak  from '../../Pages/Mainfolder/Gustukoenak';
 import LogoutButton from './LogoutButton';
 import Logged  from "../images/perfil.png";
+import { FooterL } from './FooterL';
+import React, { useState } from 'react';
 
 
 export const Denda = ({ productos }) =>{
+    const [searchTerm, setSearchTerm] = useState('');
+
     return(
         <div className='denda bg-light'>
      <header className="bg-light fixed-col pt-4 d-flex">
@@ -50,28 +54,39 @@ export const Denda = ({ productos }) =>{
             </ul>
         </nav>
         <div className='bilatzailea'>
-        <div class="input-group rounded">
-  <input type="search" class="form-control rounded" placeholder="Bilatu" aria-label="Search" aria-describedby="search-addon" />
-  <span class="" id="search-addon">
-    <img src={buscador} width={50} alt="" />
-  </span>
-</div>  
-        </div>
+                <div className="input-group rounded">
+                    <input
+                        type="search"
+                        className="form-control rounded"
+                        placeholder="Bilatu"
+                        aria-label="Search"
+                        aria-describedby="search-addon"
+                        value={searchTerm}
+                        onChange={(e) => setSearchTerm(e.target.value)}
+                    />
+                    <span className="" id="search-addon">
+                        <img src={buscador} width={50} alt="" />
+                    </span>
+                </div>
+            </div>
+            
+            {/* Renderiza el componente DendaProduktuak aquí */}
+
     </div>
+
     <div className='produktua'>
-        <h2><b>Denboraldikoak</b></h2><br />
-        <DendaProduktuak productos={productos}/>
+        <h2><b>DENDA</b></h2><br />
+        <DendaProduktuak productos={productos} searchTerm={searchTerm} />
+        
     </div>
-    <div className='gustukoenak'>
-        <h2><b>Gustukoenak</b></h2><br />
-        <Gustukoenak productos={productos}/>
-    </div>
+   
     <div className="button-container">
         
         <button className="toggle-mode-button">
           <a href="/gehitu"><img src={plus} width={40} height={40} alt="" /><b>IGO PRODUKTUA</b></a>
         </button>
         </div>
+        <FooterL />
     </div>
     
     );
