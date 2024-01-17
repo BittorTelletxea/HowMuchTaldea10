@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use App\Providers\RouteServiceProvider;
+use Illuminate\Support\Facades\Redirect;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -14,7 +15,7 @@ use Illuminate\Validation\Rules;
 use Inertia\Inertia;
 use Inertia\Response;
 use Illuminate\Support\Facades\Mail;
-
+use Illuminate\Support\Str;
 
 class RegisteredUserController extends Controller
 {
@@ -43,17 +44,12 @@ class RegisteredUserController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
-            'confirmation_code' => $request['confirmation_code']
-        ]);
-
-        Mail::send('emails.confirmation_code', ['confirmation_code' => $request->confirmation_code, 'name' => $request->name, 'email' => $request->email], function ($message) use ($request) {
-            $message->to($request->email, $request->name)->subject('Mesedez, konfirmatu emaila');
-        });
+        ]); 
 
         event(new Registered($user));
 
         Auth::login($user);
 
-        return redirect(RouteServiceProvider::HOME);
+        return Redirect::route('verification.notice');
     }
 }

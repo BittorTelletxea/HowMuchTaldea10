@@ -10,29 +10,17 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\TasazioaController;
 
 
-
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
-
 Route::get('/', function () {
    return Inertia::render('Mainfolder/App', []);
 });
-
 
 Route::get('/Perfil', function () {
    return Inertia::render('Mainfolder/Perfil', []);
 });
 Route::get('/Login', function () {
+   return Inertia::render('Mainfolder/Login', []);
+});
+Route::get('/login', function () {
    return Inertia::render('Mainfolder/Login', []);
 });
 Route::get('/Signup', function () {
@@ -78,7 +66,6 @@ Route::get('/Konfirmatu', function() {
 Route::post('/Denda', [ProductController::class, 'store'])->name('produktuak');
 Route::post('/Tasazioa', [TasazioaController::class, 'store'])->name('tasazioa');
 
-Route::post('/login', 'AuthController@login')->name('login');
 
 Route::middleware('auth')->group(function () {
    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -86,7 +73,6 @@ Route::middleware('auth')->group(function () {
    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/register/verify/{code}', 'GuestController@verify');
 
 
 require __DIR__.'/auth.php';

@@ -108,7 +108,7 @@ export function Signup() {
                  </div>
 
                                     </div>
-                                    <p className="mb-5 pb-lg-2" style={{ color: '#393f81' }}>Kontua baduzu? <Link href="/Login"
+                                    <p className="mb-5 pb-lg-2" style={{ color: '#393f81' }}>Kontua baduzu? <Link href="Login"
                                        style={{ color: '#393f81' }}>Sartu hemen</Link></p>
                                    <Link href="/" className="small text-muted">HowMuch</Link>
                                 </form>

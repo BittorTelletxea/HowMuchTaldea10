@@ -12,13 +12,20 @@ class BezeroakSeeder extends Seeder
      * Run the database seeds.
      */
     public function run() {
-      // DB::table('bezeroak')->insert([
-      //   'izena' => 'Mateu Laoz',
-      //   'email' => 'mateito@gmail.com',
-      //   'password' => bcrypt('mateulaoz1'),
-      //   'mota' => 'Arrunta',
-      //   'Ordainketa metodoa' => 'VISA',
-      // ]);
+       DB::table('bezeroak')->insert([
+         'name' => 'Elbicho',
+         'email' => 'bichosexual@gmail.com',
+         'password' => bcrypt('elbicho7'),
+         'mota' => 'Arrunta',
+       ]);
+
+       DB::table('bezeroak')->insert([
+           'name' => 'ramirosantos',
+           'email' => 'ramirosantos@gmail.com',
+           'password' => bcrypt('ramirosantos'),
+           'mota' => 'Arrunta',
+       ]);
+      
      
      DB::table('erosketak')->insert([
         'balioa' => 170,
@@ -154,6 +161,78 @@ class BezeroakSeeder extends Seeder
     'mezua' => 'No creo no?',
     'txata' => 5,
    ]);
-   
-	}
+
+   DB::table('produktuak')->insert([
+      'name' => 'audi rs 6',
+      'price' => '100.000',
+      'seller' => '1',
+      'rate' => 0,
+      'image' => '/images/DatabaseImages/65a506a8b8708_1705313960.jpg',
+     ]);
+	
+
+   DB::table('produktuak')->insert([
+      'name' => 'iphone 14 pro max',
+      'price' => '1250',
+      'seller' => '1',
+      'rate' => 0,
+      'image' => '/images/DatabaseImages/65a5072d3b710_1705314093.jpg',
+     ]);
+
+     DB::table('produktuak')->insert([
+      'name' => 'Txapela ferrari 16',
+      'price' => '30',
+      'seller' => '1',
+      'rate' => 0,
+      'image' => '/images/DatabaseImages/65a507470d979_1705314119.jpg',
+     ]);
+
+     DB::table('produktuak')->insert([
+      'name' => 'Txapela Fernando Alonso',
+      'price' => '30',
+      'seller' => '1',
+      'rate' => 0,
+      'image' => '/images/DatabaseImages/65a507570f9f7_1705314135.jpg',
+     ]);
+
+     DB::table('produktuak')->insert([
+      'name' => 'iphone 13',
+      'price' => '800',
+      'seller' => '1',
+      'rate' => 0,
+      'image' => '/images/DatabaseImages/65a5079be73f7_1705314203.jpg',
+     ]);
+
+     DB::table('produktuak')->insert([
+      'name' => 'EBizikleta',
+      'price' => '3000',
+      'seller' => '1',
+      'rate' => 0,
+      'image' => '/images/DatabaseImages/65a5084345580_1705314371.png',
+     ]);
+
+     DB::table('produktuak')->insert([
+      'name' => 'Eski',
+      'price' => '130',
+      'seller' => '1',
+      'rate' => 0,
+      'image' => '/images/DatabaseImages/65a508db6610b_1705314523.jpg',
+     ]);
+
+     DB::table('produktuak')->insert([
+      'name' => 'Scooter',
+      'price' => '1.000',
+      'seller' => '1',
+      'rate' => 0,
+      'image' => '/images/DatabaseImages/65a50938725cf_1705314616.png',
+     ]);
+
+     DB::table('produktuak')->insert([
+      'name' => 'Honda RR',
+      'price' => '60.000',
+      'seller' => '2',
+      'rate' => 0,
+      'image' => '/images/DatabaseImages/65a670a501c27_1705406629.jpg',
+     ]);
+   }
 }
