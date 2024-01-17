@@ -20,7 +20,7 @@ const DendaProduktuak = ({ productos, searchTerm }) => {
             <div className='denboraldikoak d-flex'>
   {filteredProductos.slice(4, 8).map((producto, index) => (
                 <div key={index} className='denbpro'>
-                    <img src={producto.image} width='400px' height='80%' />
+                    <img src={producto.image} width='400px' height='45%' />
                     <p className="izena">{producto.name}</p>
                     <p><b>{producto.price}€</b></p>
                 </div>
