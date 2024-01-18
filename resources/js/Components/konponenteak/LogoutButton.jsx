@@ -11,7 +11,7 @@ const LogoutButton = () => {
       type="button"
       className="logout"
     ><div className="pt-1 ">
-    <button className="log btn btn-dark btn-lg btn-block" type="submit">LOGOUT</button>
+    <button className="log btn btn-dark btn-lg btn-block" style={{ width:'160%', marginLeft: '-5%' }} type="submit">AMAITU SAIOA</button>
   </div>
     </InertiaLink>
   );
