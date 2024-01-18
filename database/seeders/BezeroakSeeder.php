@@ -167,7 +167,7 @@ class BezeroakSeeder extends Seeder
       'price' => '100.000',
       'seller' => '1',
       'rate' => 0,
-      'image' => '/images/DatabaseImages/65a506a8b8708_1705313960.jpg',
+      'image' => '/storage/images/65a506a8b8708_1705313960.jpg',
      ]);
 	
 
@@ -176,7 +176,7 @@ class BezeroakSeeder extends Seeder
       'price' => '1250',
       'seller' => '1',
       'rate' => 0,
-      'image' => '/images/DatabaseImages/65a5072d3b710_1705314093.jpg',
+      'image' => '/storage/images/65a5072d3b710_1705314093.jpg',
      ]);
 
      DB::table('produktuak')->insert([
@@ -184,7 +184,7 @@ class BezeroakSeeder extends Seeder
       'price' => '30',
       'seller' => '1',
       'rate' => 0,
-      'image' => '/images/DatabaseImages/65a507470d979_1705314119.jpg',
+      'image' => '/storage/images/65a507470d979_1705314119.jpg',
      ]);
 
      DB::table('produktuak')->insert([
@@ -192,7 +192,7 @@ class BezeroakSeeder extends Seeder
       'price' => '30',
       'seller' => '1',
       'rate' => 0,
-      'image' => '/images/DatabaseImages/65a507570f9f7_1705314135.jpg',
+      'image' => '/storage/images65a507570f9f7_1705314135.jpg',
      ]);
 
      DB::table('produktuak')->insert([
@@ -200,7 +200,7 @@ class BezeroakSeeder extends Seeder
       'price' => '800',
       'seller' => '1',
       'rate' => 0,
-      'image' => '/images/DatabaseImages/65a5079be73f7_1705314203.jpg',
+      'image' => '/storage/images/65a5079be73f7_1705314203.jpg',
      ]);
 
      DB::table('produktuak')->insert([
@@ -208,7 +208,7 @@ class BezeroakSeeder extends Seeder
       'price' => '3000',
       'seller' => '1',
       'rate' => 0,
-      'image' => '/images/DatabaseImages/65a5084345580_1705314371.png',
+      'image' => '/storage/images/65a5084345580_1705314371.png',
      ]);
 
      DB::table('produktuak')->insert([
@@ -216,7 +216,7 @@ class BezeroakSeeder extends Seeder
       'price' => '130',
       'seller' => '1',
       'rate' => 0,
-      'image' => '/images/DatabaseImages/65a508db6610b_1705314523.jpg',
+      'image' => '/storage/images/65a508db6610b_1705314523.jpg',
      ]);
 
      DB::table('produktuak')->insert([
@@ -224,7 +224,7 @@ class BezeroakSeeder extends Seeder
       'price' => '1.000',
       'seller' => '1',
       'rate' => 0,
-      'image' => '/images/DatabaseImages/65a50938725cf_1705314616.png',
+      'image' => '/storage/images/65a50938725cf_1705314616.png',
      ]);
 
      DB::table('produktuak')->insert([
@@ -232,7 +232,15 @@ class BezeroakSeeder extends Seeder
       'price' => '60.000',
       'seller' => '2',
       'rate' => 0,
-      'image' => '/images/DatabaseImages/65a670a501c27_1705406629.jpg',
+      'image' => '/storage/images/65a670a501c27_1705406629.jpg',
+     ]);
+
+     DB::table('produktuak')->insert([
+      'name' => 'Fernando Alonso',
+      'price' => '999.999',
+      'seller' => '2',
+      'rate' => 0,
+      'image' => '/storage/images/65a9175bd1819_1705580379.jpg',
      ]);
    }
 }

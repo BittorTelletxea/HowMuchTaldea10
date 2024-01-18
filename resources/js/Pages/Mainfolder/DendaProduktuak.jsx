@@ -26,14 +26,6 @@ const DendaProduktuak = ({ productos, searchTerm }) => {
                 </div>
             ))}
             </div>
-            <div className='denboraldikoak d-flex'>
-{filteredProductos.slice(8, 16).map((producto, index) => (
-                <div key={index} className='denbpro'>
-                    <img src={producto.image} width='400px' height='30%' />
-                    <p className="izena">{producto.name}</p>
-                    <p><b>{producto.price}€</b></p>
-                </div>
-            ))}</div>
             </div>
         
     );
