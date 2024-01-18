@@ -18,10 +18,10 @@ Route::get('/Perfil', function () {
    return Inertia::render('Mainfolder/Perfil', []);
 });
 Route::get('/Login', function () {
-   return Inertia::render('Mainfolder/Login', []);
+   return Inertia::render('Login', []);
 });
 Route::get('/login', function () {
-   return Inertia::render('Mainfolder/Login', []);
+   return Inertia::render('Login', []);
 });
 Route::get('/Signup', function () {
    return Inertia::render('Mainfolder/Signup', []);

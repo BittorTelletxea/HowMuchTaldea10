@@ -1,7 +1,7 @@
-import { Login } from "../../Components/konponenteak/Login";
+import { Login } from "../Components/konponenteak/Login";
 
 
-import './App.css'
+import './Mainfolder/App.css'
 
 
 
