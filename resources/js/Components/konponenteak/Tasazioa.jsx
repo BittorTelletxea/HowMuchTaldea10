@@ -98,7 +98,7 @@ export function Tasazioa({ status, canResetPassword }) {
             <h2>TASATU</h2>
             <form className="bg-transparent mb-5" onSubmit={submit}>
               <div className="mb-4">
-                <label className="form-label" htmlFor="mota">Ibilgailu mota</label>
+                <label className="form-label" htmlFor="mota">Produktu mota</label>
                 <input
                   type="text"
                   id="mota"
@@ -109,7 +109,7 @@ export function Tasazioa({ status, canResetPassword }) {
                 <InputError message={errors.mota} className="mt-2" />
               </div>
               <div className="mb-4">
-                <label className="form-label" htmlFor="marka">Ibilgailuaren marka</label>
+                <label className="form-label" htmlFor="marka">Produktu marka</label>
                 <input
                   type="text"
                   id="marka"
@@ -120,7 +120,7 @@ export function Tasazioa({ status, canResetPassword }) {
                 <InputError message={errors.marka} className="mt-2" />
               </div>
               <div className="mb-4">
-                <label className="form-label" htmlFor="marka">Ibilgailuaren modeloa</label>
+                <label className="form-label" htmlFor="marka">Produktu modeloa</label>
                 <input
                   type="text"
                   id="modeloa"
@@ -131,7 +131,7 @@ export function Tasazioa({ status, canResetPassword }) {
                 <InputError message={errors.modeloa} className="mt-2" />
               </div>
               <div className="mb-4">
-                <label className="form-label" htmlFor="marka">Ibilgailuaren urtea</label>
+                <label className="form-label" htmlFor="marka">Produktu urtea</label>
                 <input
                   type="date"
                   id="urtea"
@@ -142,7 +142,7 @@ export function Tasazioa({ status, canResetPassword }) {
                 <InputError message={errors.urtea} className="mt-2" />
               </div>
               <div className="mb-4">
-                <label className="form-label" htmlFor="marka">Ibilgailuaren kilometro kantitatea</label>
+                <label className="form-label" htmlFor="marka">Ibilgailua bada kilometrajea, ezean 0 jarri</label>
                 <input
                   type="number"
                   id="kilometrajea"
@@ -155,7 +155,7 @@ export function Tasazioa({ status, canResetPassword }) {
       
       
               <div className="mb-4">
-                <label className="form-label" htmlFor="egoera">Ibilgailuaren egoera:</label>
+                <label className="form-label" htmlFor="egoera">Produktuaren egoera:</label>
                 <select
                   id="egoera"
                   onChange={(e) => setData('egoera', e.target.value)}
@@ -163,7 +163,7 @@ export function Tasazioa({ status, canResetPassword }) {
                   required
                 >
                   <option value="" disabled selected>
-                    Ibilgailuaren egoera
+                    Produktuaren egoera
                   </option>
                   <option value="Oso ona">Oso ona</option>
                   <option value="Ona">Ona</option>
@@ -186,14 +186,7 @@ export function Tasazioa({ status, canResetPassword }) {
         </div>
       </div>
       <FooterL />
-      <div className="button-container">
-        <button className="toggle-mode-button">
-          <img src={sol} width={20} height={20} alt="" />
-        </button>
-        <button className="toggle-mode-button">
-          <a href="/tasazioab"><img src={luna} width={20} height={20} alt="" /></a>
-        </button>
-      </div>
+      
     </div>
   );
 };
