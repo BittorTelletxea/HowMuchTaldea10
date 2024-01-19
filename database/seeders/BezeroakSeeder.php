@@ -192,7 +192,7 @@ class BezeroakSeeder extends Seeder
       'price' => '30',
       'seller' => '1',
       'rate' => 0,
-      'image' => '/storage/images65a507570f9f7_1705314135.jpg',
+      'image' => '/storage/images/65a507570f9f7_1705314135.jpg',
      ]);
 
      DB::table('produktuak')->insert([
