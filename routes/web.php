@@ -8,6 +8,7 @@ use Inertia\Inertia;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\TasazioaController;
+use App\Http\Controllers\StripeController;
 
 
 Route::get('/', function () {
@@ -66,6 +67,7 @@ Route::get('/Konfirmatu', function() {
 Route::post('/Denda', [ProductController::class, 'store'])->name('produktuak');
 Route::post('/Tasazioa', [TasazioaController::class, 'store'])->name('tasazioa');
 
+Route::post('/webhook', [StripeController::class, 'handleWebhook']);
 
 Route::middleware('auth')->group(function () {
    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -73,6 +75,8 @@ Route::middleware('auth')->group(function () {
    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::delete('/user/deleted/{id}', [ProfileController::class, 'forceDeleted'])->name('profile.deleted');
+Route::get('/user/restore/{id}', [ProfileController::class, 'restore'])->name('profile.restore');
 
 
 require __DIR__.'/auth.php';

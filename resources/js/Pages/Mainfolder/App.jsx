@@ -11,9 +11,11 @@ import './App.css'
 import { HeaderL } from "@/Components/konponenteak/HeaderL";
 import { FooterL } from "@/Components/konponenteak/FooterL";
 import { NorgaraLog } from "@/Components/konponenteak/NorgaraLog";
+import { useEffect } from "react";
 
 
 function App() {
+
   return (
     <>
       <Header />

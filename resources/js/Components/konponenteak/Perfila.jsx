@@ -4,6 +4,7 @@ import { FooterL } from './FooterL';
 import  UpdateProfileInformation  from '../../Pages/Profile/Partials/UpdateProfileInformationForm';
 import { UpdatePasswordForm } from '../../Pages/Profile/Partials/UpdatePasswordForm';
 import DeleteUserForm from '../../Pages/Profile/Partials/DeleteUserForm';
+import SoftDeleteForm from '../../Pages/Profile/Partials/SoftDeleteForm';
 import '../style/perfil.css';
 import { Link, useForm, usePage } from '@inertiajs/react';
 
@@ -20,7 +21,7 @@ const getAuthenticatedUser = () => {
 export const Perfila = () => {
   const { props } = usePage();
   const user = usePage().props.auth.user;
-
+   console.log(user.id);
   const { data, setData, patch, errors, processing, recentlySuccessful } = useForm({
     name: user.name,
     email: user.email,
@@ -36,6 +37,16 @@ export const Perfila = () => {
 
   const handleUpdateSuccess = () => {
     console.log('Profile updated successfully!');
+  };
+
+  const handleRestore = () => {
+    console.log('Usuario restaurado');
+    window.location.href = '/'
+  };
+
+  const handleForceDelete = () => {
+  
+    console.log('Usuario eliminado forzadamente');
   };
 
 
@@ -96,6 +107,15 @@ export const Perfila = () => {
           <div className="card-body">
             <UpdatePasswordForm className="update-password-form" />
         </div>
+        <div>
+          <h2>Detalles del Usuario</h2>
+           
+          <SoftDeleteForm
+              userId={user.id}
+              onRestore={handleRestore}
+              onForceDelete={handleForceDelete}
+          />
+       </div>
         
           
                 

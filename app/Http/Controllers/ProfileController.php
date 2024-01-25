@@ -10,9 +10,12 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Inertia\Inertia;
 use Inertia\Response;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use App\Models\User;
 
 class ProfileController extends Controller
 {
+    use SoftDeletes;
     /**
      * Display the user's profile form.
      */
@@ -59,5 +62,36 @@ class ProfileController extends Controller
         $request->session()->regenerateToken();
 
         return Redirect::to('/');
+    }
+
+    public function restore($id) {
+
+        User::withTrashed()->find($id)->restore();
+
+        return Redirect::to('/')->with('success', 'Erabiltzailea berreskuratu da');
+    } 
+
+    public function forceDeleted($id){
+
+        try {
+            
+            $user = User::withTrashed()->find($id);
+
+            
+            if ($user) {
+                
+                $user->delete();
+                
+                \Log::info('Usuario eliminado con éxito');
+                return redirect('/')->with('success', 'Erabiltzailea ezabatu da');
+
+            } else {
+              
+                return Redirect::to('/')->with('error', 'Erabiltzailea ez da aurkitu.');
+            }
+        } catch (\Exception $e) {
+            
+            return Redirect::to('/')->with('error', 'Error al restaurar el usuario: ' . $e->getMessage());
+        }
     }
 }

@@ -51,6 +51,7 @@ return new class extends Migration
           $table->rememberToken();
           $table->timestamp('email_verified_at')->nullable();
           $table->enum('mota', ['Arrunta', 'Premium', 'VIP']);
+          $table->softDeletes("Deleted_at");
           $table->timestamps();
       });
 
@@ -163,7 +164,10 @@ return new class extends Migration
   
   public function down(): void
   {
-   Schema::dropIfExists('produktuak');   
+   Schema::dropIfExists('produktuak'); 
+   Schema::table('users', function (Blueprint $table) {
+    $table->dropSoftDeletes();
+});  
   }
 
 

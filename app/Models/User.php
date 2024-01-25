@@ -6,11 +6,14 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 
 class User extends Authenticatable implements MustVerifyEmail
 {
     use Notifiable;
+
+    use SoftDeletes;
 
     /**
      * The table associated with the model.
@@ -24,11 +27,11 @@ class User extends Authenticatable implements MustVerifyEmail
      *
      * @var array
      */
-    protected $fillable = ['name','email', 'password']; // Nombres de las columnas en tu tabla
-    protected $primaryKey = 'id'; // Nombre de la clave primaria en tu tabla
-    public $timestamps = false; // Si no tienes campos created_at y updated_at
+    protected $fillable = ['name','email', 'password']; 
+    protected $primaryKey = 'id';
+    public $timestamps = false; 
 
-    protected $rememberTokenName = null; // Si no tienes un campo remember_token
+    protected $rememberTokenName = null; 
 
  
 
