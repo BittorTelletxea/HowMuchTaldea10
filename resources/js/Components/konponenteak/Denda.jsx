@@ -12,7 +12,6 @@ import LogoutButton from './LogoutButton';
 import Logged  from "../images/perfil.png";
 import { FooterL } from './FooterL';
 import React, { useState } from 'react';
-import DendaProduktuakAdmin from "../../Pages/Mainfolder/DendaProduktuakAdmin"
 
 
 export const Denda = ({ productos }) =>{
@@ -42,34 +41,23 @@ export const Denda = ({ productos }) =>{
             
       </div>
   </header>
-    <div className='head d-flex'>
-        <nav>
-            <ul>
-                <li>
-                    <a href=''>Autoak</a>
-                    <a href="">Motorrak</a>
-                    <a href="">Bizikletak</a>
-                    <a href="">Patineteak</a>
-                    <a href="">Besteak</a>
-                </li>
-            </ul>
-        </nav>
-        <div className='bilatzailea'>
-                <div className="input-group rounded">
-                    <input
-                        type="search"
-                        className="form-control rounded"
-                        placeholder="Bilatu"
-                        aria-label="Search"
-                        aria-describedby="search-addon"
-                        value={searchTerm}
-                        onChange={(e) => setSearchTerm(e.target.value)}
-                    />
-                    <span className="" id="search-addon">
-                        <img src={buscador} width={50} alt="" />
-                    </span>
-                </div>
-            </div>
+  <div className='head fixed d-flex' style={{}}>
+    <div className='bilatzailea'>
+        <div className="input-group rounded" style={{ width: '1000px' }}>
+            <input
+                type="search"
+                className="form-control rounded"
+                placeholder="Bilatu"
+                aria-label="Search"
+                aria-describedby="search-addon"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+            />
+            <span className="" id="search-addon">
+                <img src={buscador} width={50} alt="" />
+            </span>
+        </div>
+    </div>
             
             {/* Renderiza el componente DendaProduktuak aquí */}
 

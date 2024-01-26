@@ -6,6 +6,7 @@ import { UpdatePasswordForm } from '../../Pages/Profile/Partials/UpdatePasswordF
 import DeleteUserForm from '../../Pages/Profile/Partials/DeleteUserForm';
 import SoftDeleteForm from '../../Pages/Profile/Partials/SoftDeleteForm';
 import '../style/perfil.css';
+
 import { Link, useForm, usePage } from '@inertiajs/react';
 
 // Supongamos que getAuthenticatedUser es una función que devuelve la información del usuario autenticado

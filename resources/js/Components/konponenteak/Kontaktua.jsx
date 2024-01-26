@@ -5,6 +5,8 @@ import Logged  from "../images/perfil.png";
 import { HeaderL } from './HeaderL'
 import { FooterL } from './FooterL'
 import '../style/kontaktua.css'
+import "../style/tasazioa.css";
+
 import '../style/kontakh.css'
 import LogoutButton from './LogoutButton'
 export const Kontaktua = () =>{

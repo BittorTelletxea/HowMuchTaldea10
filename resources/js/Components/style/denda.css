@@ -14,6 +14,7 @@ body{
     margin-right: 10%;
 
 }
+
 .izena{
     font-size: 25px;
 }
@@ -40,10 +41,22 @@ body{
     margin-left: 4%;
     margin-top: 5%;
 }
-.denbpro{
-    margin-right: 4%;
+.denbproad{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-top: 1px solid black;
+    border-bottom: 0px solid black;
+}
+.izena{
+    margin: auto;
+}
+.prezioa{
+    flex-direction: end;
 }
 .denbpro img{
+    
+}
+.dat{
     
 }
 .button-container {

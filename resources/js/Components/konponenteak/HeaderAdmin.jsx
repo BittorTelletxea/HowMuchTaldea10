@@ -3,7 +3,7 @@ import Logged  from "../images/perfil.png";
 import { NavButton } from "./NavButton";
 import '../style/headerl.css'
 import LogoutButton from "./LogoutButton";
-export const HeaderAdmin = () => {
+export  const HeaderAdmin = () => {
   return (
     <header className="bg-light fixed-col pt-4 d-flex">
         <div className="howmuch h-100 ">

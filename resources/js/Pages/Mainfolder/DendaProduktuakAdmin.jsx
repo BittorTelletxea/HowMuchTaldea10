@@ -1,36 +1,65 @@
- export const DendaProduktuakAdmin = ({ productos, searchTerm }) => {
-    
+import React, { useState } from 'react';
+import tres from '../../Components/images/trespoint.png';
+import 'popper.js';
+import 'bootstrap';
 
-    const filteredProductos = productos.filter(
-        (producto) =>
-            producto &&
-            producto.name &&
-            producto.name.includes(searchTerm)
-            
-    );
+export const DendaProduktuakAdmin = ({ productos, searchTerm }) => {
+  const filteredProductos = productos.filter(
+    (producto) =>
+      producto && producto.name && producto.name.includes(searchTerm)
+  );
 
-    return (
-        <div>
-        <div className='denboraldikoak d-flex'>
-            {filteredProductos.slice(0, 4).map((producto, index) => (
-                <div key={index} className='denbpro'>
-                    <img src={producto.image} width='400px' height='70%' />
-                    <p className="izena">{producto.name}</p>
-                    <p><b>{producto.price}€</b></p>
+  return (
+    <div>
+      <div className='denboraldikoak'>
+        {filteredProductos.slice(0, 4).map((producto, index) => (
+          <div key={index} className='denbproad d-flex'>
+            <div className='d-flex' style={{ justifyContent: 'space-between', width: '100%' }}>
+              <img src={producto.image} width='300px' height='75%' />
+              <div className='middle-content'>
+                <p className="izena">Izena: {producto.name}</p>
+                <p className='prezioa'><b>Prezioa: {producto.price}€</b></p>
+              </div>
+              <div className="dropdown">
+                <button className="" style={{ backgroundColor: 'transparent' }} type="button" id={`dropdownMenuButton${index}`} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src={tres} width={20} alt="" />
+                </button>
+                <div className="dropdown-menu" aria-labelledby={`dropdownMenuButton${index}`}>
+                  <a className="dropdown-item text-red" href="#">Editatu</a>
+                  <a href="#"><hr /></a>
+                  <a className="dropdown-item" style={{ color: 'red' }} onClick={() => confirmDeleteProduct(producto.id)}>Ezabatu</a>
                 </div>
-            ))}
+              </div>
+              <hr />
             </div>
-            <div className='denboraldikoak d-flex'>
-  {filteredProductos.slice(4, 8).map((producto, index) => (
-                <div key={index} className='denbpro'>
-                    <img src={producto.image} width='400px' height='45%' />
-                    <p className="izena">{producto.name}</p>
-                    <p><b>{producto.price}€</b></p>
+          </div>
+        ))}
+      </div>
+
+      <div className='denboraldikoak'>
+        {filteredProductos.slice(4, 8).map((producto, index) => (
+          <div key={index} className='denbproad d-flex'>
+            <div className='d-flex' style={{ justifyContent: 'space-between', width: '100%' }}>
+              <img src={producto.image} width='200px' height='5%' />
+              <div className='middle-content'>
+                <p className="izena">Izena: {producto.name}</p>
+                <p><b>Prezioa: {producto.price}€</b></p>
+              </div>
+              <div className="dropdown">
+                <button className="" style={{ backgroundColor: 'transparent' }} type="button" id={`dropdownMenuButton${index}`} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src={tres} width={20} alt="" />
+                </button>
+                <div className="dropdown-menu" aria-labelledby={`dropdownMenuButton${index}`}>
+                  <a className="dropdown-item text-red" href="#">Editatu</a>
+                  <a href="#"><hr /></a>
+                  <a className="dropdown-item" style={{ color: 'red' }} onClick={() => confirmDeleteProduct(producto.id)}>Ezabatu</a>
                 </div>
-            ))}
+              </div>
+              <hr />
             </div>
-            </div>
-        
-    );
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
-
