@@ -7,7 +7,6 @@ import { Perfila } from './Perfila';
 export const Estatistikak = () => {
   return (
     <div className=''>
-      <Perfila />
       <div className="estatistikak">
         <div>
             <h3><b>ESTATISTIKAK</b></h3>

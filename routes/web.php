@@ -81,6 +81,10 @@ Route::middleware('auth')->group(function () {
 Route::delete('/user/deleted/{id}', [ProfileController::class, 'forceDeleted'])->name('profile.deleted');
 Route::get('/user/restore/{id}', [ProfileController::class, 'restore'])->name('profile.restore');
 
+Route::get('/Perfil/estatistikak', function(){
+   return Inertia::render('Mainfolder/Estatistikak', []);
+});
+
 
 require __DIR__.'/auth.php';
 

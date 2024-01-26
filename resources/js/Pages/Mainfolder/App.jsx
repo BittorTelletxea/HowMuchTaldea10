@@ -11,8 +11,6 @@ import './App.css'
 import { HeaderL } from "@/Components/konponenteak/HeaderL";
 import { HeaderAdmin } from "@/Components/konponenteak/HeaderAdmin";
 
-import { HeaderAdmin } from "@/Components/konponenteak/HeaderAdmin";
-
 import { FooterL } from "@/Components/konponenteak/FooterL";
 import { NorgaraLog } from "@/Components/konponenteak/NorgaraLog";
 
@@ -20,18 +18,14 @@ import React, { useState } from 'react';
 
 import { useEffect } from "react";
 
-import React, { useState } from 'react';
-
 
 
 function App() {
   return (
     <>
-      {usuarioEmail === "btellecheael22wg@ikzubirimanteo.com" ? (
-        <HeaderAdmin />
-      ) : (
-        <HeaderL />
-      )}
+   
+        <Header />
+
       <Nagusia />
       <NorgaraLog />
       <Tarifak />
