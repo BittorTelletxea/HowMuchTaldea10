@@ -67,13 +67,12 @@ Route::get('/Konfirmatu', function() {
 Route::post('/Denda', [ProductController::class, 'store'])->name('produktuak');
 Route::post('/Tasazioa', [TasazioaController::class, 'store'])->name('tasazioa');
 
-<<<<<<< HEAD
-Route::post('/webhook', [StripeController::class, 'handleWebhook']);
-=======
 Route::get('/produktuak', [ProductController::class, 'indexAdmin']);
->>>>>>> 36a7229c (Admin panel hasiera)
 
 Route::middleware('auth')->group(function () {
+   Route::get('/Perfil', [ProfileController::class, 'edit'])->name('profile.edit');
+   Route::patch('/Perfil', [ProfileController::class, 'update'])->name('profile.update');
+   Route::delete('/Perfil', [ProfileController::class, 'destroy'])->name('profile.destroy');
    Route::get('/Perfil', [ProfileController::class, 'edit'])->name('profile.edit');
    Route::patch('/Perfil', [ProfileController::class, 'update'])->name('profile.update');
    Route::delete('/Perfil', [ProfileController::class, 'destroy'])->name('profile.destroy');
