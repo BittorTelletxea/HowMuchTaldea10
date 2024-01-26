@@ -12,6 +12,7 @@ import LogoutButton from './LogoutButton';
 import Logged  from "../images/perfil.png";
 import { FooterL } from './FooterL';
 import React, { useState } from 'react';
+import DendaProduktuakAdmin from "../../Pages/Mainfolder/DendaProduktuakAdmin"
 
 
 export const Denda = ({ productos }) =>{

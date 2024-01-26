@@ -33,13 +33,13 @@ export function Tasazioa({ status, canResetPassword }) {
     kilometrajea: '',
     urtea: '',
     egoera: '',
-
     remember: false,
   });
 
   useEffect(() => {
     if (tasatuSuccess) {
       // Realizar alguna acción después del éxito, si es necesario
+      reset(); // Limpiar los datos del formulario
     }
   }, [tasatuSuccess]);
 
@@ -54,7 +54,6 @@ export function Tasazioa({ status, canResetPassword }) {
       // La solicitud falló, puedes manejar errores si es necesario
     }
   };
-
   return (
     <div className="bg-light">
        <header className="bg-light fixed-col pt-4 d-flex">

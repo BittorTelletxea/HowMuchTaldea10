@@ -67,12 +67,15 @@ Route::get('/Konfirmatu', function() {
 Route::post('/Denda', [ProductController::class, 'store'])->name('produktuak');
 Route::post('/Tasazioa', [TasazioaController::class, 'store'])->name('tasazioa');
 
-Route::post('/webhook', [StripeController::class, 'handleWebhook']);
+Route::get('/produktuak', [ProductController::class, 'indexAdmin']);
 
 Route::middleware('auth')->group(function () {
-   Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-   Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-   Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+   Route::get('/Perfil', [ProfileController::class, 'edit'])->name('profile.edit');
+   Route::patch('/Perfil', [ProfileController::class, 'update'])->name('profile.update');
+   Route::delete('/Perfil', [ProfileController::class, 'destroy'])->name('profile.destroy');
+   Route::get('/Perfil', [ProfileController::class, 'edit'])->name('profile.edit');
+   Route::patch('/Perfil', [ProfileController::class, 'update'])->name('profile.update');
+   Route::delete('/Perfil', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
 Route::delete('/user/deleted/{id}', [ProfileController::class, 'forceDeleted'])->name('profile.deleted');

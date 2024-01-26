@@ -16,6 +16,11 @@ class ProductController extends Controller
     $productos = $this->getProductos();
     return Inertia::render('Mainfolder/denda', ['productos' => $productos]);
    }
+   public function indexAdmin()
+   {
+    $productos = $this->getProductos();
+    return Inertia::render('Mainfolder/dendaAdmin', ['productos' => $productos]);
+   }
 
 
    public function store(Request $request)
