@@ -66,6 +66,7 @@ Route::get('/Konfirmatu', function() {
 Route::post('/Denda', [ProductController::class, 'store'])->name('produktuak');
 Route::post('/Tasazioa', [TasazioaController::class, 'store'])->name('tasazioa');
 
+Route::get('/produktuak', [ProductController::class, 'indexAdmin']);
 
 Route::middleware('auth')->group(function () {
    Route::get('/Perfil', [ProfileController::class, 'edit'])->name('profile.edit');

@@ -12,10 +12,10 @@ import LogoutButton from './LogoutButton';
 import Logged  from "../images/perfil.png";
 import { FooterL } from './FooterL';
 import React, { useState } from 'react';
-import DendaProduktuakAdmin from "../../Pages/Mainfolder/DendaProduktuakAdmin"
+import { DendaProduktuakAdmin } from "../../Pages/Mainfolder/DendaProduktuakAdmin"
 
 
-export const Denda = ({ productos }) =>{
+export const DendaAdmin = ({ productos }) =>{
     const [searchTerm, setSearchTerm] = useState('');
 
     return(
@@ -77,7 +77,7 @@ export const Denda = ({ productos }) =>{
 
     <div className='produktua'>
         <h2><b>DENDA</b></h2><br />
-        <DendaProduktuak productos={productos} searchTerm={searchTerm} />
+        <DendaProduktuakAdmin productos={productos} searchTerm={searchTerm} />
         
     </div>
    

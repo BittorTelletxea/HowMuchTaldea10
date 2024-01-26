@@ -20,7 +20,7 @@ const UpdateProfileInformation = ({ mustVerifyEmail, status, onUpdateSuccess }) 
   const submit = (e) => {
     e.preventDefault();
 
-    patch(route('/Perfil'), {
+    patch(route('profile.update'), {
       onSuccess: onUpdateSuccess, // Callback function when update is successful
     });
   };

@@ -38,7 +38,7 @@ export default function DeleteUserForm({ className = '' }) {
     };
 
     const closeModal = () => {
-        setConfirmingUserDeletion(false);
+        setConfirmingUserDeletion(true);
 
         reset();
     };
