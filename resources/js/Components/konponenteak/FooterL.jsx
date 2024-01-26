@@ -13,8 +13,8 @@ export const FooterL = () => {
   };
 
   const center = {
-    lat: 43.3270543,
-    lng: -1.9720582,
+    lat: 43.3274937,
+    lng: -1.9709828,
   };
 
   const options = {
