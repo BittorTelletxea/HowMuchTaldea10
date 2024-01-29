@@ -58,9 +58,6 @@ export const Denda = ({ productos }) =>{
             </span>
         </div>
     </div>
-            
-            {/* Renderiza el componente DendaProduktuak aquí */}
-
     </div>
 
     <div className='produktua'>

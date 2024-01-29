@@ -6,7 +6,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Inertia\Inertia;
-use App\Models\Tasazioak; // Asegúrate de tener el use correcto para el modelo Tasazioak
+use App\Models\Tasazioak; 
 
 
 class TasazioaController extends Controller

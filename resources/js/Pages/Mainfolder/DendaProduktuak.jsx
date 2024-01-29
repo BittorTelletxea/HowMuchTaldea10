@@ -14,6 +14,7 @@ const DendaProduktuak = ({ productos, searchTerm }) => {
                     <img src={producto.image} width='400px' height='70%' />
                     <p className="izena">{producto.name}</p>
                     <p><b>{producto.price}€</b></p>
+                    <a href="/Erosi"><button type="button" className="toggle-mode-button" value="Erosi">Erosi</button></a>
                 </div>
             ))}
             </div>
@@ -23,6 +24,7 @@ const DendaProduktuak = ({ productos, searchTerm }) => {
                     <img src={producto.image} width='400px' height='45%' />
                     <p className="izena">{producto.name}</p>
                     <p><b>{producto.price}€</b></p>
+                    <a href="/Erosi"><button type="button" className="toggle-mode-button" value="Erosi">Erosi</button></a>
                 </div>
             ))}
             </div>

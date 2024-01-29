@@ -41,9 +41,10 @@ body{
     margin-left: 4%;
     margin-top: 5%;
 }
-.denbproad{
+.denbpro{
     padding-top: 1%;
     padding-bottom: 1%;
+    padding-right: 3%;
     border-top: 1px solid black;
     border-bottom: 0px solid black;
 }

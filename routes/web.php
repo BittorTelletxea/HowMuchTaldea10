@@ -8,7 +8,6 @@ use Inertia\Inertia;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\TasazioaController;
-use App\Http\Controllers\StripeController;
 
 
 Route::get('/', function () {
@@ -83,6 +82,10 @@ Route::get('/user/restore/{id}', [ProfileController::class, 'restore'])->name('p
 
 Route::get('/Perfil/estatistikak', function(){
    return Inertia::render('Mainfolder/Estatistikak', []);
+});
+
+Route::get('/Erosi', function(){
+   return Inertia::render('Mainfolder/Erosi', []);
 });
 
 
