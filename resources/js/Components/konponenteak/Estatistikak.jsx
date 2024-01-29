@@ -1,6 +1,6 @@
 import React from 'react'; // Import React if not already imported
 import '../style/estatistikak.css';
-import { Perfila } from './Perfila';
+
 
 
 
