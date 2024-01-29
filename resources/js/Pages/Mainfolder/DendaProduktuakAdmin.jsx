@@ -21,9 +21,13 @@ export const DendaProduktuakAdmin = ({ productos, searchTerm }) => {
                 <p className="izena">Izena: {producto.name}</p>
                 <p className='prezioa'><b>Prezioa: {producto.price}€</b></p>
               </div>
-              <button className='btn btn-outline-danger h-25 p-2'>
+              <button className='btn btn-outline-danger h-50 p-2'>
                 <div className='d-flex'>
                 <i className="bi bi-trash" style={{ fontSize: '2em', cursor: 'pointer' }}></i>              </div>
+              </button>
+              <button className='btn btn-outline-dark h-50 p-2'>
+                <div className='d-flex'>
+                <i className="bi bi-brush" style={{ fontSize: '2em', cursor: 'pointer' }}></i>              </div>
               </button>
               <hr />
             </div>
