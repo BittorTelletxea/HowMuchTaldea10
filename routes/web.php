@@ -5,6 +5,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\TasazioaController;
@@ -76,6 +77,7 @@ Route::middleware('auth')->group(function () {
    Route::patch('/Perfil', [ProfileController::class, 'update'])->name('profile.update');
    Route::delete('/Perfil', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+Route::delete('/products/{id}', [ProductController::class, 'destroy']);
 
 Route::delete('/user/deleted/{id}', [ProfileController::class, 'forceDeleted'])->name('profile.deleted');
 Route::get('/user/restore/{id}', [ProfileController::class, 'restore'])->name('profile.restore');

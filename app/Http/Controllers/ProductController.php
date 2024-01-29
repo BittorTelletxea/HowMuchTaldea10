@@ -48,7 +48,19 @@ class ProductController extends Controller
 
        return redirect()->route('produktuak');
    }
+   public function destroy($id)
+    {
+        $product = Produktuak::find($id);
 
+        if (!$product) {
+            return response()->json(['message' => 'Producto no encontrado'], 404);
+        }
+
+        $product->delete();
+
+        return response()->json(['message' => 'Producto eliminado exitosamente']);
+    }
+   
 
    public function getProductos()
    {
