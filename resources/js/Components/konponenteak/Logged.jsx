@@ -1,4 +1,6 @@
 import "../style/estiloa.css"
+import "../style/tasazioa.css";
+
 import logo from "../images/logo.png"
 import logged from "../images/login.png"
 import { NavButton } from "./NavButton";

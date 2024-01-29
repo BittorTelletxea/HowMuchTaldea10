@@ -6,7 +6,7 @@ import tiktok from "../images/tiktokl.png";
 import youtube from "../images/youtubel.png";
 import facebook from "../images/facebookl.png";
 
-export const FooterL = () => {
+export  const FooterL = () => {
   const mapContainerStyle = {
     height: "200px",
     width: "400px",

@@ -22,7 +22,9 @@
     "dependencies": {
         "@inertiajs/inertia": "^0.11.1",
         "@inertiajs/inertia-react": "^0.8.1",
+        "@react-google-maps/api": "^2.19.2",
         "bootstrap": "^4.6.0",
+        "bootstrap-icons": "^1.11.3",
         "latest": "^0.2.0",
         "react-router-dom": "^5.3.4",
         "vue": "^3.4.11"

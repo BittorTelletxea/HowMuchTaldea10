@@ -42,41 +42,30 @@ export const DendaAdmin = ({ productos }) =>{
             
       </div>
   </header>
-    <div className='head d-flex'>
-        <nav>
-            <ul>
-                <li>
-                    <a href=''>Autoak</a>
-                    <a href="">Motorrak</a>
-                    <a href="">Bizikletak</a>
-                    <a href="">Patineteak</a>
-                    <a href="">Besteak</a>
-                </li>
-            </ul>
-        </nav>
-        <div className='bilatzailea'>
-                <div className="input-group rounded">
-                    <input
-                        type="search"
-                        className="form-control rounded"
-                        placeholder="Bilatu"
-                        aria-label="Search"
-                        aria-describedby="search-addon"
-                        value={searchTerm}
-                        onChange={(e) => setSearchTerm(e.target.value)}
-                    />
-                    <span className="" id="search-addon">
-                        <img src={buscador} width={50} alt="" />
-                    </span>
-                </div>
-            </div>
+  <div className='head fixed d-flex' style={{}}>
+    <div className='bilatzailea'>
+        <div className="input-group rounded" style={{ width: '1000px' }}>
+            <input
+                type="search"
+                className="form-control rounded"
+                placeholder="Bilatu"
+                aria-label="Search"
+                aria-describedby="search-addon"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+            />
+            <span className="" id="search-addon">
+                <img src={buscador} width={50} alt="" />
+            </span>
+        </div>
+    </div>
             
             {/* Renderiza el componente DendaProduktuak aquí */}
 
     </div>
 
     <div className='produktua'>
-        <h2><b>DENDA</b></h2><br />
+        <h2><b>PRODUKTUAK</b></h2><br />
         <DendaProduktuakAdmin productos={productos} searchTerm={searchTerm} />
         
     </div>
