@@ -41,24 +41,30 @@ export const Denda = ({ productos }) =>{
             
       </div>
   </header>
-  <div className='head fixed d-flex' style={{}}>
-    <div className='bilatzailea'>
-        <div className="input-group rounded" style={{ width: '1000px' }}>
-            <input
-                type="search"
-                className="form-control rounded"
-                placeholder="Bilatu"
-                aria-label="Search"
-                aria-describedby="search-addon"
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-            />
-            <span className="" id="search-addon">
-                <img src={buscador} width={50} alt="" />
-            </span>
-        </div>
+  <div className='head fixed d-flex' style={{ justifyContent: 'space-between'}}>
+  <div style={{ marginRight: '20%' }}>
+    <h4 style={{ color: '' }} className='text-light'>DENDA   </h4>
     </div>
-    </div>
+  <div className="input-group rounded" style={{ flex: '1' }}>
+    <input
+      type="search"
+      className="form-control rounded"
+      placeholder="Bilatu"
+      aria-label="Search"
+      aria-describedby="search-addon"
+      value={searchTerm}
+      onChange={(e) => setSearchTerm(e.target.value)}
+    />
+    <span className="" id="search-addon">
+      <img src={buscador} width={50} alt="" />
+    </span>
+  </div>
+
+  <div style={{ marginLeft: '20%', marginRight: '2%' }}>
+    <i className="bi bi-heart" style={{ fontSize: '35px', cursor: 'pointer' }}></i>
+  </div>
+</div>
+
 
     <div className='produktua'>
         <h2><b>DENDA</b></h2><br />
