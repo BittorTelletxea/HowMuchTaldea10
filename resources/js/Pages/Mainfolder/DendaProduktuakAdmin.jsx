@@ -10,16 +10,38 @@ export const DendaProduktuakAdmin = ({ productId, productos, searchTerm }) => {
     (producto) =>
       producto && producto.name && producto.name.includes(searchTerm)
   );
-  const handleDelete = async () => {
-    try {
-      await axios.delete(`/api/products/${productId}`);
-      console.log('Producto eliminado exitosamente');
-      // Puedes actualizar la interfaz de usuario según tus necesidades
-    } catch (error) {
-      console.error('Error al eliminar el producto', error);
-    }
+  
+  const confirmDeleteProduct = (productId) => {
+    // Configuración de la solicitud
+    const requestOptions = {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+        // Puedes incluir otros encabezados si es necesario
+      },
+      // No es necesario incluir el cuerpo para una solicitud DELETE, pero puedes hacerlo si es necesario
+      // body: JSON.stringify({}),
+    };
+  
+    // Realizar la solicitud
+    fetch(`/api/products/${productId}`, requestOptions)
+      .then(response => {
+        if (!response.ok) {
+          // Si la respuesta no es exitosa, lanzar un error
+          throw new Error(`Error al eliminar el producto. Código de estado: ${response.status}`);
+        }
+        // Puedes devolver la respuesta si es necesario
+        return response.json();
+      })
+      .then(data => {
+        // Manejar la respuesta del servidor, por ejemplo, actualizar la lista de productos
+        console.log('Producto eliminado exitosamente', data);
+      })
+      .catch(error => {
+        // Manejar errores, por ejemplo, mostrar un mensaje de error al usuario
+        console.error('Error al eliminar el producto', error.message);
+      });
   };
-
   return (
     <div>
       <div className='denboraldikoak'>
@@ -31,8 +53,7 @@ export const DendaProduktuakAdmin = ({ productId, productos, searchTerm }) => {
                 <p className="izena"> {producto.name}</p>
                 <p className='prezioa'><b> {producto.price}€</b></p>
               </div>
-              <button className='btn btn-outline-danger h-50 p-2' onClick={handleDelete}>
-                <div className='d-flex'>
+              <button className='btn btn-outline-dark h-50 p-2' onClick={() => confirmDeleteProduct(producto.id)}>                  <div className='d-flex'>
                 <i className="bi bi-trash" style={{ fontSize: '2em', cursor: 'pointer' }}></i>              </div>
               </button>
               <button className='btn btn-outline-dark h-50 p-2'>
