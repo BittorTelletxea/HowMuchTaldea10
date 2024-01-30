@@ -90,6 +90,8 @@ Route::get('/Erosi', function(){
    return Inertia::render('Mainfolder/Erosi', []);
 });
 
+Route::delete('/Delete/{productid}', [ProductController::class, 'destroy']);
+
 
 require __DIR__.'/auth.php';
 

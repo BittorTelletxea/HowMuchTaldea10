@@ -49,24 +49,20 @@ class ProductController extends Controller
        return redirect()->route('produktuak');
    }
    public function destroy($id)
-   {
-       try {
-           $productos = getProductos();
-   
-           foreach ($productos as $key => $value) {
-               if ($value['id'] == $id) {
-                   unset($productos[$key]);
-                   // Puedes devolver una respuesta de éxito si lo deseas
-                   return response()->json(['message' => 'Producto eliminado exitosamente']);
-               }
-           }
-   
-           // Si no se encontró el producto, devolver una respuesta de error
-           return response()->json(['error' => 'Producto no encontrado'], 404);
-       } catch (\Exception $e) {
-           return response()->json(['error' => $e->getMessage()], 500);
-       }
-   }
+{
+    try {
+        
+        $producto = Produktuak::findOrFail($id);
+
+        $producto->delete();
+        
+        return response()->json(['message' => 'Producto eliminado exitosamente']);
+    } catch (\Exception $e) {
+       
+        return response()->json(['error' => $e->getMessage()], 500);
+    }
+}
+
 
    
 

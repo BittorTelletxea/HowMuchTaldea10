@@ -12,7 +12,9 @@ import LogoutButton from './LogoutButton';
 import Logged  from "../images/perfil.png";
 import { FooterL } from './FooterL';
 import React, { useState } from 'react';
-import { DendaProduktuakAdmin } from "../../Pages/Mainfolder/DendaProduktuakAdmin"
+import { DendaProduktuakAdmin } from "../../Pages/Mainfolder/DendaProduktuakAdmin";
+import { BrowserRouter as Router } from 'react-router-dom';
+import { InertiaApp } from '@inertiajs/inertia-react';
 
 
 export const DendaAdmin = ({ productos }) =>{
@@ -59,14 +61,13 @@ export const DendaAdmin = ({ productos }) =>{
             </span>
         </div>
     </div>
-            
-            {/* Renderiza el componente DendaProduktuak aquí */}
-
     </div>
 
     <div className='produktua'>
         <h2><b>PRODUKTUAK</b></h2><br />
-        <DendaProduktuakAdmin productos={productos} searchTerm={searchTerm} />
+        <Router>
+            <DendaProduktuakAdmin productos={productos} searchTerm={searchTerm} />
+        </Router>
         
     </div>
    
@@ -76,7 +77,7 @@ export const DendaAdmin = ({ productos }) =>{
           <a href="/gehitu" className='text-white'><img src={plus} width={40} height={40} alt="" /><b>IGO PRODUKTUA</b></a>
         </button>
         </div>
-        <FooterL />
+        
     </div>
     
     );
