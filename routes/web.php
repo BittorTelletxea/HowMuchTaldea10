@@ -92,6 +92,10 @@ Route::get('/Erosi', function(){
 
 Route::delete('/Delete/{productid}', [ProductController::class, 'destroy']);
 
+Route::get('/like/{id}', function(){
+   return Inertia::render('Mainfolder/Like', []);
+});
+
 
 require __DIR__.'/auth.php';
 

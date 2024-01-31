@@ -11,6 +11,12 @@ const DendaProduktuak = ({ productos, searchTerm }) => {
             producto.name.includes(searchTerm)
     );
 
+    const likeEman = (id) => {
+
+        history.push(`/likes/${id}`);
+        
+    }
+
  
 
     return (
@@ -25,7 +31,7 @@ const DendaProduktuak = ({ productos, searchTerm }) => {
                                 <p><b>{producto.price}€</b></p>
                             </div>
                             <div>
-                                <button type="button" className="btn" value="Erosi" style={{ borderColor: 'transparent' }} >
+                                <button type="button" className="btn" value="like" onClick={likeEman(producto.id)} style={{ borderColor: 'transparent' }} >
                                     <i className="megusta bi bi-heart" style={{ padding: '0', fontSize: '20px', cursor: 'pointer', transition: 'color 0.3s ease' }}></i>
                                 </button></div>
                     </div>

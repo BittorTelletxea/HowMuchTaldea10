@@ -22,26 +22,17 @@ return new class extends Migration
           $table->timestamps();
       });
 
-
-
-
       Schema::create('tasadoreak', function (Blueprint $table) {
           $table->id();
           $table->integer('kopurua');
           $table->timestamps();
       });
 
-
-
-
       Schema::create('administradoreak', function (Blueprint $table) {
           $table->id();
           $table->datetime('mantenduData');
           $table->timestamps();
       });
-
-
-
 
       Schema::create('bezeroak', function (Blueprint $table) {
           $table->id();
@@ -55,9 +46,6 @@ return new class extends Migration
           $table->timestamps();
       });
 
-
-
-
       Schema::create('produktuak', function (Blueprint $table) {
         $table->id();
         $table->string('name');
@@ -68,10 +56,6 @@ return new class extends Migration
         $table->timestamps();
     });
 
-
-
-
-
       Schema::create('erosketak', function (Blueprint $table) {
           $table->id();
           $table->integer('balioa');
@@ -80,9 +64,6 @@ return new class extends Migration
           $table->string('produktua');
           $table->timestamps();
       });
-
-
-
 
       Schema::create('salmentak', function (Blueprint $table) {
           $table->id();
@@ -93,8 +74,12 @@ return new class extends Migration
           $table->timestamps();
       });
 
-
-
+      Schema::create('like', function (Blueprint $table) {
+        $table->id();
+        $table->unsignedBigInteger('produktua');
+        $table->unsignedBigInteger('bezeroa');
+        $table->timestamps();
+      });
 
       Schema::create('txatak', function (Blueprint $table) {
           $table->id();
@@ -103,9 +88,6 @@ return new class extends Migration
           $table->datetime('sortzeData');
           $table->timestamps();
       });
-
-
-
 
      Schema::create('mezuak', function (Blueprint $table) {
           $table->id();
@@ -116,9 +98,6 @@ return new class extends Migration
           $table->timestamps();
       });
 
-
-
-
       Schema::create('komentarioak', function (Blueprint $table) {
           $table->id();
           $table->string('produktua'); 
@@ -128,16 +107,14 @@ return new class extends Migration
           $table->timestamps();
       });
 
-
       Schema::create('puntuazioak', function (Blueprint $table) {
        $table->id();  
        $table->string('idproduktua');
        $table->string('idbezeroa');
        $table->integer('puntuazioa');
        $table->timestamps();
-
-
        });
+
        Schema::create('tasazioak', function (Blueprint $table) {
         $table->id();  
         $table->string('mota');
@@ -146,12 +123,7 @@ return new class extends Migration
         $table->integer('kilometrajea');
         $table->date('urtea');
         $table->enum('egoera', ['Oso ona', 'Ona', 'Txarra', 'Oso txarra']);
-
-
-
         $table->timestamps();
- 
- 
         });
   }
 
