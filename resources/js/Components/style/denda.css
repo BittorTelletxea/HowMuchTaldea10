@@ -41,12 +41,15 @@ body{
     margin-left: 4%;
     margin-top: 5%;
 }
-.denbpro{
+.denbpro1{
     padding-top: 1%;
     padding-bottom: 1%;
     padding-right: 3%;
     border-top: 1px solid black;
     border-bottom: 0px solid black;
+}
+.denpro{
+    margin-right: 10%;
 }
 .izena{
     margin: auto;
@@ -59,6 +62,12 @@ body{
 }
 .dat{
     
+}
+.megusta{
+    color: red;
+}
+.bi:hover{
+    flood-color: red;
 }
 .button-container {
     position: fixed;

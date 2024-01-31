@@ -15,6 +15,7 @@ import { HeaderAdmin } from "@/Components/konponenteak/HeaderAdmin";
 
 import { FooterL } from "@/Components/konponenteak/FooterL";
 import { NorgaraLog } from "@/Components/konponenteak/NorgaraLog";
+import { BrowserRouter as Router } from 'react-router-dom';
 
 
 
@@ -40,11 +41,13 @@ function App() {
 
   return (
     <>
+    <Router>
       <Header />
       <Nagusia />
       <NorgaraLog />
       <Tarifak />
       <FooterL />
+      </Router>
     </>
   );
 }

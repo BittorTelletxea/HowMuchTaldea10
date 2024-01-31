@@ -62,7 +62,7 @@ return new class extends Migration
         $table->id();
         $table->string('name');
         $table->decimal('price', 8, 2);
-        $table->unsignedBigInteger('seller');
+        $table->unsignedBigInteger('seller')->nullable();      
         $table->integer('rate')->default(0);
         $table->string('image');
         $table->timestamps();

@@ -42,7 +42,7 @@ export const DendaProduktuakAdmin = ({ productId, productos, searchTerm }) => {
     <div>
       <div className='denboraldikoak'>
         {filteredProductos.slice(0, 4).map((producto, index) => (
-          <div key={index} className='denbproad d-flex'>
+          <div key={index} className='denbpro1 d-flex'>
             <div className='d-flex' style={{ justifyContent: 'space-between', width: '100%' }}>
               <img src={producto.image} width='300px' height='75%' />
               <div className='middle-content'>
@@ -54,7 +54,7 @@ export const DendaProduktuakAdmin = ({ productId, productos, searchTerm }) => {
               </button>
               <button className='btn btn-outline-dark h-50 p-2'>
                 <div className='d-flex'>
-                <i className="bi bi-brush" style={{ fontSize: '2em', cursor: 'pointer' }}></i>              </div>
+                <i className=" bi bi-brush" style={{ fontSize: '2em', cursor: 'pointer' }}></i>              </div>
               </button>
               <hr />
             </div>
@@ -64,7 +64,7 @@ export const DendaProduktuakAdmin = ({ productId, productos, searchTerm }) => {
 
       <div className='denboraldikoak'>
         {filteredProductos.slice(4, 8).map((producto, index) => (
-          <div key={index} className='denbproad d-flex'>
+          <div key={index} className='denbpro1 d-flex'>
             <div className='d-flex' style={{ justifyContent: 'space-between', width: '100%' }}>
               <img src={producto.image} width='300px' height='75%' />
               <div className='middle-content'>
