@@ -4,6 +4,8 @@ import 'bootstrap';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { useHistory } from 'react-router-dom';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
 
 export const DendaProduktuakAdmin = ({ productId, productos, searchTerm }) => {
   const history = useHistory();
@@ -54,7 +56,9 @@ export const DendaProduktuakAdmin = ({ productId, productos, searchTerm }) => {
               </button>
               <button className='btn btn-outline-dark h-50 p-2'>
                 <div className='d-flex'>
-                <i className=" bi bi-brush" style={{ fontSize: '2em', cursor: 'pointer' }}></i>              </div>
+                <Link to={`/editatu/${producto.id}`}>
+  <i className="bi bi-brush" style={{ fontSize: '2em', cursor: 'pointer' }}></i>
+</Link>             </div>
               </button>
               <hr />
             </div>
@@ -76,7 +80,7 @@ export const DendaProduktuakAdmin = ({ productId, productos, searchTerm }) => {
               </button>
               <button className='btn btn-outline-dark h-50 p-2'>
                 <div className='d-flex'>
-                <i className="bi bi-brush" style={{ fontSize: '2em', cursor: 'pointer' }}></i>              </div>
+                <a href="/editatu"><i className="bi bi-brush" style={{ fontSize: '2em', cursor: 'pointer' }}></i> </a>             </div>
               </button>
               <hr />
             </div>
