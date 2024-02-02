@@ -62,8 +62,11 @@ Route::get('/gehitu', function() {
 Route::get('/Pasahitza', function() {
    return Inertia::render('Mainfolder/pasahitza', []);
 });
-Route::get('/Konfirmatu', function() {
-   return Inertia::render('Mainfolder/konfirmatu', []);
+Route::get('/Pasahitza', function() {
+   return Inertia::render('Mainfolder/pasahitza', []);
+});
+Route::get('/editatu/{id}', function() {
+   return Inertia::render('Mainfolder/editatu', []);
 });
 Route::post('/Denda', [ProductController::class, 'store'])->name('produktuak');
 Route::post('/Tasazioa', [TasazioaController::class, 'store'])->name('tasazioa');
@@ -81,6 +84,7 @@ Route::middleware('auth')->group(function () {
 Route::delete('/api/products/{id}', [ProductController::class, 'destroy']);
 
 Route::delete('/user/deleted/{id}', [ProfileController::class, 'forceDeleted'])->name('profile.deleted');
+Route::get('/user/restore/{id}', [ProfileController::class, 'restore'])->name('profile.restore');
 Route::get('/user/restore/{id}', [ProfileController::class, 'restore'])->name('profile.restore');
 
 Route::get('/Perfil/estatistikak', function(){
