@@ -16,7 +16,7 @@ export const Header = () => {
         </div>
         
         <nav>
-            <a href="Login" className="buruz text-black  ">TASAZIOA</a>
+            <a href="Login" className="buruz1 text-black  ">TASAZIOA</a>
             
             <a href="Login" className="buruz1 text-black ">DENDA</a>
             <a href="Login" className="buruz1 text-black ">KONTAKTUA</a>

@@ -3,7 +3,7 @@
 
 namespace App\Http\Controllers;
 
-
+use App\Http\Requests\ProductUpdateRequest;
 use App\Models\Produktuak;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
@@ -62,6 +62,22 @@ class ProductController extends Controller
         return response()->json(['error' => $e->getMessage()], 500);
     }
 }
+<<<<<<< HEAD
+=======
+public function update(ProductUpdateRequest $request, $id)
+{
+    $request->validate([
+        'name' => 'string|max:255',
+        'price' => 'numeric|nullable', // Permitir valores nulos    
+    ]);
+
+    // Cambia 'Product' a 'Produktuak'
+    $product = Produktuak::findOrFail($id);
+    $product->update($request->validated());
+
+    return redirect()->route('produktuak.index');}
+
+>>>>>>> 0672813f (admin panel)
    
 
    public function getProductos()
