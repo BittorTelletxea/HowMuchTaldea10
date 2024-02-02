@@ -9,6 +9,7 @@ use Inertia\Inertia;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\TasazioaController;
+use App\Http\Controllers\LikeController;
 
 
 Route::get('/', function () {
@@ -92,10 +93,8 @@ Route::get('/Erosi', function(){
 
 Route::delete('/Delete/{productid}', [ProductController::class, 'destroy']);
 
-Route::get('/like/{id}', function(){
-   return Inertia::render('Mainfolder/Like', []);
-});
-
+Route::post('/likeEman', [LikeController::class, 'store'])->name('likeman');
+Route::get('/Like', [LikeController::class, 'index']);
 
 require __DIR__.'/auth.php';
 

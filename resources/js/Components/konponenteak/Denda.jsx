@@ -12,7 +12,7 @@ import LogoutButton from './LogoutButton';
 import Logged  from "../images/perfil.png";
 import { FooterL } from './FooterL';
 import React, { useState } from 'react';
-
+import { BrowserRouter as Router } from 'react-router-dom';
 
 export const Denda = ({ productos }) =>{
     const [searchTerm, setSearchTerm] = useState('');
@@ -68,8 +68,9 @@ export const Denda = ({ productos }) =>{
 
     <div className='produktua'>
         <h2><b>DENDA</b></h2><br />
-        <DendaProduktuak productos={productos} searchTerm={searchTerm} />
-        
+        <Router>
+          <DendaProduktuak productos={productos} searchTerm={searchTerm} />
+        </Router>
     </div>
    
     <div className="button-container">

@@ -63,6 +63,7 @@ export const Perfila = () => {
                 <li className="breadcrumb-item"><a href="#" className="text-black">Perfila</a></li>
                 <li className="breadcrumb-item active" aria-current="page">Usuario perfila</li>
                 <li className="breadcrumb-item"><a href="/Perfil/estatistikak" className="text-black">Estatistikak</a></li>
+                <li className="breadcrumb-item"><a href="/Like" className="text-black">Produktua</a></li>
               </ol>
             </nav>
           </div>
