@@ -80,7 +80,9 @@ Route::middleware('auth')->group(function () {
    Route::patch('/Perfil', [ProfileController::class, 'update'])->name('profile.update');
    Route::delete('/Perfil', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+Route::patch('/api/products/{id}', [ProductController::class, 'update']);
 Route::delete('/api/products/{id}', [ProductController::class, 'destroy']);
+
 
 Route::delete('/user/deleted/{id}', [ProfileController::class, 'forceDeleted'])->name('profile.deleted');
 Route::get('/user/restore/{id}', [ProfileController::class, 'restore'])->name('profile.restore');
