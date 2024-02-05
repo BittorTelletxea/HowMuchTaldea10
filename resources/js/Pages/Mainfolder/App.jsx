@@ -41,13 +41,11 @@ function App() {
 
   return (
     <>
-    <Router>
       <Header />
       <Nagusia />
       <NorgaraLog />
       <Tarifak />
       <FooterL />
-      </Router>
     </>
   );
 }
