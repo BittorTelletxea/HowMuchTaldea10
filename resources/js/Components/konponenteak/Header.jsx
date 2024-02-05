@@ -7,7 +7,7 @@ export const Header = () => {
     const currentPath = window.location.pathname;
 
   return (
-    <header className="bg-light fixed-col pt-4 d-flex">
+    <header className="ligt bg-light fixed-col pt-4 d-flex">
         <div className="howmuch h-100 ">
             <a className="navbar-brand display-1 fw-bolder text-center" href="/Logged" >
             <img src={logo} width="40" height="32" alt="" />

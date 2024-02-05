@@ -6,9 +6,18 @@ import '../style/dark.css'
 import 'popper.js';
 import 'bootstrap';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import sol from '../images/image (22).png'
+import sol from '../images/image__22_-removebg-preview.png'
+import React, { useEffect, useState } from 'react';
 
 export const NagusiaDark = () => {
+    const [darkMode, setDarkMode] = useState(() => localStorage.getItem('darkMode') === 'true');
+
+    const toggleDarkMode = () => {
+      const newMode = !darkMode;
+      setDarkMode(newMode);
+      localStorage.setItem('darkMode', newMode.toString());
+      window.location.reload(); 
+    };
   return (
     <div className="nagusia text-center vh-100  align-items-center  "style={{ backgroundColor: '#121212' }}>
    <div className="d-flex">
@@ -32,10 +41,10 @@ export const NagusiaDark = () => {
           <a href="/gehitu" className="text-center"><img src={flecha} width={30} height={30} alt="" /></a>
         </button>
         </div>
-        <div className="button-container-dark">
+        <div className="button-container">
         
-        <button className="toggle-mode-button-dark">
-          <a href="/gehitu" className=''></a>
+        <button className="toggle-mode-button-dark" onClick={toggleDarkMode}>
+          <i className={`bi ${darkMode ? 'bi-sun' : 'bi-moon'}`}></i>
         </button>
         </div>
     </div>

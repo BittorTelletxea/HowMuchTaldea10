@@ -7,7 +7,7 @@ export const HeaderDark = () => {
     const currentPath = window.location.pathname;
 
   return (
-    <header className=" fixed-col pt-4 d-flex "style={{ backgroundColor: '#121212' }}>
+    <header className="dark fixed-col pt-4 d-flex "style={{ backgroundColor: '#121212' }}>
         <div className="howmuch h-100 ">
             <a className="text-white navbar-brand display-1 fw-bolder text-center" href="/Logged" >
             <img src={logo} width="40" height="32" alt="" />
