@@ -5,11 +5,14 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Like;
 use App\Models\Produktuak;
+use Inertia\Inertia;
 
 class LikeController extends Controller
 {
+    
+
     public function index() {
-        $product = getProducts();
+        $product = $this->getProducts();
         return Inertia::render('Mainfolder/Like', ['productos' => $product]);
     }
 
@@ -17,7 +20,6 @@ class LikeController extends Controller
         
         $validatedata = $request->validate([
             'produktua' => 'required',
-            'bezeroa' => 'nullable'
         ]);
 
         $validatedata['bezeroa'] = auth()->id();
@@ -34,22 +36,24 @@ class LikeController extends Controller
 
     public function userLikes(){
         $id = auth()->id();
-        $likes = getLikes();
-        foreach ($likes as $product){
-            if ($product['bezeroa'] == $id){ 
-                $returnLike = $product['produktua'];
+        $likes = $this->getLikes(); 
+        foreach ($likes as $like){
+            if ($like['bezeroa'] == $id){ 
+                $returnLike[] = $like['produktua'];
+                
             }
         }
         return $returnLike;
+        
     }
 
     public function getProducts(){
-        $productid = userLikes();
+        $productid = $this->userLikes();
         $products = Produktuak::all();
         foreach ($products as $product) {
             foreach ($productid as $id){
                 if ($product['id'] == $id){
-                    $produktua = $product;
+                    $produktua[] = $product;
                 }
             }
         }
