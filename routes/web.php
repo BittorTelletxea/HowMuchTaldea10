@@ -10,6 +10,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\TasazioaController;
 use App\Http\Controllers\LikeController;
+use App\Http\Controllers\MezuaController;
 
 
 Route::get('/', function () {
@@ -52,7 +53,7 @@ Route::get('/tasazioab', function () {
 Route::get('/Denda', [ProductController::class, 'index']);
 Route::get('/Kontaktua', function () {
    return Inertia::render('Mainfolder/kontaktua', []);
-});
+})->name('kontaktua');
 Route::get('/dashboard', function () {
    return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -103,6 +104,8 @@ Route::delete('/Delete/{productid}', [ProductController::class, 'destroy']);
 
 Route::post('/likeEman', [LikeController::class, 'store'])->name('likeman');
 Route::get('/Like', [LikeController::class, 'index']);
+
+Route::post('/Mezua', [MezuaController::class, 'store'])->name('mezua');
 
 require __DIR__.'/auth.php';
 

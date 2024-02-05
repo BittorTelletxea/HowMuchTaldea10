@@ -6,10 +6,26 @@ import { HeaderL } from './HeaderL'
 import { FooterL } from './FooterL'
 import '../style/kontaktua.css'
 import "../style/tasazioa.css";
+import { useForm } from '@inertiajs/inertia-react';
 
 import '../style/kontakh.css'
 import LogoutButton from './LogoutButton'
 export const Kontaktua = () =>{
+
+  const { data, setData, post, processing, errors, reset } = useForm({
+    name: '',
+    lastname: '',
+    email: '',
+    number: '',
+    message: '',
+    remember: false,
+  });
+
+  const submit = (e) => {
+    e.preventDefault();
+    post(route('mezua'));
+  }
+
     return(
         <div className="bg-light">
      <header className="bg-light fixed-col pt-4 d-flex">
@@ -68,40 +84,40 @@ export const Kontaktua = () =>{
               </div>
   
               <div className="col-lg-7 contact-form__wrapper p-5 order-lg-1">
-                <form action="#" className="contact-form form-validate" noValidate="novalidate">
+                <form onSubmit={submit} action="#" className="contact-form form-validate" noValidate="novalidate">
                   <div className="row">
                     <div className="col-sm-6 mb-3">
                       <div className="form-group">
                         <label className="required-field" htmlFor="firstName">Izena</label>
-                        <input type="text" className="form-control" id="firstName" name="firstName" placeholder="Mateu" />
+                        <input type="text" onChange={(e) => setData('name', e.target.value)} className="form-control" id="firstName" name="firstName" placeholder="Izena" />
                       </div>
                     </div>
   
                     <div className="col-sm-6 mb-3">
                       <div className="form-group">
                         <label htmlFor="lastName">Abizena</label>
-                        <input type="text" className="form-control" id="lastName" name="lastName" placeholder="Laoz" />
+                        <input type="text" onChange={(e) => setData('lastname', e.target.value)} className="form-control" id="lastName" name="lastName" placeholder="Abizena" />
                       </div>
                     </div>
   
                     <div className="col-sm-6 mb-3">
                       <div className="form-group">
                         <label className="required-field" htmlFor="email">Email</label>
-                        <input type="text" className="form-control" id="email" name="email" placeholder="email@email.com" />
+                        <input type="text" onChange={(e) => setData('email', e.target.value)} className="form-control" id="email" name="email" placeholder="email@email.com" />
                       </div>
                     </div>
   
                     <div className="col-sm-6 mb-3">
                       <div className="form-group">
                         <label htmlFor="phone">Telefono zenbakia</label>
-                        <input type="tel" className="form-control" id="phone" name="phone" placeholder="(+34)644-34-53-23" />
+                        <input type="tel" onChange={(e) => setData('number', e.target.value)} className="form-control" id="phone" name="phone" placeholder="(+34)644-34-53-23" />
                       </div>
                     </div>
   
                     <div className="col-sm-12 mb-3">
                       <div className="form-group">
                         <label className="required-field" htmlFor="message">Mezua</label>
-                        <textarea className="form-control" id="message" name="message" rows="4" placeholder="Kaixo, mezu honekin..."></textarea>
+                        <textarea onChange={(e) => setData('message', e.target.value)} className="form-control" id="message" name="message" rows="4" placeholder="Kaixo, mezu honekin..."></textarea>
                       </div>
                     </div>
   

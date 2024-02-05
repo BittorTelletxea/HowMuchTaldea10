@@ -125,11 +125,19 @@ return new class extends Migration
         $table->enum('egoera', ['Oso ona', 'Ona', 'Txarra', 'Oso txarra']);
         $table->timestamps();
         });
+
+        Schema::create('kontaktua', function (Blueprint $table){
+            $table->id();
+            $table->string('name');
+            $table->string('lastname');
+            $table->string('email');
+            $table->string('number');
+            $table->string('message');
+            $table->string('bezeroa');
+            $table->timestamps();
+        });
   }
-
-
-
-
+  
   /**
    * Reverse the migrations.
    */
