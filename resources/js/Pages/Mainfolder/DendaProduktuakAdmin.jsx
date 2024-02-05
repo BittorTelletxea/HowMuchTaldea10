@@ -12,20 +12,22 @@ import { Transition } from '@headlessui/react';
 export const DendaProduktuakAdmin = ({ productos, searchTerm }) => {
   const history = useHistory();
   const [csrfToken, setCsrfToken] = useState('');
+  const { data, setData, patch, errors, processing, recentlySuccessful } = useForm({
+    name: '',  // Valor inicial para name
+    price: '', // Valor inicial para price
+  });
 
   useEffect(() => {
     const token = document.head.querySelector('meta[name="csrf-token"]').content;
     setCsrfToken(token);
 
-    // Configura el intervalo para recargar la página cada segundo
-   
+    // Inicializar data.name y data.price cuando el componente se monta
+    setData('name', ''); // Puedes establecer el valor inicial que desees para 'name'
+    setData('price', ''); // Puedes establecer el valor inicial que desees para 'price'
+
     // Limpia el intervalo al desmontar el componente
     return () => clearInterval(reloadIntervalId);
   }, []);
-  const { data, setData, patch, errors, processing, recentlySuccessful } = useForm({
-    name: '',
-    price: '',
-  });
 
   const filteredProductos = productos.filter(
     (producto) =>
@@ -54,7 +56,7 @@ export const DendaProduktuakAdmin = ({ productos, searchTerm }) => {
 
   const submit = async (e, productId) => {
     e.preventDefault();
-  
+    console.log(data.name)
     try {
       const response = await axios.patch(`/api/products/${productId}`, {
         name: data.name,
@@ -77,9 +79,7 @@ export const DendaProduktuakAdmin = ({ productos, searchTerm }) => {
   };
   const onUpdateSuccess = () => {
     console.log('Product updated successfully');
-  };
-
-  const likeEman = (id) => {
+  };  const likeEman = (id) => {
     history.push(`/likes/${id}`);
   };
 
@@ -98,8 +98,7 @@ export const DendaProduktuakAdmin = ({ productos, searchTerm }) => {
                     width="1000px"
                     className="mt-1 mb-3 form-control w-50"
                     value={data.name || producto.name}
-                    onChange={(e) => setData('name', e.target.value)}
-                    required
+                    onChange={(e) => {setData('name', e.target.value); console.log(e.target.value)}}
                     isFocused
                     autoComplete="name"
                   />

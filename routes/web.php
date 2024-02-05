@@ -96,7 +96,9 @@ Route::get('/Perfil/estatistikak', function(){
 Route::get('/Erosi', function(){
    return Inertia::render('Mainfolder/Erosi', []);
 });
-
+Route::get('/dark', function(){
+   return Inertia::render('Mainfolder/dark', []);
+});
 Route::delete('/Delete/{productid}', [ProductController::class, 'destroy']);
 
 Route::post('/likeEman', [LikeController::class, 'store'])->name('likeman');

@@ -1,0 +1,20 @@
+.button-container-dark {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .toggle-mode-button-dark {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+.toggle-mode-button-dark a{
+    padding-top: 4%;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    text-decoration: none;
+}

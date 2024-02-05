@@ -42,8 +42,8 @@ export function Signup() {
                </header>                <div className="container h-100">
                     <div className="row d-flex justify-content-center align-items-center h-75">
                         <div className="col col-xl-10">
-                            <div className="card p-lg-5 text-black">
-                                <form onSubmit={submit}>
+                            <div className=" p-lg-5 text-black" >
+                                <form onSubmit={submit} className='card' style={{ margin: 'auto' }}>
                                     <h5 className="fw-normal mb-3 pb-3" style={{ letterSpacing: '1px' }}>Sortu kontu bat</h5>
 
                                     <div className="mb-4">
