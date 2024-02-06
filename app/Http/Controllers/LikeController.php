@@ -37,6 +37,7 @@ class LikeController extends Controller
     public function userLikes(){
         $id = auth()->id();
         $likes = $this->getLikes(); 
+        $returnLike[] = null;
         foreach ($likes as $like){
             if ($like['bezeroa'] == $id){ 
                 $returnLike[] = $like['produktua'];
@@ -50,6 +51,7 @@ class LikeController extends Controller
     public function getProducts(){
         $productid = $this->userLikes();
         $products = Produktuak::all();
+        $produktua[] = null;
         foreach ($products as $product) {
             foreach ($productid as $id){
                 if ($product['id'] == $id){

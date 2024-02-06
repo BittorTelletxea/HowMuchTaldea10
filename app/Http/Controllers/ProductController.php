@@ -67,7 +67,7 @@ public function update(ProductUpdateRequest $request, $id)
         'name' => ['string', 'max:255', 'nullable'],
         'price' => ['integer', 'nullable'],
     ]);
-    // Cambia 'Product' a 'Produktuak'
+    
     $product = Produktuak::findOrFail($id);
     $product->update($request->validated());
 
