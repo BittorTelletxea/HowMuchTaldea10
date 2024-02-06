@@ -7,13 +7,8 @@ export const TarifakDark = () => {
                 <div className="produktuak-mota zoom border-white">
                         <h4 className="mt-2 text-white">Orokorra</h4>
                         <p className="text-white">How Much esperientzia doainik</p>
-                        <p className="display-6 text-white">0.00€</p><p className="text-white"> /hila</p>
-                        <button
-                        className="btn btn-outline-primary  mt-5 mb-4 text-white"
-                        style={{
-                        borderWidth: '2px',
-                  }}
-                > Nahi dut! </button>
+                        <p className="display-6 text-white">0.00€</p><p className="text-white" style={{ marginBottom: "10%" }}> /hila</p>
+                      
                 <p className="text-center text-white"><b>KARAKTERISTIKAK</b></p>  
                 <p className="text-white">Produktuak tasatu</p>               
                 <p className="text-white">Gehienez 10 produktu tasatu hilabetero</p>
@@ -26,12 +21,7 @@ export const TarifakDark = () => {
                         <h4 className="mt-2 text-white">Premium</h4>
                         <p className="text-white">Disfrutatu tasazio premium esperientzia</p>
                         <p className="display-6 text-white">4.99€</p><p className="text-white"> /hila</p>
-                        <button
-                        className="btn btn-outline-light  mt-5 text-white"
-                        style={{
-                        borderWidth: '2px',
-                  }}
-                > Nahi dut! </button>
+
                 <p className="text-center mt-4 text-white"><b>KARAKTERISTIKAK</b></p>  
                 <p className="text-white">Gehienez 30 produktu tasatu hilabetero</p>
                 <p className="text-white">Iragarkiak ez</p>
@@ -45,12 +35,7 @@ export const TarifakDark = () => {
                         <h4 className="mt-2 ">V.I.P</h4>
                         <p className="">Disfrutatu esperientzia gorena</p>
                         <p className="display-6 ">8.99€</p><p className=""> /hila</p>
-                        <button
-                        className="btn btn-outline-white  mt-5 text-white"
-                        style={{
-                        borderWidth: '2px',
-                  }}
-                > Nahi dut! </button>   
+                        
                 <p className="text-center mt-4"><b>KARAKTERISTIKAK</b></p>  
                 <p>Produktuak tasatu (ilimitatuak)</p>
                 <p className="text-white">Besteen karakteristikak</p>             

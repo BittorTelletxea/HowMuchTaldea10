@@ -34,17 +34,17 @@ export const FooterDark = () => {
               <img src={youtube} style={{ width: "15%", marginRight: "8%" }} alt="" />
             </div>
           </div>
-          <div>
-            <p className="h5 mb-4 text-black" style={{ fontWeight: 600 }}>Info gehiago</p>
+          <div className="text-center">
+            <p className="h5 mb-4 text-white" style={{ fontWeight: 600 }}>Info gehiago</p>
             <ul className="p-0" style={{ listStyle: 'none', cursor: 'pointer' }}>
               <li className="my-2">
-                <a className="text-black" href="/">howmuch@gmail.com</a>
+                <a className="text-white" href="/">howmuch@gmail.com</a>
               </li>
               <li className="my-2">
-                <a className="text-black" href="/">+34 644 54 76 34</a>
+                <a className="text-white" href="/">+34 644 54 76 34</a>
               </li>
               <li className="my-2">
-                <a className="text-black" href="/">IES Zubiri Manteo, Donostia</a>
+                <a className="text-white" href="/">IES Zubiri Manteo, Donostia</a>
               </li>
             </ul>
             <LoadScript googleMapsApiKey="AIzaSyCAhaOBpaLF0dvD2YXb-PBJAQkkIeO28Mk">

@@ -22,7 +22,29 @@ body{
     margin-right: 1%;
     transition: border-top-color 0.3s ease; /* Agrega una transición suave */
   }
+  .button-container-dark {
+    border-color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
   
+  
+  .toggle-mode-button-dark {
+    border-color: white;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+.toggle-mode-button-dark a{
+    padding-top: 4%;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    text-decoration: none;
+}
   /* Efecto de hover */
   .buruz:hover {
     text-decoration: none;
@@ -117,6 +139,25 @@ body{
   }
   .input1::after {
     border-bottom-color: #000; /* Cambia el color del borde inferior al obtener el foco */
+  }
+  .input11 {
+    width: 100%;
+    margin-bottom: 3%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid transparent; /* Borde inferior transparente */
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 18px; 
+    outline: none;
+    transition: border-color 0.3s ease; /* Agrega una transición suave al color del borde */
+  }
+  
+  .input11:focus {
+    border-bottom-color: #ffffff; /* Cambia el color del borde inferior al obtener el foco */
+  }
+  .input11::after {
+    border-bottom-color: #ffffff; /* Cambia el color del borde inferior al obtener el foco */
   }
 .pasahitza{
     text-align: right;

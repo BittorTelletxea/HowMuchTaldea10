@@ -40,8 +40,26 @@ body{
   text-decoration: none;
   border-top-color: black; /* Cambia el color del borde superior al hacer hover */
 }
+.buruz11 {
+  text-align: left;
+  border-top: 2px solid #000000;
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1%;
+  position: relative;
+  font-size: 17px;
+  margin-right: 1%;
+  transition: border-top-color 0.3s ease; /* Agrega una transición suave */
+}
+
+/* Efecto de hover */
+.buruz11:hover {
+  text-decoration: none;
+  border-top-color: rgb(255, 255, 255); /* Cambia el color del borde superior al hacer hover */
+}
 .dark nav{
-padding-left: 16%;
 
 }
 .ligt nav{

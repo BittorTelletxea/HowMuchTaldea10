@@ -16,10 +16,10 @@ export const HeaderDark = () => {
         </div>
         
         <nav>
-            <a href="Login" className="buruz1 text-white  ">TASAZIOA</a>
+            <a href="Login" className="buruz11 text-white  ">TASAZIOA</a>
             
-            <a href="Login" className="buruz1 text-white ">DENDA</a>
-            <a href="Login" className="buruz1 text-white ">KONTAKTUA</a>
+            <a href="Login" className="buruz11 text-white ">DENDA</a>
+            <a href="Login" className="buruz11 text-white ">KONTAKTUA</a>
         </nav>
         <div className="botoia navbar2 text-center">
             <div className="d-flex">

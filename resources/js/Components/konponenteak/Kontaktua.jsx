@@ -43,7 +43,7 @@ export const Kontaktua = () =>{
         </nav>
         <div className=" navbar2 text-center">
             <div className="d-flex">
-            <a href="Perfil"><img src={Logged} width='40' height='40' className=" mt-2"></img></a>
+            <a href="Perfil"className="text-black" style={{ fontSize: '2.5em', marginTop: '6%' }}><i class="bi bi-person-bounding-box"></i></a>
             
             <LogoutButton />
 </div>
