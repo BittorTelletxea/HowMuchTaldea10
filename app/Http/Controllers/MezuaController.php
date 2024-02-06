@@ -31,9 +31,13 @@ class MezuaController extends Controller
     }
 
     public function getMezuak(){
-        $mezua = Mezua::all();
-        return $mezua;
+        $mezuak = Mezua::all();
+        return response()->json($mezuak);
     }
 
+    public function api(){
+        $mezuak = Mezua::all();
+        return response()->json($mezuak);
+    }
 
 }

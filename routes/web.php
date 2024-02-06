@@ -109,6 +109,7 @@ Route::post('/Mezua', [MezuaController::class, 'store'])->name('mezua');
 
 Route::get('/KontaktuaAdmin', [MezuaController::class, 'index'])->name('konatktuadmin');
 
+
 require __DIR__.'/auth.php';
 
 
