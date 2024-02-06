@@ -272,6 +272,29 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 
   }
+  .button-container-dark {
+    border-color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  
+  .toggle-mode-button-dark {
+    border-color: white;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+.toggle-mode-button-dark a{
+    padding-top: 4%;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    text-decoration: none;
+}
   .btn b{
   }
 .toggle a{
@@ -327,7 +350,6 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .kontent button{
     margin-bottom: 10%;
-    color: rgb(248, 248, 248);
     border-color: rgb(255, 255, 255);
 }
 .kontent a:hover{
@@ -453,7 +475,6 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 footer{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-    background-image: url("../images/footer.webp");
     background-size: 100% 100%;
 }
 @media (max-width:1020px){
