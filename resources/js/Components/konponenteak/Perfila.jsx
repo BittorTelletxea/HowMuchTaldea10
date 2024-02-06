@@ -60,10 +60,8 @@ export const Perfila = () => {
             <nav aria-label="breadcrumb" className="bg-light rounded-3 p-3 mb-4">
               <ol className="breadcrumb mb-0">
                 <li className="breadcrumb-item"><a href="/Logged" className="text-black">Hasiera</a></li>
-                <li className="breadcrumb-item"><a href="#" className="text-black">Perfila</a></li>
-                <li className="breadcrumb-item active" aria-current="page">Usuario perfila</li>
-                <li className="breadcrumb-item"><a href="/Perfil/estatistikak" className="text-black">Estatistikak</a></li>
-                <li className="breadcrumb-item"><a href="/Like" className="text-black">Produktua</a></li>
+                <li className="breadcrumb-item active" aria-current="page">Usuario Perfila</li>
+                <li className="breadcrumb-item"><a href="/Like" className="text-black">Gustuko produktuak</a></li>
               </ol>
             </nav>
           </div>

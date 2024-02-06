@@ -61,7 +61,7 @@ export const Denda = ({ productos }) =>{
   </div>
 
   <div style={{ marginLeft: '20%', marginRight: '2%' }}>
-    <i className="bi bi-heart" style={{ fontSize: '35px', cursor: 'pointer' }}></i>
+    <a href="/Like" className='text-black'><i className="bi bi-heart" style={{ fontSize: '35px', cursor: 'pointer' }}></i></a>
   </div>
 </div>
 

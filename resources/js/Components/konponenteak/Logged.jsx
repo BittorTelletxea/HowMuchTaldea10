@@ -1,26 +1,27 @@
-import "../style/estiloa.css"
-import "../style/tasazioa.css";
-
-import logo from "../images/logo.png"
-import logged from "../images/login.png"
-import { NavButton } from "./NavButton";
-import { Footer } from "./Footer";
-import { Nagusia } from "./Nagusia";
-import { Norgara } from "./Norgara";
-import { Produktuak } from "./Produktuak";
-import { Tarifak } from "./Tarifak";
-import { Zeregin } from "./Zeregin";
+// En tu archivo Logged.js
+import React from 'react';
+import { useLocation } from 'react-router-dom';
 import { HeaderL } from "./HeaderL";
 import { FooterL } from "./FooterL";
+import { Nagusia } from "./Nagusia";
+import { Norgara } from "./Norgara";
+import { Tarifak } from "./Tarifak";
+import { HeaderAdmin } from "./HeaderAdmin";
+import { Footer } from "./Footer";
 import { NorgaraLog } from "./NorgaraLog";
-export const Logged = () =>{
-    return(
-        <div>
+
+export const Logged = ({ userEmail }) => {
+  return (
+    <div>
+      {userEmail && userEmail.toLowerCase() === 'ramirosantos@gmail.com' ? (
+        <HeaderAdmin />
+      ) : (
         <HeaderL />
-  <Nagusia />
-  <Norgara />
-  <Tarifak />
-  <FooterL />
-  </div>
-    );
-}
+      )}
+      <Nagusia />
+      <Norgara />
+      <Tarifak />
+      <FooterL />
+    </div>
+  );
+};

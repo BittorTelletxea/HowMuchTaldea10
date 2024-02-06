@@ -14,12 +14,15 @@ export  const HeaderAdmin = () => {
         </div>
         
         <nav>
-            <a href="produktuak" className="buruz text-black  ">PRODUKTUAK</a>
-            <a href="Denda" className="buruz text-black ">BEZEROAK</a>
+            <a href="produktuak" className="buruz1 text-black  ">PRODUKTUAK</a>
+            <a href="KontaktuaAdmin" className="buruz1 text-black ">MEZUAK</a>
+            <a href="errekuperazioa" className="buruz1 text-black ">BEZEROAK</a>
+
+
         </nav>
         <div className=" navbar2 text-center">
             <div className="d-flex">
-            <a href="Perfil"><img src={Logged} width='40' height='40' className=" mt-2"></img></a>
+            <a href="Perfil"className="text-black" style={{ fontSize: '2.5em', marginTop: '6%' }}><i class="bi bi-person-bounding-box"></i></a>
             
             <LogoutButton />
 </div>

@@ -15,7 +15,7 @@ export const HeaderDark = () => {
             </a>
         </div>
         
-        <nav>
+        <nav className="darkk">
             <a href="Login" className="buruz11 text-white  ">TASAZIOA</a>
             
             <a href="Login" className="buruz11 text-white ">DENDA</a>
