@@ -31,7 +31,6 @@ export function Login({ status, canResetPassword }) {
 
 
     useEffect(() => {
-
         return () => {
             reset('password');
         };
@@ -40,14 +39,15 @@ export function Login({ status, canResetPassword }) {
 
     const submit = (e) => {
         e.preventDefault();
-
         const response = post(route('login'));
-        try {
-            const userEmail = data.email;
-            router.get('Logged', { userEmail });
-        } catch (error) {
-            console.error('Cannot login');
-        } 
+        if (response.ok) {
+            try {
+                const userEmail = data.email;
+                router.get('Logged', { userEmail });
+            } catch (error) {
+                console.error('Cannot login');
+            } 
+        }
     };
 
 
