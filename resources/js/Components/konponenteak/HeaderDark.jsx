@@ -1,4 +1,5 @@
 
+
 import '../style/headerl.css'
 import 'popper.js';
 import 'bootstrap';
@@ -11,6 +12,7 @@ export const HeaderDark = () => {
     <header className="dark fixed-col pt-4 d-flex "style={{ backgroundColor: '#121212' }}>
         <div className="howmuch h-100 ">
             <a className="text-white navbar-brand display-1 fw-bolder text-center" href="/Logged" >
+            <img src={"/images/logo.png"} width="40" height="32" alt="" />
             <img src={"/images/logo.png"} width="40" height="32" alt="" />
                 How Much
             </a>
