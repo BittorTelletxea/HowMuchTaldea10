@@ -1,40 +1,28 @@
-// En tu archivo App.js
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import './App.css';
-import { Logged } from "../../Components/konponenteak/Logged";
-import { LoggedDark } from "../../Components/konponenteak/LoggedDark";
+// En tu archivo Logged.js
+import { FooterL } from '@/Components/konponenteak/FooterL';
+import { HeaderAdmin } from '@/Components/konponenteak/HeaderAdmin';
+import { HeaderL } from '@/Components/konponenteak/HeaderL';
+import { Nagusia } from '@/Components/konponenteak/Nagusia';
+import { Norgara } from '@/Components/konponenteak/Norgara';
+import { Tarifak } from '@/Components/konponenteak/Tarifak';
+import React from 'react';
+import { useLocation } from 'react-router-dom';
 
-function App() {
-  const [darkMode, setDarkMode] = useState(() => {
-    const storedValue = localStorage.getItem('darkMode');
-    return storedValue ? storedValue === 'true' : false;
-  });
 
-  const [userEmail, setUserEmail] = useState("");
-
-  useEffect(() => {
-    console.log('Dark mode changed:', darkMode);
-    document.body.className = darkMode ? 'dark-mode' : 'light-mode';
-  }, [darkMode]);
-
+const Logged = ({ userEmail }) => {
+  console.log(userEmail)
   return (
-    <Router>
-      <Switch>
-        {/* Ruta para el modo oscuro */}
-        <Route path="/logged-dark">
-          <LoggedDark />
-        </Route>
-
-        {/* Ruta para el modo normal */}
-        <Route path="/logged">
-          <Logged userEmail={userEmail} />
-        </Route>
-
-        {/* Otras rutas aquí */}
-      </Switch>
-    </Router>
+    <div>
+      {userEmail && userEmail.toLowerCase() === 'ramirosantos@gmail.com' ? (
+        <HeaderAdmin />
+      ) : (
+        <HeaderL />
+      )}
+      <Nagusia />
+      <Norgara />
+      <Tarifak />
+      <FooterL />
+    </div>
   );
-}
-
-export default App;
+};
+export default Logged;

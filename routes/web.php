@@ -5,6 +5,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\LoggedController;
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProductController;
@@ -24,14 +25,13 @@ Route::get('/Login', function () {
    return Inertia::render('Login', []);
 });
 Route::get('/login', function () {
-   return Inertia::render('Login', []);
+   return Inertia::render('login', []);
 });
 Route::get('/Signup', function () {
    return Inertia::render('Mainfolder/Signup', []);
 });
-Route::get('/Logged', function () {
-   return Inertia::render('Mainfolder/Logged', []);
-});
+Route::get('/Logged', [LoggedController::class, 'index']);
+
 Route::get('/Perfil', function () {
    return Inertia::render('Mainfolder/Perfil', []);
 });
