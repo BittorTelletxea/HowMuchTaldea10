@@ -16,11 +16,13 @@ const DendaProduktuak = ({ productos, searchTerm }) => {
         (producto) =>
           producto && producto.name && producto.name.toLowerCase().includes(searchTerm.toLowerCase())
       );
+
     const submit = (e, productId) => {
-        console.log('Product ID:', productId);
+
+       
         Inertia.post(route('likeman'), { produktua: productId });
+    
     };
-   
 
     return (
         <div>
@@ -65,7 +67,6 @@ const DendaProduktuak = ({ productos, searchTerm }) => {
                                 style={{ borderColor: 'transparent' }}
                                 onClick={(e) => submit(e, producto.id)}
                                 autoComplete="name"
-
                             >
                                 <i className="megusta bi bi-heart" style={{ padding: '0', fontSize: '20px', cursor: 'pointer', transition: 'color 0.3s ease' }}></i>
                             </button>

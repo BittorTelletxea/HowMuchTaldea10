@@ -11,6 +11,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\TasazioaController;
 use App\Http\Controllers\LikeController;
 use App\Http\Controllers\MezuaController;
+use App\Http\Controllers\UserController;
 
 
 Route::get('/', function () {
@@ -109,6 +110,7 @@ Route::post('/Mezua', [MezuaController::class, 'store'])->name('mezua');
 
 Route::get('/KontaktuaAdmin', [MezuaController::class, 'index'])->name('konatktuadmin');
 
+Route::get('/Bezeroa', [UserController::class, 'index'])->name('bezeroa');
 
 require __DIR__.'/auth.php';
 
