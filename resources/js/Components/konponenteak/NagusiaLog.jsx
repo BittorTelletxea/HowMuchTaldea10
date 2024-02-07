@@ -1,5 +1,4 @@
-import logo from "../images/logo.png"
-import nagusia from "../images/nagusia.png"
+
 export const NagusiaLog = () => {
   return (
     <div className="nagusia text-center vh-100  d-flex align-items-center  ">

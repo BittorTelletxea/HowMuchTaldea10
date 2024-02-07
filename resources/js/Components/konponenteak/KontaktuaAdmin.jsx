@@ -1,21 +1,8 @@
-import '../style/denda.css';
-import '../style/headerl.css'
-import "../style/tasazioa.css";
-import logo from "../images/logoL.png"
-import '../style/dendah.css'
-import buscador from "../images/buscador.png";
-import plus from "../images/plus.png"
-import { HeaderL } from './HeaderL';
-import  DendaProduktuak  from '../../Pages/Mainfolder/DendaProduktuak';
-import  Gustukoenak  from '../../Pages/Mainfolder/Gustukoenak';
+
 import LogoutButton from './LogoutButton';
-import Logged  from "../images/perfil.png";
-import { FooterL } from './FooterL';
+
 import React, { useState,useEffect } from 'react';
-import { DendaProduktuakAdmin } from "../../Pages/Mainfolder/DendaProduktuakAdmin";
-import { BrowserRouter as Router } from 'react-router-dom';
-import { InertiaApp } from '@inertiajs/inertia-react';
-import { HeaderAdmin } from './HeaderAdmin';
+
 
 
 
@@ -38,7 +25,7 @@ export const KontaktuaAdmin = () => {
     <header className="bg-light fixed-col pt-4 d-flex">
             <div className="howmuch h-100 ">
                 <a className="navbar-brand display-1 fw-bolder text-center" href="/Logged" >
-                <img src={logo} width="40" height="32" alt="" />
+                <img src={"/images/logoL.png"} width="40" height="32" alt="" />
                     How Much
                 </a>
             </div>

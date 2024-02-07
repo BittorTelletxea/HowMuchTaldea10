@@ -1,8 +1,5 @@
-import logo from "../images/logoL.png"
-import Logged  from "../images/perfil.png";
-import { NavButton } from "./NavButton";
+
 import '../style/headerl.css'
-import LogoutButton from "./LogoutButton";
 export const Header = () => {
     const currentPath = window.location.pathname;
 
@@ -10,7 +7,7 @@ export const Header = () => {
     <header className="ligt bg-light fixed-col pt-4 d-flex">
         <div className="howmuch h-100 ">
             <a className="navbar-brand display-1 fw-bolder text-center" href="/Logged" >
-            <img src={logo} width="40" height="32" alt="" />
+            <img src={"/images/logoL.png"} width="40" height="32" alt="" />
                 How Much
             </a>
         </div>

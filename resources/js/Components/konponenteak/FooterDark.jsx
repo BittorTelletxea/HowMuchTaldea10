@@ -1,10 +1,6 @@
 import React, { useRef, useEffect } from "react";
-import logo from "../images/logo.png";
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
-import instagram from "../images/instagram.png";
-import tiktok from "../images/tiktok.png";
-import youtube from "../images/youtube.png";
-import facebook from "../images/facebook.png";
+
 
 export const FooterDark = () => {
   const mapContainerStyle = {
@@ -28,10 +24,10 @@ export const FooterDark = () => {
         <div className="footer d-flex flex-wrap justify-content-between">
           <div className="align-self-center">
             <div className="redes mt-5">
-              <img src={instagram} style={{ width: "15%", marginRight: "8%" }} alt="" />
-              <img src={facebook} style={{ width: "10%", marginRight: "8%" }} alt="" />
-              <img src={tiktok} style={{ width: "10%", marginRight: "8%" }} alt="" />
-              <img src={youtube} style={{ width: "15%", marginRight: "8%" }} alt="" />
+              <img src={"/images/instagram.png"} style={{ width: "15%", marginRight: "8%" }} alt="" />
+              <img src={"/images/facebook.png"} style={{ width: "10%", marginRight: "8%" }} alt="" />
+              <img src={"/images/tiktok.png"} style={{ width: "10%", marginRight: "8%" }} alt="" />
+              <img src={"/images/youtube.png"} style={{ width: "15%", marginRight: "8%" }} alt="" />
             </div>
           </div>
           <div className="text-center">

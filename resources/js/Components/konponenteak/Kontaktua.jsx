@@ -1,8 +1,4 @@
-import sol from '../images/sol-1.jpg'
-import luna from '../images/luna-1.jpg'
-import logo from "../images/logoL.png"
-import Logged  from "../images/perfil.png";
-import { HeaderL } from './HeaderL'
+
 import { FooterL } from './FooterL'
 import '../style/kontaktua.css'
 import "../style/tasazioa.css";
@@ -31,7 +27,7 @@ export const Kontaktua = () =>{
      <header className="bg-light fixed-col pt-4 d-flex">
         <div className="howmuch h-100 ">
             <a className="navbar-brand display-1 fw-bolder text-center" href="/Logged" >
-            <img src={logo} width="40" height="32" alt="" />
+            <img src={"/images/logoL.png"} width="40" height="32" alt="" />
                 How Much
             </a>
         </div>

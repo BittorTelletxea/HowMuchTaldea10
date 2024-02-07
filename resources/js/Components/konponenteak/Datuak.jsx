@@ -1,5 +1,4 @@
 import '../style/datuak.css';
-import perfil from '../images/perfil.png';
 
 
 export const Datuak = () =>{
@@ -9,7 +8,7 @@ export const Datuak = () =>{
             <div className=" col1">
                 <div className='perfila d-flex'>
                     <p>Argazki publikoa:</p>
-                    <img src={perfil} width={'20%'} alt="" />
+                    <img src={'/images/perfil.png'} width={'20%'} alt="" />
                     <button
                     className="login btn btn-outline-primary rounded-pill "
                     style={{

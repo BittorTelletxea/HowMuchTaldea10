@@ -1,16 +1,12 @@
 import { useEffect, useState } from 'react';
-import Checkbox from '@/Components/Checkbox';
-import GuestLayout from '@/Layouts/GuestLayout';
-import InputError from '@/Components/InputError';
-import InputLabel from '@/Components/InputLabel';
-import PrimaryButton from '@/Components/PrimaryButton';
-import TextInput from '@/Components/TextInput';
-import { Head, Link, useForm } from '@inertiajs/react';
-import logo from "../images/logoL.png";
+
+import {  Link, useForm } from '@inertiajs/react';
 import "../style/login.css";
-import { HeaderL } from './HeaderL';
-import { FooterL } from './FooterL';
+import 'popper.js';
+import 'bootstrap';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import { router } from '@inertiajs/react';
+import InputError from '../InputError';
 
 
 export function Login({ status, canResetPassword }) {
@@ -42,12 +38,14 @@ export function Login({ status, canResetPassword }) {
         e.preventDefault();
 
         const response = post(route('login'));
+        if(response.ok){
         try {
             const userEmail = data.email;
             router.get('Logged', { userEmail });
         } catch (error) {
             console.error('Cannot login');
         } 
+    }
     };
 
 
@@ -57,7 +55,7 @@ export function Login({ status, canResetPassword }) {
                 <header>
                     <div className="howmuch h-100 mt-3">
                         <a className="navbar-brand text-black display-1 fw-bolder text-center" href="/">
-                            <img src={logo} width="50" height="40" alt="" />
+                            <img src={"/images/logoL.png"} width="50" height="40" alt="" />
                             How Much
                         </a>
                     </div>
@@ -93,6 +91,7 @@ export function Login({ status, canResetPassword }) {
                                             value={data.password}
                                             onChange={(e) => setData('password', e.target.value)}
                                         />
+                                        
                                         <InputError message={errors.password} className="mt-2" />
                                     </div>
                                     <Link href="/Pasahitza"

@@ -8,6 +8,8 @@ import { Norgara } from "./Norgara";
 import { Tarifak } from "./Tarifak";
 import { HeaderAdmin } from "./HeaderAdmin";
 import { Footer } from "./Footer";
+import '../style/headerl.css'
+
 import { NorgaraLog } from "./NorgaraLog";
 
 export const Logged = ({ userEmail }) => {
