@@ -5,15 +5,14 @@ import  UpdateProfileInformation  from '@/Pages/Profile/Partials/UpdateProfileIn
 import { UpdatePasswordForm } from '@/Pages/Profile/Partials/UpdatePasswordForm';
 import DeleteUserForm from '@/Pages/Profile/Partials/DeleteUserForm';
 import SoftDeleteForm from '@/Pages/Profile/Partials/SoftDeleteForm';
-import '@/Components/style../style/perfil.css';
+import '@/Components/style/perfil.css';
 
 import { Link, useForm, usePage } from '@inertiajs/react';
 import LogoutButton from './LogoutButton';
 
-// Supongamos que getAuthenticatedUser es una función que devuelve la información del usuario autenticado
+
 const getAuthenticatedUser = () => {
-  // Implementa la lógica para obtener el usuario autenticado
-  // Puedes ajustar esto según tu lógica de autenticación
+ 
   return {
     name: 'UsuarioAutenticado',
     email: 'autenticado@example.com',
