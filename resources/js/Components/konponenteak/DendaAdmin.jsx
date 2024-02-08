@@ -1,7 +1,7 @@
-import '../style/denda.css';
-import '../style/headerl.css'
-import "../style/tasazioa.css";
-import '../style/dendah.css'
+import '@/Components/style/denda.css';
+import '@/Components/style/headerl.css'
+import "@/Components/style/tasazioa.css";
+import '@/Components/style/dendah.css'
 import { HeaderL } from './HeaderL';
 
 import LogoutButton from './LogoutButton';

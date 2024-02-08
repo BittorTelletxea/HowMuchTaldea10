@@ -3,8 +3,8 @@ import { FooterL } from "../konponenteak/FooterL";
 import 'popper.js';
 import 'bootstrap';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import "../style/tasazioa.css";
-import "../style/login.css"
+import "@/Components/style/tasazioa.css";
+import "@/Components/style/login.css"
 import { useEffect } from 'react';
 import InputError from '@/Components/InputError';
 import { Head, Link, useForm } from '@inertiajs/react';

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/headerl.css'
+import '@/Components/style/headerl.css'
 import { InertiaLink } from '@inertiajs/inertia-react';
 
 const LogoutButton = () => {

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import InputError from '@/Components/InputError';
 
 import { Head, Link, useForm } from '@inertiajs/react';
-import "../style/login.css";
+import "@/Components/style/login.css";
 
 
 export function SignupDark() {

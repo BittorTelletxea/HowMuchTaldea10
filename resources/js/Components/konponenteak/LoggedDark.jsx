@@ -1,5 +1,5 @@
-import "../style/estiloa.css"
-import "../style/tasazioa.css";
+import "@/Components/style/estiloa.css"
+import "@/Components/style/tasazioa.css";
 
 
 import { HeaderLDark } from "./HeaderLDark";

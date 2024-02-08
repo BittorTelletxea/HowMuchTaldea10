@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import {  Link, useForm } from '@inertiajs/react';
-import "../style/login.css";
+import "@/Components/style/login.css";
 import 'popper.js';
 import 'bootstrap';
 import 'bootstrap-icons/font/bootstrap-icons.css';

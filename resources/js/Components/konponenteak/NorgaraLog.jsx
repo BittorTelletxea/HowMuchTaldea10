@@ -1,4 +1,4 @@
-import '../style/estiloa.css'
+import '@/Components/style/estiloa.css'
 export const NorgaraLog = () => {
     return (
       <div className="norgara bg-light" /*style={{

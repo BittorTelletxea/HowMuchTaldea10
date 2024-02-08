@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import {  useForm } from '@inertiajs/react';
-import "../style/login.css";
+import "@/Components/style/login.css";
 
 export function Pasahitza({ status, canResetPassword }) {
     const { data, setData, post, processing, errors, reset } = useForm({

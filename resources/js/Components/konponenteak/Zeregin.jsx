@@ -1,4 +1,4 @@
-import "../style/estiloa.css"
+import "@/Components/style/estiloa.css"
 export const Zeregin = () => {
     return (
       <div className="zeregin bg-black" /*style={{

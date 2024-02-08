@@ -1,6 +1,6 @@
 
-import '../style/estiloa.css'
-import '../style/dark.css'
+import '@/Components/style/estiloa.css'
+import '@/Components/style/dark.css'
 import 'popper.js';
 import 'bootstrap';
 import 'bootstrap-icons/font/bootstrap-icons.css';

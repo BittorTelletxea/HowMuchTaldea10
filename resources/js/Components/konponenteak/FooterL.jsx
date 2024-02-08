@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
-import "../style/footerl.css";
+import "@/Components/style/footerl.css";
 
 export  const FooterL = () => {
   const mapContainerStyle = {

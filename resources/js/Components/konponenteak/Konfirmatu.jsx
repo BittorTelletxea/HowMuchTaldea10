@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 
 import { Head, Link, useForm } from '@inertiajs/react';
-import "../style/login.css";
+import "@/Components/style/login.css";
 
 
 

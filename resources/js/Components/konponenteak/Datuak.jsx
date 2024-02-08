@@ -1,4 +1,4 @@
-import '../style/datuak.css';
+import '@/Components/style/datuak.css';
 
 
 export const Datuak = () =>{

@@ -3,7 +3,7 @@ import { Header } from "../konponenteak/Header";
 import { Footer } from "../konponenteak/Footer";
 import sol from "../images/sol-1.jpg";
 import luna from "../images/luna-1.jpg"
-import "../style/tasazioab.css";
+import "@/Components/style/tasazioab.css";
 
 export const Tasazioab = () => {
   return (

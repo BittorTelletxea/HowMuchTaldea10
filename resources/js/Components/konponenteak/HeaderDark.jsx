@@ -1,6 +1,6 @@
 
 
-import '../style/headerl.css'
+import '@/Components/style/headerl.css'
 import 'popper.js';
 import 'bootstrap';
 import 'bootstrap-icons/font/bootstrap-icons.css';

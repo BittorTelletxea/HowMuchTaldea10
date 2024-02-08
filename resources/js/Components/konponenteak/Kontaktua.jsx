@@ -1,12 +1,12 @@
 
 import { FooterL } from './FooterL'
-import '../style/kontaktua.css'
-import "../style/tasazioa.css";
+import '@/Components/style/kontaktua.css'
+import "@/Components/style/tasazioa.css";
 import { useForm } from '@inertiajs/inertia-react';
 import 'popper.js';
 import 'bootstrap';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import '../style/kontakh.css'
+import '@/Components/style/kontakh.css'
 import LogoutButton from './LogoutButton'
 export const Kontaktua = () =>{
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import '../style/estiloa.css';
+import '@/Components/style/estiloa.css';
 
 export const Nagusia = () => {
   const [darkMode, setDarkMode] = useState(() => localStorage.getItem('darkMode') === 'true');

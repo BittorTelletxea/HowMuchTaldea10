@@ -5,7 +5,7 @@ import  UpdateProfileInformation  from '@/Pages/Profile/Partials/UpdateProfileIn
 import { UpdatePasswordForm } from '@/Pages/Profile/Partials/UpdatePasswordForm';
 import DeleteUserForm from '@/Pages/Profile/Partials/DeleteUserForm';
 import SoftDeleteForm from '@/Pages/Profile/Partials/SoftDeleteForm';
-import '../style/perfil.css';
+import '@/Components/style../style/perfil.css';
 
 import { Link, useForm, usePage } from '@inertiajs/react';
 import LogoutButton from './LogoutButton';

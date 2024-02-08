@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import "../style/estiloa.css"
+import "@/Components/style/estiloa.css"
 
 export const NavButton = ({value}) => {
 
