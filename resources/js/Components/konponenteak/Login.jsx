@@ -66,7 +66,7 @@ export function Login({ status, canResetPassword }) {
                         </a>
                     </div>
                 </header>
-                <div className="container ">
+                <div className="container " style={{ marginLeft: '38%' }}>
                     <div className="row d-flex justify-content-center align-items-center h-75">
                         <div className="col col-xl-10" style={{ marginLeft: '-35%' }}>
                             <div className=" p-lg-5 text-black">
