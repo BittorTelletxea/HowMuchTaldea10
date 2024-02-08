@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import InputError from '@/Components/InputError';
 import { Head, Link, useForm } from '@inertiajs/react';
-import logo from "../images/logoL.png";
 import "../style/login.css";
 
 
@@ -41,7 +40,7 @@ export function Login({ status, canResetPassword }) {
                <header>
                    <div className="howmuch h-100 mt-3">
                        <a className="navbar-brand text-black display-1 fw-bolder text-center" href="/">
-                           <img src={logo} width="50" height="40" alt="" />
+                           <img src={"/images/logoL.png"} width="50" height="40" alt="" />
                            How Much
                        </a>
                    </div>
