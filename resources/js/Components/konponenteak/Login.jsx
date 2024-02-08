@@ -1,18 +1,13 @@
 import { useEffect, useState } from 'react';
 
 import {  Link, useForm } from '@inertiajs/react';
-
-import {  Link, useForm } from '@inertiajs/react';
 import "../style/login.css";
-import 'popper.js';
-import 'bootstrap';
-import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'popper.js';
 import 'bootstrap';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { router } from '@inertiajs/react';
 import InputError from '../InputError';
-import InputError from '../InputError';
+
 
 
 export function Login({ status, canResetPassword }) {
@@ -53,14 +48,13 @@ export function Login({ status, canResetPassword }) {
     }
     };
 
-
+    }
     return (
         <div className='dena bg-light'>
             <section className="vh-100 bg-light">
                 <header>
                     <div className="howmuch h-100 mt-3">
                         <a className="navbar-brand text-black display-1 fw-bolder text-center" href="/">
-                            <img src={"/images/logoL.png"} width="50" height="40" alt="" />
                             <img src={"/images/logoL.png"} width="50" height="40" alt="" />
                             How Much
                         </a>

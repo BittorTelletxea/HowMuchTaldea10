@@ -3,11 +3,7 @@ import { FooterL } from "../konponenteak/FooterL";
 import 'popper.js';
 import 'bootstrap';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import 'popper.js';
-import 'bootstrap';
-import 'bootstrap-icons/font/bootstrap-icons.css';
 import "../style/tasazioa.css";
-import "../style/login.css"
 import "../style/login.css"
 import { useEffect } from 'react';
 import InputError from '@/Components/InputError';
@@ -56,7 +52,6 @@ export function Tasazioa({ status, canResetPassword }) {
         <div className="howmuch h-100 ">
             <a className="navbar-brand display-1 fw-bolder text-center" href="/Logged" >
             <img src={"/images/logoL.png"} width="40" height="32" alt="" />
-            <img src={"/images/logoL.png"} width="40" height="32" alt="" />
                 How Much
             </a>
         </div>
@@ -85,11 +80,7 @@ export function Tasazioa({ status, canResetPassword }) {
             </div>
             <img src={'/images/lupa.png'} alt="" className="lupa" />
             <img src={"/images/zigzag.png"} width='20%' height='40%' alt="" className="linea"/>
-            <img src={'/images/lupa.png'} alt="" className="lupa" />
-            <img src={"/images/zigzag.png"} width='20%' height='40%' alt="" className="linea"/>
             <div>
-              <img src={'/images/carta.png'} width='20%' alt="" className="carta" /><br />
-              <img src={'/images/prezioa.png'} width='20%' alt="" className="prezioa"/>
               <img src={'/images/carta.png'} width='20%' alt="" className="carta" /><br />
               <img src={'/images/prezioa.png'} width='20%' alt="" className="prezioa"/>
             </div>
