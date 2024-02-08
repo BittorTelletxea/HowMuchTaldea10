@@ -3,7 +3,7 @@ import PrimaryButton from '@/Components/PrimaryButton';
 import { Head, Link, useForm } from '@inertiajs/react';
 import LogoutButton from '@/Components/konponenteak/LogoutButton';
 import '@/Components/style/headerl.css';
-import logo from "../../Components/images/logoL.png";
+import logo from "@/Components/images/logoL.png";
 
 
 export default function VerifyEmail({ status }) {

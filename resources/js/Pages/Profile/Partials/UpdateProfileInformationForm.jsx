@@ -5,7 +5,7 @@ import InputLabel from '@/Components/InputLabel';
 import TextInput from '@/Components/TextInput';
 import { Link, useForm, usePage } from '@inertiajs/react';
 import { Transition } from '@headlessui/react';
-import '../../../Components/style/perfil.css'
+import '@/Components/style/perfil.css'
 
 const UpdateProfileInformation = ({ mustVerifyEmail, status, onUpdateSuccess }) => {
   const user = usePage().props.auth.user;
