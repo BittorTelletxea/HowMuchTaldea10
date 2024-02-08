@@ -17,12 +17,11 @@ export const HeaderL = () => {
         <div className="howmuch h-100 ">
             <a className="navbar-brand display-1 fw-bolder text-center" href="/Logged" >
             <img src={"/images/logoL.png"} width="40" height="32" alt="" />
-            <img src={"/images/logoL.png"} width="40" height="32" alt="" />
                 How Much
             </a>
         </div>
         
-        <nav style={{ paddingLeft: '17%' }}>
+        <nav>
             <a href="Tasazioa" className="buruz1 text-black  ">TASAZIOA</a>
             <a href="Denda" className="buruz1 text-black ">DENDA</a>
             <a href="Kontaktua" className="buruz1 text-black ">KONTAKTUA</a>

@@ -1,5 +1,7 @@
 
-
+import 'popper.js';
+import 'bootstrap';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import LogoutButton from './LogoutButton';
 import "../style/headerl.css"
 import React, { useState,useEffect } from 'react';

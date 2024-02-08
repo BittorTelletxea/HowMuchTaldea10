@@ -9,7 +9,7 @@ import InputLabel from '@/Components/InputLabel';
 import TextInput from '@/Components/TextInput';
 import InputError from '@/Components/InputError';
 import { Transition } from '@headlessui/react';
-import SoftDeleteForm from '../../Pages/Profile/Partials/SoftDeleteForm';
+import SoftDeleteForm from '@/Pages/Profile/Partials/SoftDeleteForm';
 import LogoutButton from '@/Components/konponenteak/LogoutButton';
 
 

@@ -1,4 +1,4 @@
-import { Estatistikak } from "../../Components/konponenteak/Estatistikak";
+import { Estatistikak } from "@/Components/konponenteak/Estatistikak";
 
 
 import './App.css'

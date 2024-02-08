@@ -1,5 +1,5 @@
 import './App.css'
-import { Erosi } from "../../Components/konponenteak/Erosi";
+import { Erosi } from "@/Components/konponenteak/Erosi";
 function erosi() {
 
   return (

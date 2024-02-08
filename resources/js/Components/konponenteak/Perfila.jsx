@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { HeaderL } from './HeaderL';
 import { FooterL } from './FooterL';
-import  UpdateProfileInformation  from '../../Pages/Profile/Partials/UpdateProfileInformationForm';
-import { UpdatePasswordForm } from '../../Pages/Profile/Partials/UpdatePasswordForm';
-import DeleteUserForm from '../../Pages/Profile/Partials/DeleteUserForm';
-import SoftDeleteForm from '../../Pages/Profile/Partials/SoftDeleteForm';
+import  UpdateProfileInformation  from '@/Pages/Profile/Partials/UpdateProfileInformationForm';
+import { UpdatePasswordForm } from '@/Pages/Profile/Partials/UpdatePasswordForm';
+import DeleteUserForm from '@/Pages/Profile/Partials/DeleteUserForm';
+import SoftDeleteForm from '@/Pages/Profile/Partials/SoftDeleteForm';
 import '../style/perfil.css';
 
 import { Link, useForm, usePage } from '@inertiajs/react';

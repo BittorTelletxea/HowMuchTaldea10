@@ -4,8 +4,8 @@ import "../style/tasazioa.css";
 import '../style/dendah.css'
 
 import { HeaderL } from './HeaderL';
-import  DendaProduktuak  from '../../Pages/Mainfolder/DendaProduktuak';
-import  Gustukoenak  from '../../Pages/Mainfolder/Gustukoenak';
+import  DendaProduktuak  from '@/Pages/Mainfolder/DendaProduktuak';
+import  Gustukoenak  from '@/Pages/Mainfolder/Gustukoenak';
 import LogoutButton from './LogoutButton';
 import { FooterL } from './FooterL';
 import React, { useState } from 'react';

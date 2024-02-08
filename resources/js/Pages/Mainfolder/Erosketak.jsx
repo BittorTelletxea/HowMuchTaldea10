@@ -1,4 +1,4 @@
-import { Erosketak } from "../../Components/konponenteak/Erosketak";
+import { Erosketak } from "@/Components/konponenteak/Erosketak";
 
 
 import './App.css'

@@ -13,7 +13,6 @@ export const HeaderDark = () => {
         <div className="howmuch h-100 ">
             <a className="text-white navbar-brand display-1 fw-bolder text-center" href="/Logged" >
             <img src={"/images/logo.png"} width="40" height="32" alt="" />
-            <img src={"/images/logo.png"} width="40" height="32" alt="" />
                 How Much
             </a>
         </div>

@@ -1,4 +1,4 @@
-import { ProduktuaGehitu } from "../../Components/konponenteak/ProduktuaGehitu";
+import { ProduktuaGehitu } from "@/Components/konponenteak/ProduktuaGehitu";
 
 
 

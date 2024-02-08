@@ -1,5 +1,5 @@
 import './App.css'
-import { Konfirmatu } from "../../Components/konponenteak/Konfirmatu";
+import { Konfirmatu } from "@/Components/konponenteak/Konfirmatu";
 function konfirmatu() {
 
   return (

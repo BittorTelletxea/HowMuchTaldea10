@@ -1,5 +1,5 @@
 import './App.css'
-import { DendaAdmin } from "../../Components/konponenteak/DendaAdmin";
+import { DendaAdmin } from "@/Components/konponenteak/DendaAdmin";
 function dendaAdmin({productos}) {
 
   return (

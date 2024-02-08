@@ -1,4 +1,4 @@
-import { Kontaktua } from "../../Components/konponenteak/Kontaktua";
+import { Kontaktua } from "@/Components/konponenteak/Kontaktua";
 
 
 import './App.css'

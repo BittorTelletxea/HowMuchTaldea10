@@ -7,7 +7,7 @@ import { HeaderL } from './HeaderL';
 import LogoutButton from './LogoutButton';
 
 import React, { useState } from 'react';
-import { DendaProduktuakAdmin } from "../../Pages/Mainfolder/DendaProduktuakAdmin";
+import { DendaProduktuakAdmin } from "@/Pages/Mainfolder/DendaProduktuakAdmin";
 import { BrowserRouter as Router } from 'react-router-dom';
 
 

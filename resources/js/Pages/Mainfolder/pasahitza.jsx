@@ -1,5 +1,5 @@
 import './App.css'
-import { Pasahitza } from "../../Components/konponenteak/Pasahitza";
+import { Pasahitza } from "@/Components/konponenteak/Pasahitza";
 function pasahitza() {
 
   return (

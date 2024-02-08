@@ -1,5 +1,5 @@
 import './App.css'
-import { Tasazioab } from "../../Components/konponenteak/Tasazioab";
+import { Tasazioab } from "@/Components/konponenteak/Tasazioab";
 function tasazioab() {
 
   return (

@@ -1,4 +1,4 @@
-import { Salmentak } from "../../Components/konponenteak/Salmentak";
+import { Salmentak } from "@/Components/konponenteak/Salmentak";
 
 
 import './App.css'

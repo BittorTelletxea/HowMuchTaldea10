@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Header } from "@/Components/konponenteak/Header";
-import { Nagusia } from "../../Components/konponenteak/Nagusia";
+import { Nagusia } from "@/Components/konponenteak/Nagusia";
 import { NorgaraLog } from "@/Components/konponenteak/NorgaraLog";
-import { Tarifak } from "../../Components/konponenteak/Tarifak";
+import { Tarifak } from "@/Components/konponenteak/Tarifak";
 import { FooterL } from "@/Components/konponenteak/FooterL";
 import { HeaderDark } from "@/Components/konponenteak/HeaderDark";
-import '../../Components/style/bootstrap.min.css';
+import '@/Components/style/bootstrap.min.css';
 import { NagusiaDark } from '@/Components/konponenteak/NagusiaDark';
 import { Norgara } from '@/Components/konponenteak/Norgara';
 import { NorgaraDark } from '@/Components/konponenteak/NorgaraDark';

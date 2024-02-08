@@ -11,7 +11,7 @@ const Like = ({productos}) => {
     console.log(productos);
     return (
         <section className="bg-light">
-<header className="bg-light fixed-col pt-4 d-flex" style={{ justifyContent: 'space-between', marginLeft: '9%', marginRight: '9%' }}>
+ <header className="bg-light fixed-col pt-4 d-flex" style={{ justifyContent: 'space-between', marginLeft: '9%', marginRight: '9%' }}>
         <div className="howmuch h-100 ">
             <a className="navbar-brand display-1 fw-bolder text-center" href="/Logged" >
             <img src={"/images/logoL.png"} width="40" height="32" alt="" />
@@ -20,9 +20,9 @@ const Like = ({productos}) => {
         </div>
         
         <nav >
-            <a href="Produktuak" className="buruz1 text-black  " style={{ padding: '3%' }}>PRODUKTUAK</a>
-            <a href="KontaktuaAdmin" className="buruz1 text-black " style={{ padding: '3%' }}>MEZUAK</a>
-            <a href="Bezeroa" className="buruz1 text-black " style={{ padding: '3%' }}>BEZEROAK</a>
+            <a href="Tasazioa" className="buruz1  text-black  " style={{ padding: '3%' }}>TASAZIOA</a>
+            <a href="Denda" className="buruz1 text-black " style={{ padding: '3%' }}>DENDA</a>
+            <a href="Kontaktua" className="buruz1 text-black " style={{ padding: '3%' }}>KONTAKTUA</a>
         </nav>
         <div className=" navbar2 text-center">
             <div className="d-flex">
@@ -30,8 +30,9 @@ const Like = ({productos}) => {
             
             <LogoutButton />
 </div>
-            </div>
-            </header>       <div className="container py-5">
+            
+      </div>
+  </header>     <div className="container py-5">
         <div className="row">
           <div className="col">
             <nav aria-label="breadcrumb" className="bg-light rounded-3 p-3 mb-4">
