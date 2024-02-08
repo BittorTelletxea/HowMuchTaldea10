@@ -3,7 +3,6 @@ import PrimaryButton from '@/Components/PrimaryButton';
 import { Head, Link, useForm } from '@inertiajs/react';
 import LogoutButton from '@/Components/konponenteak/LogoutButton';
 import '@/Components/style/headerl.css';
-import logo from "@/Components/images/logoL.png";
 
 
 export default function VerifyEmail({ status }) {
@@ -19,7 +18,7 @@ export default function VerifyEmail({ status }) {
             <header>
                    <div className="howmuch h-100 mt-3 text-center">
                        <a className="navbar-brand text-black display-1 fw-bolder text-center" href="/">
-                           <img src={logo} width="50" height="40" alt="" />
+                           <img src={"/images/logoL.png"} width="50" height="40" alt="" />
                            How Much
                        </a>
                    </div>
