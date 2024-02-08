@@ -36,7 +36,7 @@ export const KontaktuaAdmin = () => {
         
         <nav >
             <a href="produktuak" className="buruz1 text-black  " style={{ padding: '3%' }}>PRODUKTUAK</a>
-            <a href="KontaktuaAdmin" className="buruz text-black " style={{ padding: '3%' }}>MEZUAK</a>
+            <a href="KontaktuaAdmin" className="buruz text-black " style={{ padding: '3%' , borderTop: '2px solid black'}}>MEZUAK</a>
             <a href="Bezeroa" className="buruz1 text-black " style={{ padding: '3%' }}>BEZEROAK</a>
         </nav>
         <div className=" navbar2 text-center">

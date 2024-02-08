@@ -22,6 +22,15 @@
     border-radius: 4px;
     cursor: pointer;
   }
+  .toggle-mode-button-darkd {
+    border-color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
 .toggle-mode-button-dark a{
     padding-top: 4%;
     color: rgb(0, 0, 0);

@@ -114,8 +114,8 @@ export const Perfila = () => {
             <div className='card' style={{ marginTop: '4%', height: '21%', paddingTop: '3%' }}>
               <b>ADMIN PANEL</b>
               <p>Sartu administratzaile moduan</p>
-                    <Link href="produktuak" className="btn btn-success mt-2" style={{ width: '50%', margin: 'auto', marginTop: '3%' }}>
-                      ADMIN PANEL
+                    <Link href="produktuak" className="btn btn-success mt-2" style={{ width: '35%', margin: 'auto', marginTop: '3%' }}>
+                      <b>ADMIN</b>
                     </Link>
             </div>
                               )} 

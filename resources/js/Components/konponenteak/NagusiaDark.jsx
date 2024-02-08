@@ -40,7 +40,7 @@ export const NagusiaDark = () => {
         </div>
         <div className="button-container">
         
-        <button className="toggle-mode-button-dark" onClick={toggleDarkMode}>
+        <button className="toggle-mode-button-darkd" onClick={toggleDarkMode}>
           <i className={`bi ${darkMode ? 'bi-sun' : 'bi-moon'}`}></i>
         </button>
         </div>

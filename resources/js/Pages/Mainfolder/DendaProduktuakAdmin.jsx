@@ -8,24 +8,24 @@ import InputLabel from '@/Components/InputLabel';
 import TextInput from '@/Components/TextInput';
 import InputError from '@/Components/InputError';
 import { Transition } from '@headlessui/react';
+import axios from 'axios';
+
 
 export const DendaProduktuakAdmin = ({ productos, searchTerm }) => {
   const history = useHistory();
   const [csrfToken, setCsrfToken] = useState('');
   const { data, setData, patch, errors, processing, recentlySuccessful } = useForm({
-    name: '',  // Valor inicial para name
-    price: '', // Valor inicial para price
+    name: '',  
+    price: '', 
   });
 
   useEffect(() => {
     const token = document.head.querySelector('meta[name="csrf-token"]').content;
     setCsrfToken(token);
 
-    // Inicializar data.name y data.price cuando el componente se monta
-    setData('name', ''); // Puedes establecer el valor inicial que desees para 'name'
-    setData('price', ''); // Puedes establecer el valor inicial que desees para 'price'
+    setData('name', '');
+    setData('price', ''); 
 
-    // Limpia el intervalo al desmontar el componente
     return () => clearInterval(reloadIntervalId);
   }, []);
 
@@ -35,6 +35,7 @@ export const DendaProduktuakAdmin = ({ productos, searchTerm }) => {
   );
 
   const confirmDeleteProduct = async (productId) => {
+
     try {
       const response = await fetch(`/api/products/${productId}`, {
         method: 'DELETE',
@@ -45,6 +46,8 @@ export const DendaProduktuakAdmin = ({ productos, searchTerm }) => {
       });
 
       if (response.ok) {
+        window.location.reload();
+
         console.log('Product deleted successfully');
       } else {
         console.error('Error deleting product:', response.statusText);
@@ -56,13 +59,12 @@ export const DendaProduktuakAdmin = ({ productos, searchTerm }) => {
 
   const submit = async (e, productId) => {
     e.preventDefault();
-    window.location.reload();
     console.log(data.name)
     try {
       const response = await axios.patch(`/api/products/${productId}`, {
         name: data.name,
-        // Asegúrate de no enviar el campo price si no lo quieres requerido
         price: data.price,
+        
       });
   
       if (response.status === 200) {
