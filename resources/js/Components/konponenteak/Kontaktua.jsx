@@ -1,13 +1,11 @@
-import sol from '../images/sol-1.jpg'
-import luna from '../images/luna-1.jpg'
-import logo from "../images/logoL.png"
-import Logged  from "../images/perfil.png";
-import { HeaderL } from './HeaderL'
+
 import { FooterL } from './FooterL'
 import '../style/kontaktua.css'
 import "../style/tasazioa.css";
 import { useForm } from '@inertiajs/inertia-react';
-
+import 'popper.js';
+import 'bootstrap';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import '../style/kontakh.css'
 import LogoutButton from './LogoutButton'
 export const Kontaktua = () =>{
@@ -28,28 +26,27 @@ export const Kontaktua = () =>{
 
     return(
         <div className="bg-light">
-     <header className="bg-light fixed-col pt-4 d-flex">
+     <header className="bg-light fixed-col pt-4 d-flex" style={{ justifyContent: 'space-between', marginLeft: '9%', marginRight: '9%' }}>
         <div className="howmuch h-100 ">
             <a className="navbar-brand display-1 fw-bolder text-center" href="/Logged" >
-            <img src={logo} width="40" height="32" alt="" />
+            <img src={"/images/logoL.png"} width="40" height="32" alt="" />
                 How Much
             </a>
         </div>
         
-        <nav>
-            <a href="Tasazioa" className="buruz1 text-black  ">TASAZIOA</a>
-            <a href="Denda" className="buruz1 text-black ">DENDA</a>
-            <a href="Kontaktua" className="buruz text-black ">KONTAKTUA</a>
+        <nav >
+            <a href="Tasazioa" className="buruz1 text-black  " style={{ padding: '3%' }}>TASAZIOA</a>
+            <a href="Denda" className="buruz1 text-black " style={{ padding: '3%' }}>DENDA</a>
+            <a href="Kontaktua" className="buruz text-black " style={{ padding: '3%' }}>KONTAKTUA</a>
         </nav>
         <div className=" navbar2 text-center">
             <div className="d-flex">
-            <a href="Perfil"className="text-black" style={{ fontSize: '2.5em', marginTop: '6%' }}><i class="bi bi-person-bounding-box"></i></a>
+            <a href="Perfil" className="text-black" style={{ fontSize: '2.5em', marginTop: '6%' }}><i class="bi bi-person-bounding-box"></i></a>
             
             <LogoutButton />
 </div>
-            
-      </div>
-  </header>
+            </div>
+            </header>
         <div className='izenburu'>
             <h2><b>Kontaktua</b></h2>
         </div>

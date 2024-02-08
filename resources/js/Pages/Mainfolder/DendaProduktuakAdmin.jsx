@@ -56,6 +56,7 @@ export const DendaProduktuakAdmin = ({ productos, searchTerm }) => {
 
   const submit = async (e, productId) => {
     e.preventDefault();
+    window.location.reload();
     console.log(data.name)
     try {
       const response = await axios.patch(`/api/products/${productId}`, {

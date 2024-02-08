@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import flecha from '../images/flexha.png';
 import '../style/estiloa.css';
 
 export const Nagusia = () => {
@@ -27,7 +26,7 @@ export const Nagusia = () => {
       </div>
       <div className="">
         <button className="toggle">
-          <a href="/gehitu" className="text-center"><img src={flecha} width={30} height={30} alt="" /></a>
+          <a href="/gehitu" className="text-center"><img src={'/images/flexha.png'} width={30} height={30} alt="" /></a>
         </button>
       </div>
       <div className="button-container-dark">

@@ -1,10 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import "../style/footerl.css";
-import instagram from "../images/instagraml.png";
-import tiktok from "../images/tiktokl.png";
-import youtube from "../images/youtubel.png";
-import facebook from "../images/facebookl.png";
 
 export  const FooterL = () => {
   const mapContainerStyle = {
@@ -27,10 +23,10 @@ export  const FooterL = () => {
       <div className="footer d-flex flex-wrap justify-content-between">
         <div className="align-self-center">
           <div className="redes mt-5">
-            <img src={instagram} style={{ width: "15%", marginRight: "8%" }} alt="" />
-            <img src={facebook} style={{ width: "10%", marginRight: "8%" }} alt="" />
-            <img src={tiktok} style={{ width: "10%", marginRight: "8%" }} alt="" />
-            <img src={youtube} style={{ width: "15%", marginRight: "8%" }} alt="" />
+          <img src={"/images/instagraml.png"} style={{ width: "15%", marginRight: "8%" }} alt="" />
+              <img src={"/images/facebookl.png"} style={{ width: "10%", marginRight: "8%" }} alt="" />
+              <img src={"/images/tiktokl.png"} style={{ width: "10%", marginRight: "8%" }} alt="" />
+              <img src={"/images/youtubel.png"} style={{ width: "15%", marginRight: "8%" }} alt="" />
           </div>
         </div>
         <div className="kontak">

@@ -24,15 +24,16 @@ const UserActions = ({ userId, onRestore, onForceDelete }) => {
         fetch(`/user/deleted/${userId}`, {
             method: 'delete',
         })
-          window.location.href = '/';
+          window.location.href = '/Bezeroak';
+          window.location.reload();
         
     };
     
 
   return (
     <div>
-      <button onClick={handleRestore}>Restaurar Usuario</button>
-      <button onClick={handleForceDelete}>Eliminar Forzadamente</button>
+      <button onClick={handleRestore} className='btn btn-dark' style={{ marginRight: '2%' }}>Errekuperatu</button>
+      <button onClick={handleForceDelete} className='btn btn-dark'>Ezabatu</button>
     </div>
   );
 };

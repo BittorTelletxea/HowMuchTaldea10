@@ -14,7 +14,7 @@ class UserController extends Controller
     }
 
     public function getUser(){
-        $bezeroa = User::all();
+        $bezeroa = User::withTrashed()->get();
         return $bezeroa;
     }
 

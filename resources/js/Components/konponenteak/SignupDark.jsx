@@ -1,14 +1,9 @@
 import { useEffect, useState } from 'react';
-import GuestLayout from '@/Layouts/GuestLayout';
 import InputError from '@/Components/InputError';
-import InputLabel from '@/Components/InputLabel';
-import PrimaryButton from '@/Components/PrimaryButton';
-import TextInput from '@/Components/TextInput';
+
 import { Head, Link, useForm } from '@inertiajs/react';
-import logo from "../images/logo.png";
 import "../style/login.css";
-import { HeaderL } from './HeaderL';
-import { FooterL } from './FooterL';
+
 
 export function SignupDark() {
     const [darkMode, setDarkMode] = useState(() => localStorage.getItem('darkMode') === 'true');
@@ -43,7 +38,7 @@ const toggleDarkMode = () => {
             <header>
                    <div className="howmuch h-100 mt-3">
                        <a className="navbar-brand text-black display-1 fw-bolder text-center text-white" href="/">
-                           <img src={logo} width="50" height="40" alt="" />
+                           <img src={"/images/logoL.png"} width="50" height="40" alt="" />
                            How Much
                        </a>
                    </div>

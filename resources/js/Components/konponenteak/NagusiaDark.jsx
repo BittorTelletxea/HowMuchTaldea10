@@ -1,12 +1,9 @@
-import logo from "../images/logo.png"
-import nagusia from "../images/nagusia.png"
-import flecha from '../images/image (21).png'
+
 import '../style/estiloa.css'
 import '../style/dark.css'
 import 'popper.js';
 import 'bootstrap';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import sol from '../images/image__22_-removebg-preview.png'
 import React, { useEffect, useState } from 'react';
 
 export const NagusiaDark = () => {
@@ -38,7 +35,7 @@ export const NagusiaDark = () => {
     <div className="">
         
         <button className="toggle ">
-          <a href="/gehitu" className="text-center"><img src={flecha} width={30} height={30} alt="" /></a>
+          <a href="/gehitu" className="text-center"><img src={'/images/image (21).png'} width={30} height={30} alt="" /></a>
         </button>
         </div>
         <div className="button-container">

@@ -1,15 +1,12 @@
 import '../style/denda.css';
 import '../style/headerl.css'
 import "../style/tasazioa.css";
-import logo from "../images/logoL.png"
 import '../style/dendah.css'
-import buscador from "../images/buscador.png";
-import plus from "../images/plus.png"
+
 import { HeaderL } from './HeaderL';
 import  DendaProduktuak  from '../../Pages/Mainfolder/DendaProduktuak';
 import  Gustukoenak  from '../../Pages/Mainfolder/Gustukoenak';
 import LogoutButton from './LogoutButton';
-import Logged  from "../images/perfil.png";
 import { FooterL } from './FooterL';
 import React, { useState } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
@@ -19,28 +16,27 @@ export const Denda = ({ productos }) =>{
 
     return(
         <div className='denda bg-light'>
-     <header className="bg-light fixed-col pt-4 d-flex">
+    <header className="bg-light fixed-col pt-4 d-flex" style={{ justifyContent: 'space-between', marginLeft: '9%', marginRight: '9%' }}>
         <div className="howmuch h-100 ">
             <a className="navbar-brand display-1 fw-bolder text-center" href="/Logged" >
-            <img src={logo} width="40" height="32" alt="" />
+            <img src={"/images/logoL.png"} width="40" height="32" alt="" />
                 How Much
             </a>
         </div>
         
-        <nav>
-            <a href="Tasazioa" className="buruz1 text-black  ">TASAZIOA</a>
-            <a href="Denda" className="buruz text-black ">DENDA</a>
-            <a href="Kontaktua" className="buruz1 text-black ">KONTAKTUA</a>
+        <nav >
+            <a href="Tasazioa" className="buruz1 text-black  " style={{ padding: '3%' }}>TASAZIOA</a>
+            <a href="Denda" className="buruz text-black " style={{ padding: '3%' }}>DENDA</a>
+            <a href="Kontaktua" className="buruz1 text-black " style={{ padding: '3%' }}>KONTAKTUA</a>
         </nav>
         <div className=" navbar2 text-center">
             <div className="d-flex">
-            <a href="Perfil"className="text-black" style={{ fontSize: '2.5em', marginTop: '6%' }}><i class="bi bi-person-bounding-box"></i></a>
+            <a href="Perfil" className="text-black" style={{ fontSize: '2.5em', marginTop: '6%' }}><i class="bi bi-person-bounding-box"></i></a>
             
             <LogoutButton />
 </div>
-            
-      </div>
-  </header>
+            </div>
+            </header>
   <div className='head fixed d-flex' style={{ justifyContent: 'space-between'}}>
   <div style={{ marginRight: '20%' }}>
     <h4 style={{ color: '' }} className='text-light'>DENDA   </h4>
@@ -56,7 +52,7 @@ export const Denda = ({ productos }) =>{
       onChange={(e) => setSearchTerm(e.target.value)}
     />
     <span className="" id="search-addon">
-      <img src={buscador} width={50} alt="" />
+      <img src={"/images/buscador.png"} width={50} alt="" />
     </span>
   </div>
 
@@ -76,7 +72,7 @@ export const Denda = ({ productos }) =>{
     <div className="button-container">
         
         <button className="toggle-mode-button">
-          <a href="/gehitu" className='text-white'><img src={plus} width={40} height={40} alt="" /><b>IGO PRODUKTUA</b></a>
+          <a href="/gehitu" className='text-white'><img src={"/images/plus.png"} width={40} height={40} alt="" /><b>IGO PRODUKTUA</b></a>
         </button>
         </div>
         <FooterL />
