@@ -19,7 +19,7 @@ export  const FooterL = () => {
   };
 
   return (
-    <div className="bg-light footer d-flex flex-column mx-auto py-5" style={{ width: "90%" }}>
+    <div className="bg-light footer d-flex flex-column mx-auto py-5" style={{ width: "100%", paddingLeft: '4%', paddingRight: '4%' }}>
       <div className="footer d-flex flex-wrap justify-content-between">
         <div className="align-self-center">
           <div className="redes mt-5">

@@ -38,9 +38,9 @@ class ProductController extends Controller
 
        $imageName = uniqid() . '_' . time() . '.' . $request->file('image')->extension();
 
-       $request->file('image')->storeAs("public/images", $imageName);
+       $request->file('image')->storeAs("/imagesdb", $imageName);
 
-       $image = "/storage/images/{$imageName}";
+       $image = "/imagesdb/{$imageName}";
 
        $validatedData["image"] = $image;
 
