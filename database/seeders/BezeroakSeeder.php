@@ -167,7 +167,7 @@ class BezeroakSeeder extends Seeder
       'price' => '5',
       'seller' => '1',
       'rate' => 0,
-      'image' => '/storage/images/guantes.jpg',
+      'image' => '/imagesdb/guantes.jpg',
      ]);
 	
 
@@ -176,7 +176,7 @@ class BezeroakSeeder extends Seeder
       'price' => '15',
       'seller' => '1',
       'rate' => 0,
-      'image' => '/storage/images/bufanda.jpg',
+      'image' => '/imagesdb/bufanda.jpg',
      ]);
 
      DB::table('produktuak')->insert([
@@ -184,7 +184,7 @@ class BezeroakSeeder extends Seeder
       'price' => '30',
       'seller' => '1',
       'rate' => 0,
-      'image' => '/storage/images/65a507470d979_1705314119.jpg',
+      'image' => '/imagesdb/65a507470d979_1705314119.jpg',
      ]);
 
      DB::table('produktuak')->insert([
@@ -192,7 +192,7 @@ class BezeroakSeeder extends Seeder
       'price' => '30',
       'seller' => '1',
       'rate' => 0,
-      'image' => '/storage/images/65a507570f9f7_1705314135.jpg',
+      'image' => '/imagesdb/65a507570f9f7_1705314135.jpg',
      ]);
 
      DB::table('produktuak')->insert([
@@ -200,7 +200,7 @@ class BezeroakSeeder extends Seeder
       'price' => '800',
       'seller' => '1',
       'rate' => 0,
-      'image' => '/storage/images/camiseta.jpg',
+      'image' => '/imagesdb/camiseta.jpg',
      ]);
 
      DB::table('produktuak')->insert([
@@ -208,7 +208,7 @@ class BezeroakSeeder extends Seeder
       'price' => '3000',
       'seller' => '1',
       'rate' => 0,
-      'image' => '/storage/images/huesca.jpg',
+      'image' => '/imagesdb/huesca.jpg',
      ]);
 
      DB::table('produktuak')->insert([
@@ -216,7 +216,7 @@ class BezeroakSeeder extends Seeder
       'price' => '499',
       'seller' => '1',
       'rate' => 0,
-      'image' => '/storage/images/ps5.jpg',
+      'image' => '/imagesdb/ps5.jpg',
      ]);
 
      DB::table('produktuak')->insert([
@@ -224,7 +224,7 @@ class BezeroakSeeder extends Seeder
       'price' => '10',
       'seller' => '1',
       'rate' => 0,
-      'image' => '/storage/images/teclado.jpg',
+      'image' => '/imagesdb/teclado.jpg',
      ]);
 
    
