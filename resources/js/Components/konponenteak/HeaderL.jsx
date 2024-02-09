@@ -21,7 +21,7 @@ export const HeaderL = () => {
             </a>
         </div>
         
-        <nav>
+        <nav style={{ paddingLeft: '17%' }}>
             <a href="Tasazioa" className="buruz1 text-black  ">TASAZIOA</a>
             <a href="Denda" className="buruz1 text-black ">DENDA</a>
             <a href="Kontaktua" className="buruz1 text-black ">KONTAKTUA</a>
