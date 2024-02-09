@@ -3,86 +3,86 @@
     "file": "assets/App-783a3642.css",
     "src": "App.css"
   },
-  "_ApplicationLogo-5bd0dc6e.js": {
-    "file": "assets/ApplicationLogo-5bd0dc6e.js",
+  "_ApplicationLogo-3072b12d.js": {
+    "file": "assets/ApplicationLogo-3072b12d.js",
     "imports": [
       "resources/js/app.jsx"
     ]
   },
-  "_AuthenticatedLayout-d5064b12.js": {
-    "file": "assets/AuthenticatedLayout-d5064b12.js",
+  "_AuthenticatedLayout-5b8a7749.js": {
+    "file": "assets/AuthenticatedLayout-5b8a7749.js",
     "imports": [
       "resources/js/app.jsx",
-      "_ApplicationLogo-5bd0dc6e.js",
-      "_transition-66e34a33.js"
+      "_ApplicationLogo-3072b12d.js",
+      "_transition-08b27e44.js"
     ]
   },
-  "_FooterL-3c576cfb.js": {
+  "_FooterL-00be753d.js": {
     "css": [
       "assets/footerl-a3583dd3.css"
     ],
-    "file": "assets/FooterL-3c576cfb.js",
+    "file": "assets/FooterL-00be753d.js",
     "imports": [
       "resources/js/app.jsx"
     ]
   },
-  "_InputError-82f35005.js": {
-    "file": "assets/InputError-82f35005.js",
+  "_InputError-c929f6ee.js": {
+    "file": "assets/InputError-c929f6ee.js",
     "imports": [
       "resources/js/app.jsx"
     ]
   },
-  "_InputLabel-aa67aee3.js": {
-    "file": "assets/InputLabel-aa67aee3.js",
+  "_InputLabel-6ab7cb82.js": {
+    "file": "assets/InputLabel-6ab7cb82.js",
     "imports": [
       "resources/js/app.jsx"
     ]
   },
-  "_LogoutButton-70bb7eb2.js": {
+  "_LogoutButton-8150591c.js": {
     "css": [
       "assets/headerl-5e3c4f3f.css"
     ],
-    "file": "assets/LogoutButton-70bb7eb2.js",
+    "file": "assets/LogoutButton-8150591c.js",
     "imports": [
       "resources/js/app.jsx",
-      "_index-814c90b5.js"
+      "_index-03db010d.js"
     ]
   },
-  "_NagusiaDark-2db2e1a1.js": {
+  "_NagusiaDark-751efd5b.js": {
     "css": [
       "assets/headerl-5e3c4f3f.css",
       "assets/estiloa-1caec966.css",
       "assets/dark-ab522951.css"
     ],
-    "file": "assets/NagusiaDark-2db2e1a1.js",
+    "file": "assets/NagusiaDark-751efd5b.js",
     "imports": [
       "resources/js/app.jsx",
-      "_bootstrap-icons-3eb0fae3.js"
+      "_bootstrap-icons-ae402bd8.js"
     ]
   },
-  "_Norgara-e98c7bed.js": {
+  "_Norgara-710494ca.js": {
     "css": [
       "assets/estiloa-1caec966.css"
     ],
-    "file": "assets/Norgara-e98c7bed.js",
+    "file": "assets/Norgara-710494ca.js",
     "imports": [
       "resources/js/app.jsx"
     ]
   },
-  "_PrimaryButton-5ffba604.js": {
-    "file": "assets/PrimaryButton-5ffba604.js",
+  "_PrimaryButton-c07d2d5b.js": {
+    "file": "assets/PrimaryButton-c07d2d5b.js",
     "imports": [
       "resources/js/app.jsx",
-      "_ApplicationLogo-5bd0dc6e.js"
+      "_ApplicationLogo-3072b12d.js"
     ]
   },
-  "_TextInput-752aa76c.js": {
-    "file": "assets/TextInput-752aa76c.js",
+  "_TextInput-28f72fc5.js": {
+    "file": "assets/TextInput-28f72fc5.js",
     "imports": [
       "resources/js/app.jsx"
     ]
   },
-  "_bootstrap-icons-3eb0fae3.js": {
+  "_bootstrap-icons-ae402bd8.js": {
     "assets": [
       "assets/bootstrap-icons-476adf42.woff2",
       "assets/bootstrap-icons-bb1de989.woff"
@@ -90,39 +90,39 @@
     "css": [
       "assets/bootstrap-icons-9b588ab0.css"
     ],
-    "file": "assets/bootstrap-icons-3eb0fae3.js",
+    "file": "assets/bootstrap-icons-ae402bd8.js",
     "imports": [
       "resources/js/app.jsx"
     ]
   },
-  "_index-814c90b5.js": {
-    "file": "assets/index-814c90b5.js",
+  "_index-03db010d.js": {
+    "file": "assets/index-03db010d.js",
     "imports": [
       "resources/js/app.jsx",
-      "_index-ae2d02a2.js"
+      "_index-feb9df55.js"
     ]
   },
-  "_index-ae2d02a2.js": {
-    "file": "assets/index-ae2d02a2.js",
+  "_index-feb9df55.js": {
+    "file": "assets/index-feb9df55.js",
     "imports": [
       "resources/js/app.jsx"
     ]
   },
-  "_react-router-3cb3ebfe.js": {
-    "file": "assets/react-router-3cb3ebfe.js",
+  "_react-router-d1f2c3db.js": {
+    "file": "assets/react-router-d1f2c3db.js",
     "imports": [
       "resources/js/app.jsx"
     ]
   },
-  "_react-router-dom-d800b529.js": {
-    "file": "assets/react-router-dom-d800b529.js",
+  "_react-router-dom-acd2cf0d.js": {
+    "file": "assets/react-router-dom-acd2cf0d.js",
     "imports": [
-      "_react-router-3cb3ebfe.js",
+      "_react-router-d1f2c3db.js",
       "resources/js/app.jsx"
     ]
   },
-  "_transition-66e34a33.js": {
-    "file": "assets/transition-66e34a33.js",
+  "_transition-08b27e44.js": {
+    "file": "assets/transition-08b27e44.js",
     "imports": [
       "resources/js/app.jsx"
     ]
@@ -168,26 +168,26 @@
     "src": "perfil.css"
   },
   "resources/js/Pages/Auth/ConfirmPassword.jsx": {
-    "file": "assets/ConfirmPassword-cdd19f26.js",
+    "file": "assets/ConfirmPassword-1f8c0879.js",
     "imports": [
       "resources/js/app.jsx",
-      "_PrimaryButton-5ffba604.js",
-      "_InputError-82f35005.js",
-      "_InputLabel-aa67aee3.js",
-      "_TextInput-752aa76c.js",
-      "_ApplicationLogo-5bd0dc6e.js"
+      "_PrimaryButton-c07d2d5b.js",
+      "_InputError-c929f6ee.js",
+      "_InputLabel-6ab7cb82.js",
+      "_TextInput-28f72fc5.js",
+      "_ApplicationLogo-3072b12d.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Auth/ConfirmPassword.jsx"
   },
   "resources/js/Pages/Auth/ForgotPassword.jsx": {
-    "file": "assets/ForgotPassword-cb51700d.js",
+    "file": "assets/ForgotPassword-dd550f23.js",
     "imports": [
       "resources/js/app.jsx",
-      "_PrimaryButton-5ffba604.js",
-      "_InputError-82f35005.js",
-      "_TextInput-752aa76c.js",
-      "_ApplicationLogo-5bd0dc6e.js"
+      "_PrimaryButton-c07d2d5b.js",
+      "_InputError-c929f6ee.js",
+      "_TextInput-28f72fc5.js",
+      "_ApplicationLogo-3072b12d.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Auth/ForgotPassword.jsx"
@@ -196,36 +196,36 @@
     "css": [
       "assets/login-096068f8.css"
     ],
-    "file": "assets/Login-6d025213.js",
+    "file": "assets/Login-52fecf79.js",
     "imports": [
       "resources/js/app.jsx",
-      "_InputError-82f35005.js"
+      "_InputError-c929f6ee.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Auth/Login.jsx"
   },
   "resources/js/Pages/Auth/Register.jsx": {
-    "file": "assets/Register-6a84ebcc.js",
+    "file": "assets/Register-93e5a185.js",
     "imports": [
       "resources/js/app.jsx",
-      "_PrimaryButton-5ffba604.js",
-      "_InputError-82f35005.js",
-      "_InputLabel-aa67aee3.js",
-      "_TextInput-752aa76c.js",
-      "_ApplicationLogo-5bd0dc6e.js"
+      "_PrimaryButton-c07d2d5b.js",
+      "_InputError-c929f6ee.js",
+      "_InputLabel-6ab7cb82.js",
+      "_TextInput-28f72fc5.js",
+      "_ApplicationLogo-3072b12d.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Auth/Register.jsx"
   },
   "resources/js/Pages/Auth/ResetPassword.jsx": {
-    "file": "assets/ResetPassword-406e370b.js",
+    "file": "assets/ResetPassword-86f5fce6.js",
     "imports": [
       "resources/js/app.jsx",
-      "_PrimaryButton-5ffba604.js",
-      "_InputError-82f35005.js",
-      "_InputLabel-aa67aee3.js",
-      "_TextInput-752aa76c.js",
-      "_ApplicationLogo-5bd0dc6e.js"
+      "_PrimaryButton-c07d2d5b.js",
+      "_InputError-c929f6ee.js",
+      "_InputLabel-6ab7cb82.js",
+      "_TextInput-28f72fc5.js",
+      "_ApplicationLogo-3072b12d.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Auth/ResetPassword.jsx"
@@ -234,22 +234,22 @@
     "css": [
       "assets/headerl-5e3c4f3f.css"
     ],
-    "file": "assets/VerifyEmail-e2f44346.js",
+    "file": "assets/VerifyEmail-db9bbdb2.js",
     "imports": [
       "resources/js/app.jsx",
-      "_index-814c90b5.js",
-      "_index-ae2d02a2.js"
+      "_index-03db010d.js",
+      "_index-feb9df55.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Auth/VerifyEmail.jsx"
   },
   "resources/js/Pages/Dashboard.jsx": {
-    "file": "assets/Dashboard-d7551174.js",
+    "file": "assets/Dashboard-d265aad9.js",
     "imports": [
       "resources/js/app.jsx",
-      "_AuthenticatedLayout-d5064b12.js",
-      "_ApplicationLogo-5bd0dc6e.js",
-      "_transition-66e34a33.js"
+      "_AuthenticatedLayout-5b8a7749.js",
+      "_ApplicationLogo-3072b12d.js",
+      "_transition-08b27e44.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Dashboard.jsx"
@@ -259,11 +259,11 @@
       "assets/login-096068f8.css",
       "assets/App-783a3642.css"
     ],
-    "file": "assets/Login-bc872725.js",
+    "file": "assets/Login-09c0e69d.js",
     "imports": [
       "resources/js/app.jsx",
-      "_bootstrap-icons-3eb0fae3.js",
-      "_InputError-82f35005.js"
+      "_bootstrap-icons-ae402bd8.js",
+      "_InputError-c929f6ee.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Login.jsx"
@@ -280,13 +280,13 @@
       "assets/footerl-a3583dd3.css",
       "assets/dark-ab522951.css"
     ],
-    "file": "assets/App-b39e432f.js",
+    "file": "assets/App-5d0a0231.js",
     "imports": [
       "resources/js/app.jsx",
-      "_bootstrap-icons-3eb0fae3.js",
-      "_Norgara-e98c7bed.js",
-      "_FooterL-3c576cfb.js",
-      "_NagusiaDark-2db2e1a1.js"
+      "_bootstrap-icons-ae402bd8.js",
+      "_Norgara-710494ca.js",
+      "_FooterL-00be753d.js",
+      "_NagusiaDark-751efd5b.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Mainfolder/App.jsx"
@@ -295,46 +295,46 @@
     "css": [
       "assets/headerl-5e3c4f3f.css"
     ],
-    "file": "assets/BezeroakAdmin-bf84ba5d.js",
+    "file": "assets/BezeroakAdmin-87e7d1da.js",
     "imports": [
       "resources/js/app.jsx",
-      "_index-ae2d02a2.js",
-      "_bootstrap-icons-3eb0fae3.js",
-      "_TextInput-752aa76c.js",
+      "_index-feb9df55.js",
+      "_bootstrap-icons-ae402bd8.js",
+      "_TextInput-28f72fc5.js",
       "resources/js/Pages/Profile/Partials/SoftDeleteForm.jsx",
-      "_LogoutButton-70bb7eb2.js",
-      "_index-814c90b5.js"
+      "_LogoutButton-8150591c.js",
+      "_index-03db010d.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Mainfolder/BezeroakAdmin.jsx"
   },
   "resources/js/Pages/Mainfolder/DendaProduktuak.jsx": {
-    "file": "assets/DendaProduktuak-6f33e227.js",
+    "file": "assets/DendaProduktuak-c274a12b.js",
     "imports": [
       "resources/js/app.jsx",
-      "_index-ae2d02a2.js",
-      "_bootstrap-icons-3eb0fae3.js",
-      "_TextInput-752aa76c.js"
+      "_index-feb9df55.js",
+      "_bootstrap-icons-ae402bd8.js",
+      "_TextInput-28f72fc5.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Mainfolder/DendaProduktuak.jsx"
   },
   "resources/js/Pages/Mainfolder/DendaProduktuakAdmin.jsx": {
-    "file": "assets/DendaProduktuakAdmin-08dda6c9.js",
+    "file": "assets/DendaProduktuakAdmin-250979f0.js",
     "imports": [
       "resources/js/app.jsx",
-      "_bootstrap-icons-3eb0fae3.js",
-      "_InputLabel-aa67aee3.js",
-      "_TextInput-752aa76c.js",
-      "_InputError-82f35005.js",
-      "_react-router-3cb3ebfe.js",
-      "_transition-66e34a33.js"
+      "_bootstrap-icons-ae402bd8.js",
+      "_InputLabel-6ab7cb82.js",
+      "_TextInput-28f72fc5.js",
+      "_InputError-c929f6ee.js",
+      "_react-router-d1f2c3db.js",
+      "_transition-08b27e44.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Mainfolder/DendaProduktuakAdmin.jsx"
   },
   "resources/js/Pages/Mainfolder/Gustukoenak.jsx": {
-    "file": "assets/Gustukoenak-932f118f.js",
+    "file": "assets/Gustukoenak-1cf9f7fd.js",
     "imports": [
       "resources/js/app.jsx"
     ],
@@ -346,13 +346,13 @@
       "assets/headerl-5e3c4f3f.css",
       "assets/App-783a3642.css"
     ],
-    "file": "assets/KontaktuaAdmin-ead4a8c7.js",
+    "file": "assets/KontaktuaAdmin-13eeeab2.js",
     "imports": [
       "resources/js/app.jsx",
-      "_bootstrap-icons-3eb0fae3.js",
-      "_LogoutButton-70bb7eb2.js",
-      "_index-814c90b5.js",
-      "_index-ae2d02a2.js"
+      "_bootstrap-icons-ae402bd8.js",
+      "_LogoutButton-8150591c.js",
+      "_index-03db010d.js",
+      "_index-feb9df55.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Mainfolder/KontaktuaAdmin.jsx"
@@ -365,14 +365,14 @@
       "assets/tasazioa-b02c24df.css",
       "assets/footerl-a3583dd3.css"
     ],
-    "file": "assets/Like-354228e3.js",
+    "file": "assets/Like-24048661.js",
     "imports": [
       "resources/js/app.jsx",
-      "_bootstrap-icons-3eb0fae3.js",
-      "_LogoutButton-70bb7eb2.js",
-      "_FooterL-3c576cfb.js",
-      "_index-814c90b5.js",
-      "_index-ae2d02a2.js"
+      "_bootstrap-icons-ae402bd8.js",
+      "_LogoutButton-8150591c.js",
+      "_FooterL-00be753d.js",
+      "_index-03db010d.js",
+      "_index-feb9df55.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Mainfolder/Like.jsx"
@@ -385,15 +385,15 @@
       "assets/footerl-a3583dd3.css",
       "assets/estiloa-1caec966.css"
     ],
-    "file": "assets/Logged-0bf94ba2.js",
+    "file": "assets/Logged-d18ad2fc.js",
     "imports": [
       "resources/js/app.jsx",
-      "_FooterL-3c576cfb.js",
-      "_bootstrap-icons-3eb0fae3.js",
-      "_LogoutButton-70bb7eb2.js",
-      "_Norgara-e98c7bed.js",
-      "_index-814c90b5.js",
-      "_index-ae2d02a2.js"
+      "_FooterL-00be753d.js",
+      "_bootstrap-icons-ae402bd8.js",
+      "_LogoutButton-8150591c.js",
+      "_Norgara-710494ca.js",
+      "_index-03db010d.js",
+      "_index-feb9df55.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Mainfolder/Logged.jsx"
@@ -412,21 +412,21 @@
       "assets/perfil-d4afbacd.css",
       "assets/footerl-a3583dd3.css"
     ],
-    "file": "assets/Perfil-c74dd46a.js",
+    "file": "assets/Perfil-5bcd6651.js",
     "imports": [
       "resources/js/app.jsx",
-      "_bootstrap-icons-3eb0fae3.js",
-      "_LogoutButton-70bb7eb2.js",
-      "_FooterL-3c576cfb.js",
+      "_bootstrap-icons-ae402bd8.js",
+      "_LogoutButton-8150591c.js",
+      "_FooterL-00be753d.js",
       "resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.jsx",
       "resources/js/Pages/Profile/Partials/UpdatePasswordForm.jsx",
       "resources/js/Pages/Profile/Partials/DeleteUserForm.jsx",
-      "_index-814c90b5.js",
-      "_index-ae2d02a2.js",
-      "_InputError-82f35005.js",
-      "_InputLabel-aa67aee3.js",
-      "_TextInput-752aa76c.js",
-      "_transition-66e34a33.js"
+      "_index-03db010d.js",
+      "_index-feb9df55.js",
+      "_InputError-c929f6ee.js",
+      "_InputLabel-6ab7cb82.js",
+      "_TextInput-28f72fc5.js",
+      "_transition-08b27e44.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Mainfolder/Perfil.jsx"
@@ -436,10 +436,10 @@
       "assets/login-096068f8.css",
       "assets/App-783a3642.css"
     ],
-    "file": "assets/ProduktuaGehitu-f96f47b4.js",
+    "file": "assets/ProduktuaGehitu-28f1bd39.js",
     "imports": [
       "resources/js/app.jsx",
-      "_InputError-82f35005.js"
+      "_InputError-c929f6ee.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Mainfolder/ProduktuaGehitu.jsx"
@@ -455,13 +455,13 @@
       "assets/dendah-fa0849f8.css",
       "assets/footerl-a3583dd3.css"
     ],
-    "file": "assets/Signup-7ae617f1.js",
+    "file": "assets/Signup-c024bfce.js",
     "imports": [
       "resources/js/app.jsx",
-      "_InputError-82f35005.js",
-      "_index-814c90b5.js",
-      "_bootstrap-icons-3eb0fae3.js",
-      "_index-ae2d02a2.js"
+      "_InputError-c929f6ee.js",
+      "_index-03db010d.js",
+      "_bootstrap-icons-ae402bd8.js",
+      "_index-feb9df55.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Mainfolder/Signup.jsx"
@@ -473,11 +473,11 @@
       "assets/estiloa-1caec966.css",
       "assets/dark-ab522951.css"
     ],
-    "file": "assets/dark-fdc1573f.js",
+    "file": "assets/dark-4647b5ff.js",
     "imports": [
       "resources/js/app.jsx",
-      "_NagusiaDark-2db2e1a1.js",
-      "_bootstrap-icons-3eb0fae3.js"
+      "_NagusiaDark-751efd5b.js",
+      "_bootstrap-icons-ae402bd8.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Mainfolder/dark.jsx"
@@ -490,18 +490,18 @@
       "assets/tasazioa-b02c24df.css",
       "assets/footerl-a3583dd3.css"
     ],
-    "file": "assets/denda-8800b630.js",
+    "file": "assets/denda-f4a29c16.js",
     "imports": [
       "resources/js/app.jsx",
-      "_bootstrap-icons-3eb0fae3.js",
-      "_LogoutButton-70bb7eb2.js",
+      "_bootstrap-icons-ae402bd8.js",
+      "_LogoutButton-8150591c.js",
       "resources/js/Pages/Mainfolder/DendaProduktuak.jsx",
-      "_FooterL-3c576cfb.js",
-      "_react-router-dom-d800b529.js",
-      "_index-814c90b5.js",
-      "_index-ae2d02a2.js",
-      "_TextInput-752aa76c.js",
-      "_react-router-3cb3ebfe.js"
+      "_FooterL-00be753d.js",
+      "_react-router-dom-acd2cf0d.js",
+      "_index-03db010d.js",
+      "_index-feb9df55.js",
+      "_TextInput-28f72fc5.js",
+      "_react-router-d1f2c3db.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Mainfolder/denda.jsx"
@@ -513,20 +513,20 @@
       "assets/headerl-5e3c4f3f.css",
       "assets/tasazioa-b02c24df.css"
     ],
-    "file": "assets/dendaAdmin-6b1c12bc.js",
+    "file": "assets/dendaAdmin-0e8911f0.js",
     "imports": [
       "resources/js/app.jsx",
-      "_bootstrap-icons-3eb0fae3.js",
-      "_LogoutButton-70bb7eb2.js",
+      "_bootstrap-icons-ae402bd8.js",
+      "_LogoutButton-8150591c.js",
       "resources/js/Pages/Mainfolder/DendaProduktuakAdmin.jsx",
-      "_react-router-dom-d800b529.js",
-      "_index-814c90b5.js",
-      "_index-ae2d02a2.js",
-      "_InputLabel-aa67aee3.js",
-      "_TextInput-752aa76c.js",
-      "_InputError-82f35005.js",
-      "_react-router-3cb3ebfe.js",
-      "_transition-66e34a33.js"
+      "_react-router-dom-acd2cf0d.js",
+      "_index-03db010d.js",
+      "_index-feb9df55.js",
+      "_InputLabel-6ab7cb82.js",
+      "_TextInput-28f72fc5.js",
+      "_InputError-c929f6ee.js",
+      "_react-router-d1f2c3db.js",
+      "_transition-08b27e44.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Mainfolder/dendaAdmin.jsx"
@@ -536,7 +536,7 @@
       "assets/App-783a3642.css",
       "assets/login-096068f8.css"
     ],
-    "file": "assets/konfirmatu-e8c46247.js",
+    "file": "assets/konfirmatu-dc7b630b.js",
     "imports": [
       "resources/js/app.jsx"
     ],
@@ -555,14 +555,14 @@
       "assets/footerl-a3583dd3.css",
       "assets/headerl-5e3c4f3f.css"
     ],
-    "file": "assets/kontaktua-b4bad4e9.js",
+    "file": "assets/kontaktua-a7ff37b4.js",
     "imports": [
       "resources/js/app.jsx",
-      "_FooterL-3c576cfb.js",
-      "_index-814c90b5.js",
-      "_bootstrap-icons-3eb0fae3.js",
-      "_LogoutButton-70bb7eb2.js",
-      "_index-ae2d02a2.js"
+      "_FooterL-00be753d.js",
+      "_index-03db010d.js",
+      "_bootstrap-icons-ae402bd8.js",
+      "_LogoutButton-8150591c.js",
+      "_index-feb9df55.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Mainfolder/kontaktua.jsx"
@@ -576,20 +576,20 @@
       "assets/footerl-a3583dd3.css",
       "assets/perfil-d4afbacd.css"
     ],
-    "file": "assets/main2-57108093.js",
+    "file": "assets/main2-4d116a58.js",
     "imports": [
       "resources/js/app.jsx",
       "resources/js/Pages/Mainfolder/Perfil.jsx",
-      "_bootstrap-icons-3eb0fae3.js",
-      "_LogoutButton-70bb7eb2.js",
-      "_index-814c90b5.js",
-      "_index-ae2d02a2.js",
-      "_FooterL-3c576cfb.js",
+      "_bootstrap-icons-ae402bd8.js",
+      "_LogoutButton-8150591c.js",
+      "_index-03db010d.js",
+      "_index-feb9df55.js",
+      "_FooterL-00be753d.js",
       "resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.jsx",
-      "_InputError-82f35005.js",
-      "_InputLabel-aa67aee3.js",
-      "_TextInput-752aa76c.js",
-      "_transition-66e34a33.js",
+      "_InputError-c929f6ee.js",
+      "_InputLabel-6ab7cb82.js",
+      "_TextInput-28f72fc5.js",
+      "_transition-08b27e44.js",
       "resources/js/Pages/Profile/Partials/UpdatePasswordForm.jsx",
       "resources/js/Pages/Profile/Partials/DeleteUserForm.jsx"
     ],
@@ -601,7 +601,7 @@
       "assets/App-783a3642.css",
       "assets/login-096068f8.css"
     ],
-    "file": "assets/pasahitza-0b80cafa.js",
+    "file": "assets/pasahitza-c7d28831.js",
     "imports": [
       "resources/js/app.jsx"
     ],
@@ -619,14 +619,14 @@
       "assets/dendah-fa0849f8.css",
       "assets/footerl-a3583dd3.css"
     ],
-    "file": "assets/signupmain-b119fae5.js",
+    "file": "assets/signupmain-cb3949d3.js",
     "imports": [
       "resources/js/app.jsx",
       "resources/js/Pages/Mainfolder/Signup.jsx",
-      "_InputError-82f35005.js",
-      "_index-814c90b5.js",
-      "_index-ae2d02a2.js",
-      "_bootstrap-icons-3eb0fae3.js"
+      "_InputError-c929f6ee.js",
+      "_index-03db010d.js",
+      "_index-feb9df55.js",
+      "_bootstrap-icons-ae402bd8.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Mainfolder/signupmain.jsx"
@@ -640,15 +640,15 @@
       "assets/dendah-fa0849f8.css",
       "assets/footerl-a3583dd3.css"
     ],
-    "file": "assets/tasazioa-61b8ecde.js",
+    "file": "assets/tasazioa-7da1d701.js",
     "imports": [
       "resources/js/app.jsx",
-      "_FooterL-3c576cfb.js",
-      "_bootstrap-icons-3eb0fae3.js",
-      "_InputError-82f35005.js",
-      "_LogoutButton-70bb7eb2.js",
-      "_index-814c90b5.js",
-      "_index-ae2d02a2.js"
+      "_FooterL-00be753d.js",
+      "_bootstrap-icons-ae402bd8.js",
+      "_InputError-c929f6ee.js",
+      "_LogoutButton-8150591c.js",
+      "_index-03db010d.js",
+      "_index-feb9df55.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Mainfolder/tasazioa.jsx"
@@ -657,18 +657,18 @@
     "css": [
       "assets/perfil-d4afbacd.css"
     ],
-    "file": "assets/Edit-fb62e304.js",
+    "file": "assets/Edit-64f5b9e2.js",
     "imports": [
       "resources/js/app.jsx",
-      "_AuthenticatedLayout-d5064b12.js",
+      "_AuthenticatedLayout-5b8a7749.js",
       "resources/js/Pages/Profile/Partials/DeleteUserForm.jsx",
       "resources/js/Pages/Profile/Partials/UpdatePasswordForm.jsx",
       "resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.jsx",
-      "_ApplicationLogo-5bd0dc6e.js",
-      "_transition-66e34a33.js",
-      "_InputError-82f35005.js",
-      "_InputLabel-aa67aee3.js",
-      "_TextInput-752aa76c.js"
+      "_ApplicationLogo-3072b12d.js",
+      "_transition-08b27e44.js",
+      "_InputError-c929f6ee.js",
+      "_InputLabel-6ab7cb82.js",
+      "_TextInput-28f72fc5.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Profile/Edit.jsx"
@@ -677,19 +677,19 @@
     "css": [
       "assets/perfil-d4afbacd.css"
     ],
-    "file": "assets/DeleteUserForm-359f39ee.js",
+    "file": "assets/DeleteUserForm-9fdcdc20.js",
     "imports": [
       "resources/js/app.jsx",
-      "_InputError-82f35005.js",
-      "_InputLabel-aa67aee3.js",
-      "_transition-66e34a33.js",
-      "_TextInput-752aa76c.js"
+      "_InputError-c929f6ee.js",
+      "_InputLabel-6ab7cb82.js",
+      "_transition-08b27e44.js",
+      "_TextInput-28f72fc5.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Profile/Partials/DeleteUserForm.jsx"
   },
   "resources/js/Pages/Profile/Partials/SoftDeleteForm.jsx": {
-    "file": "assets/SoftDeleteForm-0b091c79.js",
+    "file": "assets/SoftDeleteForm-21dfb377.js",
     "imports": [
       "resources/js/app.jsx"
     ],
@@ -697,13 +697,13 @@
     "src": "resources/js/Pages/Profile/Partials/SoftDeleteForm.jsx"
   },
   "resources/js/Pages/Profile/Partials/UpdatePasswordForm.jsx": {
-    "file": "assets/UpdatePasswordForm-1bab753e.js",
+    "file": "assets/UpdatePasswordForm-0916ae98.js",
     "imports": [
       "resources/js/app.jsx",
-      "_InputError-82f35005.js",
-      "_InputLabel-aa67aee3.js",
-      "_TextInput-752aa76c.js",
-      "_transition-66e34a33.js"
+      "_InputError-c929f6ee.js",
+      "_InputLabel-6ab7cb82.js",
+      "_TextInput-28f72fc5.js",
+      "_transition-08b27e44.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Profile/Partials/UpdatePasswordForm.jsx"
@@ -712,30 +712,30 @@
     "css": [
       "assets/perfil-d4afbacd.css"
     ],
-    "file": "assets/UpdateProfileInformationForm-ba354826.js",
+    "file": "assets/UpdateProfileInformationForm-6e05815a.js",
     "imports": [
       "resources/js/app.jsx",
-      "_InputError-82f35005.js",
-      "_InputLabel-aa67aee3.js",
-      "_TextInput-752aa76c.js",
-      "_transition-66e34a33.js"
+      "_InputError-c929f6ee.js",
+      "_InputLabel-6ab7cb82.js",
+      "_TextInput-28f72fc5.js",
+      "_transition-08b27e44.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.jsx"
   },
   "resources/js/Pages/Test.jsx": {
-    "file": "assets/Test-7f0d3f40.js",
+    "file": "assets/Test-1c3c14a7.js",
     "imports": [
       "resources/js/app.jsx",
-      "_AuthenticatedLayout-d5064b12.js",
-      "_ApplicationLogo-5bd0dc6e.js",
-      "_transition-66e34a33.js"
+      "_AuthenticatedLayout-5b8a7749.js",
+      "_ApplicationLogo-3072b12d.js",
+      "_transition-08b27e44.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Test.jsx"
   },
   "resources/js/Pages/Welcome.jsx": {
-    "file": "assets/Welcome-184dc434.js",
+    "file": "assets/Welcome-155a629b.js",
     "imports": [
       "resources/js/app.jsx"
     ],
@@ -787,7 +787,7 @@
       "resources/js/Pages/Test.jsx",
       "resources/js/Pages/Welcome.jsx"
     ],
-    "file": "assets/app-495d7f8c.js",
+    "file": "assets/app-238eeed8.js",
     "isEntry": true,
     "src": "resources/js/app.jsx"
   },
